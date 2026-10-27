@@ -92,6 +92,11 @@ Texto 0 s: "7 anos de inglês na escola… e eu só sei falar isso:" · Priya: "
 
 (A v1 abria com "Ai, amiga… eu queria tanto falar inglês direito." e só chegava na piada aos 13 s, com 44 s: foi refeita.)
 
+### "Ao pé da letra na imigração" (Mina e Evelyn, 30,3 s, Reels primeiro, 27/10) — resultado ainda não medido
+Por que este formato: "erro → reação do personagem" (Comigo 2,5 mi; criadores da Praktika 1,68 mi) + o tema "expressões brasileiras que deixam o gringo perdido" (todo mundo tem uma para comentar).
+Texto 0 s: "brasileira na imigração traduzindo TUDO ao pé da letra 💀" · Evelyn: "Who's paying for your trip?" · Mina: "My friends made a little cow!" [pílula "ao pé da letra: fizeram uma vaquinha"] · [balão 🐄 "a little… cow?"] Evelyn: "A cow." · "Do you plan to work here?" · Mina: "No, no… I took my little horse out of the rain." [balão 🐴☔] Evelyn: "And a horse." · "And your job back home?" · Mina (erguendo o passaporte): "I kicked the bucket!" [a música para, disco arranhando] · Evelyn (close extremo): "You… died?" [um fantasminha sobe da Mina; "‘kick the bucket’ = MORRER em inglês 💀"] · Mina: "Pera… o quê?!" · Tato (pula do balcão): "Kick the bucket é morrer! Fala: I quit my job." · Mina: "I quit my job!" · [carimbo WELCOME + bilhete "1 cow ✓ 1 horse ✓ alive ✓"] Evelyn: "Welcome to Batata City." · Mina (para a câmera): "E você, ia traduzir qual?" · Evelyn: "Next!" → laço.
+Série possível: cada episódio com outras expressões (fazer uma vaquinha, pagar mico, engolir sapo, ficar de molho, pão-duro…) e outro morador (o Sora no café, a Priya na entrevista). As expressões dos comentários viram o próximo episódio.
+
 ### Quiz rápido (22,6 s)
 Tato: "Quiz de inglês! Três perguntas pra testar seu nível." · Q1 "eu concordo" → I agree ✓ (I'm agree não existe) · Q2 "Pull" na porta → Puxe ✓ · Q3 pedir a conta → The check, please ✓ (account é conta de banco) · "Quantas você acertou? 👇 Comenta 0, 1, 2 ou 3" · Tato: "Bora de novo?". (Pedido do dono: perguntas simples e cativantes; "for here or to go" sem contexto foi rejeitada como difícil; título na tela + voz no começo.)
 

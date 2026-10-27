@@ -35,6 +35,11 @@
 | Aviso de IA ilegível a 360 px | 26 px | 32 px, fundo mais opaco |
 | `1 cidades` no contador | começar em 1 | começar em 2 |
 | Emoji de bandeira vira "US" | Windows não tem glifo de bandeira | não usar bandeiras |
+| Objeto do rig (carimbo) com a cor errada | a chave de cor `ink` do objeto colidiu com uma cor que já existe no desenho do personagem | dar nomes próprios às cores do objeto (`stampKnob`, `stampBase`…) |
+| Boca de susto da Evelyn parecendo bigode | expressão com boca `wobble` (que funciona na Mina) vira um risco escuro em outro rosto | boca aberta (`open` + `curve` negativa + `w` largo) e conferir no close |
+| Pílula de tradução em cima do texto do gancho | os dois no alto da tela ao mesmo tempo | cada adesivo do alto com o seu tempo: o gancho sai quando a pílula entra |
+| Legenda em cima da boca no close extremo | olhos baixos demais no enquadramento | no close extremo, olhos em y ≈ 740 (a boca fica acima da legenda em 1165) |
+| Take de TTS repetindo a frase ("died? Died?", "Welcome… Welcome…") | instabilidade do modelo; a checagem por palavras não pega repetição | ler a transcrição de cada take e fixar o take limpo em `picks.json` |
 | Whisper com palavra de duração zero | tempos ruins em TTS | `align` por sílabas dentro dos trechos com voz |
 | TTS repetiu a frase / riu no fim | instabilidade do modelo | escolher o outro take ou cortar com `clip` |
 | `"No quê?"` a ~400 Hz | interpretação aguda | aceitável (grito de confusão); confira consistência |

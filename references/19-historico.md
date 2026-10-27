@@ -26,6 +26,8 @@
 
 21. **"Pesquisa muito sobre o algoritmo do Instagram, como fazer Reels bons, concorrentes… as informações do Instagram têm que equivaler às do TikTok e depois superar, pois lá estamos tendo mais resultado"** → `references/23`: algoritmo oficial, Socialinsider (9,8 mi de Reels: pico em 45–60 s), Metricool (Reels ganham em compartilhamento), 224 posts medidos de 31 contas pela página de incorporação (número público = 30–80% do painel), Instagram × TikTok lado a lado; três receitas de Instagram em `references/22`; Instagram como rede principal no SKILL.md.
 
+22. **"Pega uma ideia ou formato de vídeo que já viralizou muito no Reels e faz adaptado pro BataTalk… faça 1 e faça o melhor Reel possível pra postar agora"** → 5 opções consideradas (ao pé da letra/erro→reação, expectativa×realidade, Desafio v2, POV atendente, tipos de brasileiro); escolhido "ao pé da letra na imigração" (Mina + Evelyn, que atende a Imigração no app; chutar o balde = kick the bucket = morrer). Produção completa com o placar e o lint antes, TTS ~US$ 0,03 (total ~0,14 de 0,20), cenário novo da imigração, balões de pensamento, fantasma, Tato, carimbo com o bilhete como piada de retorno, laço "Next!". Template em `templates/src/cuts/imigracao.js`.
+
 ## O que agradou
 
 Pesquisa embasando cada decisão; proatividade; skill organizada e com ferramentas; várias opções; vídeos que parecem nativos; personagens com personalidade; humor de meme brasileiro; acabamento técnico (QC, área segura).
