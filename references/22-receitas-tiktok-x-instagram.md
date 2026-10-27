@@ -35,35 +35,47 @@ As duas redes premiam coisas diferentes (`references/02`). Não faça um vídeo 
 - Legenda: palavra-chave buscável ("inglês", "falar inglês", "falso amigo") + pergunta. Até 5 hashtags.
 - Postar como **Todos**, com o selo de IA ligado; responder comentários na primeira hora; próximo vídeo = o erro mais pedido nos comentários (série).
 
-## Receita Instagram: "manda pra aquela amiga" de 12–20 s
+## Receitas Instagram (a rede principal: é onde temos mais resultado)
 
-**O que o Instagram mede**: tempo assistido em comparação com Reels do mesmo tamanho, curtidas por alcance e, principalmente para quem não segue, **envios por DM** e compartilhamentos fora do app; também o uso do áudio (`references/02`). Na nossa conta, o formato **participativo** (Desafio) foi o melhor.
+Base: `references/23` (algoritmo oficial, estudo de 9,8 mi de Reels, 224 posts medidos). No Instagram a duração quase não separa: **o que separa é ser enviado, prender sem som e ter história ou série**. São três formatos, e cada post usa um.
+
+### A. Esquete "manda pra aquela amiga" (25–45 s)
+O formato do Bar e da Mina, que no Instagram não é punido pela duração.
 
 | Tempo | Batida | Regra |
 |---|---|---|
-| 0–2 s | **Identificação** em texto + rosto ("a amiga que só fala inglês depois do terceiro café") | o espectador pensa numa pessoa específica |
-| 2–10 s | a situação com 2–3 escaladas (jogo da cena) | um personagem-espelho e um personagem-amigo |
-| 10–16 s | **virada útil**: a frase que salva (tela do app ou dica do Tato) | motivo para salvar |
-| fim | **"manda pra ela"** em texto + pergunta fácil | o envio é o sinal que mais pesa para quem não segue |
+| 0–2 s | **Identificação** que funciona sem som: rosto + texto curto + ação ("7 anos de inglês na escola… e eu só sei falar isso:") | o sistema mede pulo nos 2 primeiros segundos |
+| 2–15 s | jogo da cena: 2–3 escaladas, com reação segurada | um personagem-espelho, um personagem-amigo |
+| 15–30 s | **virada**: o Tato e a tela real do app, quem responde é a pessoa | o produto dentro da história |
+| 30–40 s | vitória + **"manda pra amiga que…"** + laço | o envio é o sinal que mais pesa para quem não segue |
 
-- Capa (o quadro 0) com texto legível na grade do perfil.
-- Áudio original nomeado de forma buscável. Legenda com a dor + pergunta + "link no perfil", até 5 hashtags, texto alternativo preenchido.
-- Testar dois ganchos com **Reels de teste** (vão só para quem não segue). O dono decide e posta.
-- Variações que rendem no Instagram:
-  - "**Desafio 3 s**" (participação);
-  - "**3 frases que salvam no café**" (salvamento);
-  - "**tipos de amiga no intercâmbio**" (envio).
+### B. Série "erro → reação" (15–20 s)
+O mesmo mecanismo da receita do TikTok, como **série no Instagram** (os criadores da Praktika publicam dezenas iguais, com mediana de cerca de 78 mil views). Mesmo cenário, mesmo morador, um erro novo por episódio; na capa, "Ep. N".
+
+### C. Participativo (Desafio / Quiz, 20–30 s)
+O nosso melhor no Instagram (1.258). Pergunta na capa, cronômetro, "comenta sua resposta", **"manda pro amigo que erraria"**. Variação de salvamento: **carrossel com áudio** ("5 falsos amigos que já te pegaram"), que também entra na aba de Reels.
+
+### Regras de Instagram para os três
+- **Funciona sem som**: legenda queimada palavra a palavra; a piada se lê.
+- Capa com texto legível na grade; arquivo limpo (sem marca d'água do TikTok, sem borda, sem tela cheia de texto).
+- Áudio original nomeado de forma buscável (o uso do áudio é sinal oficial).
+- **Colaboração** (o post nas duas contas) quando houver um parceiro ou criador; o dono convida.
+- **Reels de teste** para ganchos novos; o dono decide liberar para os seguidores.
+- Legenda: a dor + pergunta + "link no perfil"; até 5 hashtags; texto alternativo.
+- Responder comentários na primeira hora; **curtida e comentário de amigos aparecem na aba de amigos**.
 
 ## O que vale para os dois
 
-- 9:16, até 20 s, cada fala ≤ 1,5 s, algo novo a cada 2–3 s.
+- 9:16; cada fala ≤ 1,5 s; algo novo a cada 2–3 s.
 - O Tato ou um morador num momento-chave; o endereço só no fim, discreto.
 - **Uma ideia por vídeo.** Se precisar explicar, corte.
 - Rodar `lint-roteiro` e o placar antes de produzir.
+- **Uma versão por rede**: a mesma ideia rende um corte de 12 s para o TikTok e um esquete de 25–40 s para o Instagram.
 
-## Plano para os próximos dois vídeos
+## Plano para os próximos vídeos
 
-1. **TikTok — "Falso amigo no café"** (12–14 s): Sora pergunta "Anything else?" → a pessoa: "I'm constipated, so… a tea?" (achando que é resfriado) → Sora congela, cara de choque → o Tato sopra: "constipated = intestino preso 😅 resfriado é *I have a cold*" → "I have a cold!" → Sora alivia: "Ohhh. Tea it is." Texto final: "qual falso amigo já te pegou? 👇".
-2. **Instagram — "A amiga que só fala inglês quando…"** (15–18 s): June e Priya; identificação em 2 s; Priya escala três desculpas para não falar; June mostra o Tato; Priya acerta uma frase; texto "manda pra amiga que ensaia no banho 🫧".
+1. **Instagram (prioridade) — "A amiga que só fala inglês quando…"** (25–35 s, formato A): June e Priya; identificação em 2 s; Priya escala três desculpas para não falar; June mostra o Tato; Priya acerta uma frase de verdade; fecha com "manda pra amiga que ensaia no banho 🫧" e laço.
+2. **Instagram — série "Falso amigo" ep. 1** (15–18 s, formato B): Sora pergunta "Anything else?" → "I'm constipated, so… a tea?" (achando que é resfriado) → Sora congela → o Tato sopra: "constipated = intestino preso 😅 resfriado é *I have a cold*" → "I have a cold!" → "Ohhh. Tea it is." Capa "Falso amigo ep. 1"; legenda "qual falso amigo já te pegou? 👇".
+3. **TikTok — corte de 12–14 s do item 2** (receita TikTok), postado como **Todos**.
 
-Ambos reaproveitam cenários e rig existentes. Vozes novas precisam de autorização de TTS: estimar o custo antes.
+Todos reaproveitam cenários e rig existentes. Vozes novas precisam de autorização de TTS: estimar o custo antes.

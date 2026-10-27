@@ -21,15 +21,20 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
    - **Animação** tem o dobro de salvamentos.
    - Aula, desconto e demonstração ficam perto de 0% de compartilhamento.
    - O formato que fez Praktika e Comigo crescerem é **"erro → reação do personagem"**, com o produto funcionando dentro da piada.
-9. **Concorrentes** (`21`): primeiro fazer o que já funciona para eles (criadores, personagem com atitude, impulsionar só o vencedor, constância); depois se destacar (universo de Batata City, o Tato no momento de travar, humor limpo e brasileiro, preço de app).
+9. **O Instagram é a rede principal** (é onde temos mais resultado; `23`, com 224 posts medidos e um estudo de 9,8 mi de Reels):
+   - lá a duração quase não separa (45–60 s tem a maior média no estudo grande), ao contrário do TikTok;
+   - o que separa é **ser enviado por DM**, prender **sem som** nos 2 primeiros segundos, e ter história ou série;
+   - marca que ensina ou vende vai mal (Fluency, Praktika, Open English); marca com personagem ou que entretém vai bem; **criadores parceiros e colaborações** multiplicam;
+   - Reels ganham do TikTok em compartilhamentos em todos os tamanhos de conta (Metricool).
+10. **Concorrentes** (`21`): primeiro fazer o que já funciona para eles (criadores, personagem com atitude, impulsionar só o vencedor, constância); depois se destacar (universo de Batata City, o Tato no momento de travar, humor limpo e brasileiro, preço de app).
 
 ## Roteador: o que ler para cada pedido
 
 | Pedido | Faça | Leia |
 |---|---|---|
-| **Vídeo novo** ("faz um vídeo", "algo incrível", "pra viralizar") | fluxo completo, fases A–F; **uma versão por rede** | 01 → 22 → 10 → 09 → 05 → 06/07/08 → 11–16 → 17 → 18 |
+| **Vídeo novo** ("faz um vídeo", "algo incrível", "pra viralizar") | fluxo completo, fases A–F; **uma versão por rede, começando pelo Instagram** | 01 → 23 → 22 → 10 → 09 → 05 → 06/07/08 → 11–16 → 17 → 18 |
 | **Vídeo focado no TikTok** | receita "erro → reação" de 10–15 s, postar como Todos | 22, 20, 02 |
-| **Vídeo focado no Instagram** | receita "manda pra aquela amiga" de 12–20 s, Reels de teste | 22, 02, 17 |
+| **Vídeo focado no Instagram** (prioridade) | escolha o formato: A esquete "manda pra amiga" (25–45 s), B série "erro → reação" (15–20 s) ou C participativo/carrossel; tem que funcionar sem som; Reels de teste; colaboração | 23, 22, 02, 17 |
 | **Concorrentes / posicionamento / "como vencer"** | mapa, fase 1 (paridade) e fase 2 (diferença); pesquisar de novo preços e dados | 21, 04, 20 |
 | **Só ideias / roteiro** | fases A–B; entregue a folha de batidas + o placar no papel | 01, 09, 05, 06, 07, 08, 10 |
 | **Revisar um vídeo pronto** ("melhora o pace", "mais engajado") | `references/10` §6: assistir quadro a quadro → mapa de retenção → placar → correções em ordem de impacto | 10, 06, 16 + o guia do problema |
@@ -143,4 +148,5 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | `19-historico.md` | linha do tempo dos pedidos, decisões, correções e do que agradou e desagradou |
 | `20-dados-de-videos-tiktok.md` | métricas de 112 vídeos (duração × compartilhamento, animação × não, campeões e por quê, roteiros pela legenda automática), os nossos números, **método para repetir a coleta** |
 | `21-concorrentes-de-ingles.md` | Duolingo, Praktika, Comigo, Speak, Fluency, Open English, Cambly, escolas: o que fazem, como vendem, fraquezas, como vencer; BataTalk na mesa; plano em duas fases |
-| `22-receitas-tiktok-x-instagram.md` | receita TikTok "erro → reação" de 10–15 s com banco de erros limpos, receita Instagram "manda pra amiga" de 12–20 s, o plano dos próximos dois vídeos |
+| `22-receitas-tiktok-x-instagram.md` | receita TikTok "erro → reação" de 10–15 s com banco de erros limpos; três receitas de Instagram (esquete 25–45 s, série 15–20 s, participativo/carrossel); o plano dos próximos vídeos |
+| `23-instagram-a-fundo.md` | algoritmo oficial (cartão de sistema, Mosseri, taxa de pulo, aba de amigos, Reels de teste, originalidade), estudos (Socialinsider 9,8 mi, Metricool), **224 posts medidos de 31 contas**, Instagram × TikTok lado a lado, 12 regras de Reels bons, método de coleta |

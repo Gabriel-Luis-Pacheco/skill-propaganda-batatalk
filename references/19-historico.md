@@ -24,6 +24,8 @@
 
 20. **"Pesquise e consuma vários vídeos do TikTok que divulgam coisas… esquetes, animações… e depois pesquise a fundo todos os concorrentes de inglês, como se posicionam, como vendem, como vencer"** → coleta de 112 vídeos com métricas e roteiros (`references/20`); descoberta de que 4 dos 8 vídeos do TikTok estavam privados; o Comigo (capivara, 2,5 mi de views com a fundadora) e o motor de criadores da Praktika; o mapa de concorrentes com plano em duas fases (`references/21`); receitas separadas para TikTok e Instagram (`references/22`).
 
+21. **"Pesquisa muito sobre o algoritmo do Instagram, como fazer Reels bons, concorrentes… as informações do Instagram têm que equivaler às do TikTok e depois superar, pois lá estamos tendo mais resultado"** → `references/23`: algoritmo oficial, Socialinsider (9,8 mi de Reels: pico em 45–60 s), Metricool (Reels ganham em compartilhamento), 224 posts medidos de 31 contas pela página de incorporação (número público = 30–80% do painel), Instagram × TikTok lado a lado; três receitas de Instagram em `references/22`; Instagram como rede principal no SKILL.md.
+
 ## O que agradou
 
 Pesquisa embasando cada decisão; proatividade; skill organizada e com ferramentas; várias opções; vídeos que parecem nativos; personagens com personalidade; humor de meme brasileiro; acabamento técnico (QC, área segura).
