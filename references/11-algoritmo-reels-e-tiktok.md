@@ -35,3 +35,35 @@ Força da evidência: **oficial** (a plataforma ou um executivo dela disse), **i
 4. **Original sempre**; subir arquivo limpo em cada rede (sem marca d'água cruzada).
 5. **Palavras de busca** em três lugares (fala, tela, legenda).
 6. **Teste variações** (trial reels / ganchos diferentes) e compare taxa de pulo, tempo médio, compartilhamentos.
+
+## O que a própria Meta publica sobre o Reels (cartão do sistema "Reels Chaining", atualizado em nov/2025) — fonte primária
+
+Fonte: [Meta Transparency Center — Instagram Reels Chaining](https://transparency.meta.com/features/explaining-ranking/ig-reels-chaining/) e [Instagram Feed Recommendations](https://transparency.meta.com/features/explaining-ranking/ig-feed-recommendations/).
+
+**Etapas**: junta candidatos (de quem você segue e parecidos com o que você engajou) → um modelo leve reduz para ~100 → filtros de integridade tiram o "não recomendável" → modelos preveem o valor de cada um → ordena por pontuação.
+
+**O que o modelo prevê para cada Reel** (lista oficial):
+1. chance de você **assistir menos de 3 segundos** (sinais: quantos assistiram ≥ 3 s, quantos dispensaram, **pulos nos primeiros 2 s**, assistiu com som)
+2. chance de **assistir mais do que 95% das pessoas que veem Reels do mesmo tamanho** (tempo relativo à duração!)
+3. chance de **comentar**
+4. chance de **compartilhar dentro do Instagram** e **fora do Instagram**
+5. chance de **seguir o autor**
+6. chance de **usar o áudio do Reel** num Reel seu
+7. chance de tocar em "Interessado"
+8. chance de abrir em tela cheia (Explorar)
+
+No feed de recomendações também aparecem: "quão informativo é o post" (avaliação de qualidade por modelo de linguagem), visitar o perfil, ligar o som, continuar rolando.
+
+**O que isso muda na prática**
+- **Os 2 primeiros segundos são medidos explicitamente** (pulo). Quadro 0 forte não é opinião, é sinal oficial.
+- **Tempo assistido é comparado com vídeos do mesmo tamanho**: um vídeo de 35 s precisa segurar mais do que outros de 35 s — corte o que sobra, não "encha" duração.
+- **Som ligado conta**: áudio que dá vontade de ouvir (voz já no quadro 0, efeito, trilha própria).
+- **Áudio reutilizável conta**: uma fala-bordão curta e original ("the book is on the table" na voz da Priya, "Confia." da June) pode virar som que outros usam → sinal oficial de distribuição. Nomeie o áudio original de forma buscável ao postar.
+- **Compartilhar fora do Instagram** (WhatsApp!) é previsto separadamente: conteúdo "manda no grupo" é ouro no Brasil.
+- **Seguir o autor**: personagens recorrentes (série) dão motivo para seguir.
+
+## TikTok — fontes primárias adicionais
+
+- Recomendação evita dois vídeos seguidos com o mesmo som ou do mesmo criador (diversificação) e considera "Não tenho interesse" ([TikTok Newsroom](https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you/)); há "Por que este vídeo" no painel de compartilhar ([SEJ](https://www.searchenginejournal.com/tiktoks-for-you-page-shows-why-a-video-is-recommended/474864)).
+- **Padrões de elegibilidade do Para Você**: conteúdo impróprio para público amplo não é recomendado — inclui dieta/fitness extremo, sugestivo sexual, **tristeza/frases desesperançosas**, saúde mental generalizada; reincidência deixa a conta temporariamente fora das recomendações ([cobertura da política](https://www.kxlf.com/tiktok-to-start-banning-problematic-content-from-its-for-you-feed)). Mantenha o tom leve e engraçado; nada de "sou um fracasso" sem virada positiva.
+- Vídeo recém-enviado em análise pode ainda não ser recomendado (2020, Newsroom).

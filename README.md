@@ -1,6 +1,6 @@
 # skill-propaganda-batatalk
 
-Skill do Claude para criar, revisar e entregar vídeos curtos de propaganda do BataTalk (TikTok/Reels): roteiro, humor, verdade do produto, vozes, animação, som, render, QC, legendas do post e entrega. Reúne tudo o que foi aprendido em outubro de 2026 — acertos, erros e correções.
+Skill do Claude para criar, revisar e entregar vídeos curtos de propaganda do BataTalk (TikTok/Reels): briefing e placar de qualidade, algoritmo (fontes da Meta e do TikTok), psicologia de quem assiste, roteiro e comédia, falas humanas, visual autoral, vozes, animação, som, render, QC, legendas do post e entrega. Reúne tudo o que foi aprendido em outubro de 2026 — acertos, erros e correções.
 
 Comece por [`SKILL.md`](SKILL.md).
 

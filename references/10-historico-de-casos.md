@@ -15,6 +15,7 @@
 13. **"As legendas têm que ser as melhores possíveis, pesquisa"** → legenda TikTok/Reels separadas, ≤ 5 hashtags, comentário fixado da marca, alt text.
 14. **"Junta tudo e faz uma skill"** → este repositório.
 15. **"Pesquisa muito mais: algoritmo do Reels e do TikTok, vídeos que viralizam, animação, psicologia de prender, roteiros que prendem, falas humanizadas, anti AI slop"** → guias 11–15.
+16. **"Pesquisa ainda mais… psicologia de quem assiste e como prender… visualmente, sem ser genérico e tosco. Seja proativo"** → fontes primárias (cartão de sistema do Reels da Meta com as previsões "pular em 2 s", "assistir mais que 95% de reels do mesmo tamanho", envios, uso do áudio; regras de elegibilidade do For You) no guia 11; guias novos 16 (rastreamento ocular, contágio emocional, redundância × aprendiz de língua, ativos distintivos), 17 (Duolingo/519 posts, Ryanair, Lu do Magalu, mascotes, manual do MrBeast), 18 (visual anti-genérico), 19 (comédia e história), 20 (briefing + placar mínimo 30/40 + ciclo de métricas). SKILL.md reescrito em volta de briefing → 3 conceitos → placar → produção → métricas.
 
 ## O que agradou
 
