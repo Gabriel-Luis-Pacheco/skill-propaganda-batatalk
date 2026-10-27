@@ -16,12 +16,21 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 5. **Soa gente**: subtexto, oralidade, cada personagem com seu jeito de falar, nenhum tique de IA. → `08`
 6. **Parece BataTalk**: Tato, paleta, Fredoka, motivo sonoro, vetor autoral, movimento calmo, técnica impecável. → `11`, `12`
 7. **Aja como criador, não como anunciante.** O Duolingo cresceu quando o mascote virou personagem. Começou comentando nos vídeos dos outros, e o primeiro estouro foi o 39º vídeo. Muitas tentativas nativas e rápidas, num universo que o público quer acompanhar. → `04`, `05`, `09`
+8. **Os dados de 112 vídeos do TikTok** (`20`):
+   - **11–15 s rende mais** (mediana de 353 mil views e 1,02% de compartilhamento); acima de 25 s, tudo cai.
+   - **Animação** tem o dobro de salvamentos.
+   - Aula, desconto e demonstração ficam perto de 0% de compartilhamento.
+   - O formato que fez Praktika e Comigo crescerem é **"erro → reação do personagem"**, com o produto funcionando dentro da piada.
+9. **Concorrentes** (`21`): primeiro fazer o que já funciona para eles (criadores, personagem com atitude, impulsionar só o vencedor, constância); depois se destacar (universo de Batata City, o Tato no momento de travar, humor limpo e brasileiro, preço de app).
 
 ## Roteador: o que ler para cada pedido
 
 | Pedido | Faça | Leia |
 |---|---|---|
-| **Vídeo novo** ("faz um vídeo", "algo incrível", "pra viralizar") | fluxo completo, fases A–F | 01 → 10 → 09 → 05 → 06/07/08 → 11–16 → 17 → 18 |
+| **Vídeo novo** ("faz um vídeo", "algo incrível", "pra viralizar") | fluxo completo, fases A–F; **uma versão por rede** | 01 → 22 → 10 → 09 → 05 → 06/07/08 → 11–16 → 17 → 18 |
+| **Vídeo focado no TikTok** | receita "erro → reação" de 10–15 s, postar como Todos | 22, 20, 02 |
+| **Vídeo focado no Instagram** | receita "manda pra aquela amiga" de 12–20 s, Reels de teste | 22, 02, 17 |
+| **Concorrentes / posicionamento / "como vencer"** | mapa, fase 1 (paridade) e fase 2 (diferença); pesquisar de novo preços e dados | 21, 04, 20 |
 | **Só ideias / roteiro** | fases A–B; entregue a folha de batidas + o placar no papel | 01, 09, 05, 06, 07, 08, 10 |
 | **Revisar um vídeo pronto** ("melhora o pace", "mais engajado") | `references/10` §6: assistir quadro a quadro → mapa de retenção → placar → correções em ordem de impacto | 10, 06, 16 + o guia do problema |
 | **Variação de gancho / teste** | mudar abertura de verdade (texto, primeira fala, primeiro plano); arquivo limpo | 06 (tipos de gancho), 18, 15 (`vertical-wrap`) |
@@ -97,7 +106,7 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 - [ ] **Emoção e envio**: emoção forte visível no rosto, detalhe brasileiro específico, motivo para mandar a alguém, pergunta fácil + marca-a-amiga
 - [ ] **Humano e autoral**: zero tique de IA (lint sem ERRO), personagens que soam diferentes, visual da marca, Tato num momento-chave, endereço no fim, formato nativo, só o BataTalk faria isso
 - [ ] **Técnico**: legenda palavra a palavra na cor de quem fala, dentro da zona segura (x 120–960, y 270–1248); determinismo, alpha, QC (h264/bt709/aac 48k, −15 LUFS ±1,5, pico ≤ −1 dBTP), black-scan 0, sem fantasma nos cortes; MP4 limpo para cada rede
-- [ ] **Post**: txt completo, ≤ 5 hashtags, avisos; placar ≥ 33/44 sem ★ zerado; gasto informado; fontes citadas
+- [ ] **Post**: privacidade **Todos** (nunca "Somente eu"); txt completo, ≤ 5 hashtags, avisos; placar ≥ 33/44 sem ★ zerado; gasto informado; fontes citadas
 
 ## Ferramentas e modelos desta skill
 
@@ -132,3 +141,6 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | `17-legenda-do-post.md` | pesquisa e modelo da legenda do post, hashtags, comentário fixado, alt text, legendas antigas |
 | `18-entrega-postagem-e-metricas.md` | pastas, txt, variações e reaproveitamento, métricas, ritmo de postagem e teste, **diagnóstico de alcance baixo** e os nossos números |
 | `19-historico.md` | linha do tempo dos pedidos, decisões, correções e do que agradou e desagradou |
+| `20-dados-de-videos-tiktok.md` | métricas de 112 vídeos (duração × compartilhamento, animação × não, campeões e por quê, roteiros pela legenda automática), os nossos números, **método para repetir a coleta** |
+| `21-concorrentes-de-ingles.md` | Duolingo, Praktika, Comigo, Speak, Fluency, Open English, Cambly, escolas: o que fazem, como vendem, fraquezas, como vencer; BataTalk na mesa; plano em duas fases |
+| `22-receitas-tiktok-x-instagram.md` | receita TikTok "erro → reação" de 10–15 s com banco de erros limpos, receita Instagram "manda pra amiga" de 12–20 s, o plano dos próximos dois vídeos |

@@ -32,7 +32,7 @@ const legal = [
   [/\bfluent[ea]s? em \d+|\bfluência em \d+|\bem \d+ (dias|semanas|meses)\b/i, 'promessa de fluência ou prazo'],
   [/\b100 ?%/i, 'número absoluto sem prova'],
   [/\bsem esforço\b|\baprend(a|e) rápido\b/i, 'promessa de facilidade'],
-  [/\b(cerveja|chope|drinks?|vinho|caipirinha|vodka|gin|tequila|shot)\b/i, 'bebida alcoólica (público jovem: limonada e café)'],
+  [/\b(cerveja|chope|vinho|drinque|caipirinha|vodka|gin|tequila|shot)\b/i, 'bebida alcoólica (público jovem: limonada e café)'],
   [/\b(eu|a gente) (aprendi|aprendemos) .*\b(com|no) batatalk\b/i, 'parece depoimento de cliente (personagem ≠ cliente)'],
 ];
 // Tiques de IA e de anúncio: aviso.

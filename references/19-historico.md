@@ -22,6 +22,8 @@
 
 19. **"Analisa isto. Estamos indo mal… o TikTok tá cortando alcance e o Insta não divulga nem retém"** (prints de 27/10, 11h39) → diagnóstico em `references/18` (§ Diagnóstico de alcance baixo): o Desafio teve 1.258 no Instagram e 0 no TikTok; o mesmo vídeo vai 4–9× melhor no Instagram; formato participativo e curto ganham; zero comentários; o "ficar fluente" foi o pior. Próximo passo: o dono confere o Status da conta nas duas redes e manda os prints de retenção e fonte de tráfego.
 
+20. **"Pesquise e consuma vários vídeos do TikTok que divulgam coisas… esquetes, animações… e depois pesquise a fundo todos os concorrentes de inglês, como se posicionam, como vendem, como vencer"** → coleta de 112 vídeos com métricas e roteiros (`references/20`); descoberta de que 4 dos 8 vídeos do TikTok estavam privados; o Comigo (capivara, 2,5 mi de views com a fundadora) e o motor de criadores da Praktika; o mapa de concorrentes com plano em duas fases (`references/21`); receitas separadas para TikTok e Instagram (`references/22`).
+
 ## O que agradou
 
 Pesquisa embasando cada decisão; proatividade; skill organizada e com ferramentas; várias opções; vídeos que parecem nativos; personagens com personalidade; humor de meme brasileiro; acabamento técnico (QC, área segura).
