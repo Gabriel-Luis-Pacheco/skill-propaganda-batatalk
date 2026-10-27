@@ -55,3 +55,11 @@ Listas de 2026 citam: tankar, cringe, delulu, flopar, gag/"ficou gag", slay/poca
 5. **Som**: dá para fazer com áudio original (conta comercial)?
 
 Se falhar em qualquer item, **não use**. Ficar de fora de uma trend é uma decisão válida.
+
+## 7. Humor geração Z (Brasil)
+
+- Funciona: autodepreciativo + absurdo/nonsense (o caso Duolingo Brasil), "cara de paisagem" (deadpan) contra drama, memes nacionais duradouros.
+- "The book is on the table": piada nacional do inglês de livro didático (aulas de preposição) — sinônimo de inglês decorado. Segura, autodepreciativa, não "punching down". Variação: "I'm fine, thank you, and you?".
+- Formatos: "eu lendo inglês: 😎 / eu falando inglês: 💀"; "7 anos de inglês na escola… e eu só sei falar isso:"; janela de erro "travou.exe parou de responder 🧊"; flashback "▶ 6º ano".
+- Personalidade do elenco gera a comédia: Priya controlada que desaba no drama; June calma e seca ("Amiga." / "Falou." / "Confia.").
+- Regra VIBES (meme-and-culture): entender a origem, caber na marca, ser seguro (nada de tragédia/divisivo/zoar grupo), visual original, nativo e rápido — ou não usar.

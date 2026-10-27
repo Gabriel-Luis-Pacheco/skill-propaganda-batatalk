@@ -4,6 +4,8 @@ Cópias dos arquivos de `batatalk-launch-video/v8-publica/` em 27/10/2026. Eles 
 
 | Arquivo | O que é |
 |---|---|
+| `folha-de-batidas.md` | modelo da folha de batidas (tempo, plano, fala, intenção, texto na tela, som, sinal) com checagens |
+| `legenda-e-hashtags.txt` | modelo do txt de entrega (TikTok, Reels, comentário fixado, alt text, dicas) |
 | `src/cuts/bar.js` + `bar-room.js` | esquete do bar v2 (Priya e June): abertura fria, campo e contracampo, tranco/tremida, travou.exe, Tato que sobe da mesa, celular em primeira pessoa, laço; `samples()` seguro nos cortes |
 | `src/cuts/creator.js` + `room.js` | vídeo falado da Mina (vlog animado no quarto); exporta `fastLine`, `align`, `segVoice`, `stick`, `buildPages`, `focusLines` |
 | `src/cuts/quiz2.js`, `quiz.js` | Quiz rápido e Desafio 3s |

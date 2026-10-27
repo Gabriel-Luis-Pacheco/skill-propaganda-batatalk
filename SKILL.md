@@ -1,158 +1,133 @@
 ---
 name: propaganda-batatalk
-description: Cria, revisa e entrega vídeos curtos de propaganda do BataTalk para TikTok e Reels — esquetes com o elenco de Batata City, vídeo de criadora (vlog animado), quiz, variações de gancho — no renderizador próprio do repositório (batatalk-launch-video/v8-publica). Baseada em pesquisa sobre algoritmo (Meta Reels/TikTok For You), psicologia de quem assiste (olhar, emoção, identificação, compartilhamento), Duolingo/concorrentes/marcas de outros nichos, trends do momento, banco de ideias, ofício de comédia (jogo da cena), falas humanas anti-"cara de IA", visual autoral, animação calma, som, QC técnico, legendas do post e placar de qualidade antes de renderizar. Use para qualquer pedido de vídeo, propaganda, TikTok, Reels, esquete, roteiro, legenda de post ou revisão de vídeo do BataTalk.
+description: Cria, revisa e entrega vídeos curtos de propaganda do BataTalk para TikTok e Reels — esquetes com o elenco de Batata City, vídeo de criadora (vlog animado), quiz, trends curtas, séries e variações de gancho — no renderizador próprio do repositório (batatalk-launch-video/v8-publica). Traz pesquisa sobre algoritmo (Meta Reels/TikTok), psicologia de quem assiste, Duolingo e concorrentes, trends do momento, banco de ideias, roteiro e comédia (jogo da cena), falas humanas anti-"cara de IA", visual autoral, animação calma, som, QC técnico, legenda do post, placar de qualidade e ferramentas (lint de roteiro, placar). Use para qualquer pedido de vídeo, propaganda, TikTok, Reels, esquete, roteiro, ideia de post, legenda de post ou revisão de vídeo do BataTalk.
 ---
 
-# Propaganda BataTalk — vídeos curtos que prendem, sem mentir
+# Propaganda BataTalk: vídeos curtos que prendem, sem mentir
 
-Esta skill junta tudo o que funcionou (e o que deu errado) na produção dos vídeos do BataTalk para TikTok e Reels em outubro de 2026: a família V8 pública, as variações de gancho, o Desafio 3s, o Quiz rápido, o vídeo falado da Mina e o esquete do bar (Priya e June). Junta também a pesquisa de algoritmo, de psicologia do espectador, de casos que viralizaram, de comédia, de visual e de legendas. **Leia os arquivos de `references/` antes de agir.** Os detalhes, os números e as fontes estão lá.
+Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikTok e Reels (out/2026): a família V8 pública, as variações de gancho, o Desafio 3s, o Quiz rápido, a Mina criadora e o esquete do bar (Priya e June), além de seis rodadas de pesquisa. Os detalhes, números e fontes estão em `references/`. Leia **só o que o seu pedido precisa** (roteador abaixo).
 
-## A ideia central em 6 linhas
+## O que faz um vídeo nosso funcionar (resumo da pesquisa)
 
-1. **O algoritmo é um espelho do espectador.** O Reels prevê se a pessoa vai pular em 2 s, assistir mais que 95% dos vídeos do mesmo tamanho, comentar, compartilhar, mandar no direct ou fora do app, seguir e usar o áudio. O TikTok ranqueia por interações, tempo assistido, se a pessoa assistiu até o fim e originalidade (`references/11`).
-2. **Quem assiste olha primeiro para rostos, olhos e movimento**, em ~200 ms. A emoção do personagem passa para quem assiste, e passa mais quando o personagem é simpático (`references/16`).
-3. **As pessoas compartilham o que dá emoção forte** (rir, se surpreender, sentir orgulho) **e o que diz algo sobre elas** ("isso é a gente") (`references/12`).
-4. **Prende quem tem causa e efeito.** Cada batida liga à anterior com "mas" ou "então", a lacuna é curta e a piada vem no tempo certo, com pausa e reação (`references/14`, `references/19`).
-5. **Soa gente**: subtexto, oralidade, cada personagem com seu jeito de falar, sem tique de IA (`references/15`).
-6. **Parece BataTalk**: ativos distintivos (Tato, paleta, Fredoka, motivo sonoro), vetor autoral, movimento calmo e técnica impecável (`references/13`, `references/18`).
-7. **Aja como criador, não como anunciante.** O Duolingo só cresceu quando parou de dar aula e transformou o mascote em personagem. O primeiro sucesso deles foram comentários, e o primeiro vídeo que estourou foi o 39º. Muitas tentativas pequenas, rápidas e nativas, com um universo que o público quer acompanhar (`references/21`, `references/22`, `references/23`).
+1. **O algoritmo mede o espectador.** O Reels prevê pulo nos primeiros 2 s, tempo assistido comparado a vídeos do mesmo tamanho, comentário, envio (no app e fora dele), seguir e uso do áudio. O TikTok soma interações, tempo assistido, assistir até o fim e originalidade. → `02`
+2. **O olho vai para rostos, olhos e movimento em ~200 ms**, e a emoção do personagem passa para quem assiste. → `03`
+3. **As pessoas compartilham emoção forte** (rir, surpresa, orgulho) **e o que fala delas** ("isso é a gente"). O medo do nosso público é parecer bobo: rimos *com* ele. → `03`
+4. **História prende quando tem causa e efeito**: "mas/então", jogo da cena que escala, lacuna curta, pausa antes da piada, reação segurada, laço. → `06`, `07`
+5. **Soa gente**: subtexto, oralidade, cada personagem com seu jeito de falar, nenhum tique de IA. → `08`
+6. **Parece BataTalk**: Tato, paleta, Fredoka, motivo sonoro, vetor autoral, movimento calmo, técnica impecável. → `11`, `12`
+7. **Aja como criador, não como anunciante.** O Duolingo cresceu quando o mascote virou personagem. Começou comentando nos vídeos dos outros, e o primeiro estouro foi o 39º vídeo. Muitas tentativas nativas e rápidas, num universo que o público quer acompanhar. → `04`, `05`, `09`
 
-## Quando usar
+## Roteador: o que ler para cada pedido
 
-Qualquer pedido de vídeo, propaganda, TikTok, Reels, esquete, roteiro ou legenda de post do BataTalk. Também a revisão de um vídeo já feito: "melhora o pace", "deixa mais engajado", "as legendas têm que ser as melhores".
+| Pedido | Faça | Leia |
+|---|---|---|
+| **Vídeo novo** ("faz um vídeo", "algo incrível", "pra viralizar") | fluxo completo, fases A–F | 01 → 10 → 09 → 05 → 06/07/08 → 11–16 → 17 → 18 |
+| **Só ideias / roteiro** | fases A–B; entregue a folha de batidas + o placar no papel | 01, 09, 05, 06, 07, 08, 10 |
+| **Revisar um vídeo pronto** ("melhora o pace", "mais engajado") | `references/10` §6: assistir quadro a quadro → mapa de retenção → placar → correções em ordem de impacto | 10, 06, 16 + o guia do problema |
+| **Variação de gancho / teste** | mudar abertura de verdade (texto, primeira fala, primeiro plano); arquivo limpo | 06 (tipos de gancho), 18, 15 (`vertical-wrap`) |
+| **Só legenda / hashtags / comentário fixado** | modelo `templates/legenda-e-hashtags.txt` + `lint-roteiro --post` | 17, 01 |
+| **Pesquisa / "pesquisa mais"** | pesquise de novo com fontes; marque força da evidência; atualize o guia certo e o histórico | 02–05, 19 |
+| **Trend do momento** | pesquisar se ainda está viva (≤ 3–4 semanas), filtro VIBES, áudio original | 05 |
 
-## Fluxo (siga nesta ordem)
+## Fluxo completo
 
-1. **Verdade do produto e limites** → `references/01-marca-produto-e-verdade.md`.
-   - Só afirmações verdadeiras: grátis para começar, sem cartão, no navegador, 14 cidades, conversa em voz alta, dica do Tato.
-   - Nada de "a melhor", depoimento falso ou resultado inventado.
-   - Vozes de IA sempre avisadas.
-2. **Orçamento e permissões antes de gastar.**
-   - TTS pago só com autorização explícita e dentro do teto combinado. Histórico: teto de US$ 0,10, depois ampliado pelo dono para US$ 0,20 no total; gasto até 27/10 ≈ US$ 0,11.
-   - Se o vídeo novo precisa de vozes novas e o teto não cobre, **pergunte antes** (AskUserQuestion com opções e custo estimado).
-   - Prefira reaproveitar falas já geradas (`picks.json`) quando servirem.
-3. **Briefing + 3 conceitos** → `references/20-placar-e-briefing.md`.
-   - Preencha o briefing: dor específica, emoção-alvo, motivo para mandar a alguém, gatilho do dia a dia, prova do produto, ativos.
-   - Escreva 3 ideias (gancho + virada + prova) e escolha uma.
-   - Comece pelo **banco de ideias** (`references/23-banco-de-ideias.md`) e pela lógica dos casos (`references/17-casos-que-viralizaram.md`, `references/21-duolingo-e-concorrentes-a-fundo.md`): o mascote como personagem, o app como prova rápida e não como discurso, os comentários como roteiro.
-   - **Cheque o momento** (`references/22-trends-e-cultura-do-momento.md`): pesquise de novo as trends da semana (a lista lá tem data), passe no filtro VIBES e use áudio original.
-4. **Roteiro / folha de batidas** → `references/14-roteiros-que-prendem.md`, `references/19-oficio-de-comedia-e-historia.md`, `references/12-psicologia-e-viralizacao.md`, `references/16-ciencia-do-espectador.md`, `references/15-falas-humanas-anti-slop.md`, `references/02-roteiro-e-humor.md`, `references/03-retencao-tiktok.md`, `references/11-algoritmo-reels-e-tiktok.md`.
-   - Abertura fria: a piada ou o valor no quadro 0, com rosto, texto-gancho e voz.
-   - 21–34 s, algo novo a cada 2–4 s, reengajamento no meio.
-   - Pausa de 0,2–0,5 s antes da piada; reação segurada; etiquetas.
-   - Final que emenda no começo.
-   - Pergunta fácil para comentar e marca-a-amiga.
-   - Pt-BR falado de verdade, com uma impressão digital para cada personagem.
-   - Teste da Pixar ("Era uma vez… até que finalmente") e teste "mas/então".
-   - Esquete = **jogo da cena**: realidade base → primeira coisa estranha → escalar 2–3 vezes → virada.
-   - Anote a **intenção** de cada fala (o que o personagem quer naquela frase).
-5. **Placar antes de produzir** → pontue o roteiro e o storyboard no placar de `references/20`.
-   - Mínimo de 33 de 44 pontos, e nenhum item ★ com 0.
-   - Se não passar, reescreva. Não "conserte na animação".
-6. **Vozes** → `references/05-pipeline-tecnico.md`.
-   - Comandos: voice-final, picks, analyze-voices e voice-fast 1,1×.
-   - Cortes nos respiros com `AudioList.clip`; palavras realinhadas por sílabas.
-   - Direção de voz como atuação, não leitura (`references/15`).
-7. **Cena, rig e animação** → `references/06-animacao-e-rig.md`, `references/13-animacao-de-qualidade.md`, `references/18-visual-sem-cara-generica.md`.
-   - Visual: vetor chapado (nunca pintura, foto ou IA raster); o Tato é o único volumétrico; uma luz por cena; mundo vivo com objetos que têm piada; profundidade.
-   - Rostos e olhos: olhos no terço superior; um rosto dominante por plano; movimento só onde você quer o olhar.
-   - **Movimento calmo**: o corpo segue a fala suavizada; cabeça e mãos se mexem no começo das frases; gestos grandes com antecipação e mola; nada tremendo.
-   - Atuação e boca: a emoção aparece no rosto antes da ação. A boca vai 1–2 quadros à frente do som. B/M/P fecham. Não animar cada letra.
-   - Rosto em close ou plano médio enquanto fala.
-8. **Som** → `references/07-som.md`.
-   - Voz desde o quadro 0.
-   - Música cai antes da piada (silêncio de comédia).
-   - Efeitos de meme próprios; motivo sonoro Ré–Fá♯–Lá.
-   - −15 LUFS, pico ≤ −2 dBTP.
-9. **Revisão por quadros, render e QC técnico** → `references/08-qc-e-armadilhas.md`.
-   - Antes do render: `tools/stills.mjs --sheet`, correções, **verify-determinism**, **alpha-scan**, exportar a linha do tempo, mixar.
-   - Render em segundo plano com `V8P_HASH_SCOPE=film`, depois montar.
-   - Depois do render: **qc + black-scan + safezone + folha de 1–2 quadros por segundo + quadros em volta de cada corte**.
-   - Pontue o placar de novo com o vídeo pronto.
-10. **Legenda do post, hashtags, comentário fixado, texto alternativo** → `references/04-legendas-do-post.md`.
-    - Versão TikTok (palavras-chave buscáveis) e versão Reels (manda pra amiga).
-    - No máximo 5 hashtags.
-11. **Entregue** → `references/09-entregas-e-postagem.md`.
-    - Pasta `Downloads/BataTalk-TikTok-21-videos/00_<NOME>/` com o `.mp4` e `legenda-e-hashtags.txt`.
-    - Envie o arquivo no chat.
-    - Atualize `LEGENDAS-TIKTOK.md`, `PROGRESSO.md` e a transcrição (`tools/captions.mjs`).
-12. **Feche com a verdade e com o ciclo de métricas.**
-    - Diga o que foi checado, o que ninguém ouviu ou assistiu ainda, quanto gastou e as fontes da pesquisa, com links.
-    - Proponha o pós-postagem de `references/20` §4: anotar retenção 3 s, % assistida, envios e comentários em 24–72 h; os comentários viram o próximo roteiro.
+**A. Limites antes de criar**
+- Verdade do produto (`01`): só o que é verdade (grátis para começar, sem cartão, no navegador, 14 cidades, conversa em voz alta, dica do Tato). Nada de "a melhor", depoimento falso ou promessa de prazo. Avisos de IA.
+- Orçamento: TTS pago só com autorização explícita e dentro do teto. O teto atual é US$ 0,20 no total e o gasto até 27/10 foi ≈ US$ 0,11. Antes de gerar vozes novas, informe o custo estimado e, se o teto não cobrir, **pergunte** (AskUserQuestion). Reaproveite as falas de `picks.json` sempre que der.
+
+**B. Ideia e roteiro**
+1. Briefing + **3 conceitos** (`10` §1–2), partindo do banco de ideias (`09`) e da lógica dos casos (`04`). Cheque o momento (`05`): a lista de trends tem data, então pesquise de novo.
+2. **Folha de batidas** (`templates/folha-de-batidas.md`), com tempo, plano, fala, intenção, texto na tela, som e o sinal que cada batida mira (`06`, `07`, `08`):
+   - abertura fria com rosto + voz + texto-gancho no quadro 0;
+   - duração do formato (21–34 s no esquete; 7–15 s na trend);
+   - algo novo a cada 2–4 s;
+   - pausa de 0,2–0,5 s antes da piada;
+   - laço;
+   - pergunta fácil + marca-a-amiga.
+3. `node scripts/lint-roteiro.mjs folha.md`: zero ERRO. Leia em voz alta.
+4. **Placar no papel** (`10` §3, `node scripts/placar.mjs`): ≥ 33/44 e nenhum ★ zerado. Se não passar, reescreva. Não tente consertar na animação.
+
+**C. Vozes** (`15`, `08`): voice-final → picks → analyze-voices → voice-fast 1,1×. Corte nos respiros com `AudioList.clip` e realinhe as palavras por sílabas. Dirija a voz como atuação (intenção + subtexto).
+
+**D. Cena, animação e som**
+- Visual (`11`): vetor chapado; o Tato é o único volumétrico; uma luz por cena; mundo vivo; profundidade; ativos da marca.
+- Animação (`12`, `13`):
+  - **movimento calmo**: o corpo segue a voz suavizada; cabeça e mãos só no começo das frases; nada tremendo;
+  - antecipação e mola nos gestos grandes;
+  - a emoção aparece no rosto antes da ação;
+  - a boca vai 1–2 quadros à frente do som e fecha em B/M/P;
+  - close ou plano médio enquanto fala;
+  - olhos no mesmo terço entre os cortes.
+- Som (`14`):
+  - voz desde o quadro 0;
+  - a música cai antes da piada;
+  - efeitos de meme próprios e o motivo Ré–Fá♯–Lá;
+  - −15 LUFS, pico-alvo ≤ −2 dBTP (o QC aceita ≤ −1).
+
+**E. Render e QC** (`15`, `16`)
+- Antes do render: folha de quadros (`stills --sheet`), correções, verify-determinism, alpha-scan, exportar a linha do tempo, mixar.
+- Render em segundo plano (`V8P_HASH_SCOPE=film`), depois `build --fps 60`.
+- Depois do render: qc, black-scan, safezone, folha de 1–2 quadros por segundo e quadros em volta de cada corte.
+- Pontue o placar de novo com o MP4.
+
+**F. Post, entrega e métricas** (`17`, `18`)
+- `legenda-e-hashtags.txt` com versões TikTok e Reels, ≤ 5 hashtags, comentário fixado, alt text e dicas; rode `lint-roteiro --post`.
+- Pasta `Downloads/BataTalk-TikTok-21-videos/00_<NOME>/`; envie o MP4 no chat; atualize `LEGENDAS-TIKTOK.md`, `PROGRESSO.md`, a transcrição e `references/19-historico.md`.
+- No fechamento, diga a verdade: o que foi checado, o que ninguém assistiu num celular, o gasto e as fontes com links. Proponha o ciclo de métricas (`10` §4) e o ritmo de postagem (`18`).
 
 ## Regras que não se quebram
 
-- **Verdade e lei.**
-  - Sem superlativo sem prova ("a melhor" → CONAR/TJSP exigem prova), sem depoimento falso, sem promessa de fluência ou prazo.
-  - Personagens são personagens: diga no post que não é depoimento de cliente.
-  - "Exemplo animado" nas telas do app; "Vozes geradas por IA" no vídeo; selo de IA no TikTok.
-- **Bebida alcoólica**: não. Bar = limonada e café (público jovem, regras de anúncio).
-- **Personagem da marca**: o Tato ajuda e nunca humilha. Nenhuma piada que rebaixe o espectador ou um grupo; a vergonha é leve e compartilhada (violação benigna).
-- **Não publicar, não impulsionar, não comprar mídia, não mandar mensagem.** Quem posta é o dono.
+- **Verdade e lei**: sem superlativo sem prova, sem depoimento falso, sem promessa de fluência ou prazo. Personagem não é cliente. "Exemplo animado" nas telas do app, "Vozes geradas por IA" no vídeo e selo de IA no TikTok.
+- **Sem álcool** (bar = limonada e café). **Tom**: o Tato ajuda e nunca humilha; a vergonha é leve e compartilhada; nada de tristeza sem virada (regras do Para Você). Sem rosto, nome, voz ou música de pessoa real; trend só pela lógica do formato.
+- **Quem posta é o dono**: não publicar, impulsionar, comprar mídia, comentar em perfis nem mandar mensagem. A skill entrega o arquivo e sugere os textos.
 - **Nunca ler nem servir `.env`.** A chave entra só via `node --env-file=../.env`.
-- **Não sobrescrever entregas antigas** sem querer. Não mexer na landing nem em analytics de produção. Não "consertar" o produto para o anúncio parecer verdade.
-- **Não editar fontes do filme durante um render.** O render aborta de propósito: `generated/` e todo `.js/.mjs/.css/.html/.json/.wav` de `v8-publica` fora de `tools/` e `audio/out` entram no hash.
-- **Feedback do dono vale como regra.**
-  - Movimento calmo, sem tremor.
-  - Não postar o mesmo vídeo várias vezes; variações de gancho servem para testar.
-  - "Usa as versões antigas também, escolhe as melhores."
-  - "Faz o máximo de vídeos diferentes."
-  - Quando ele diz "encerra/tá bom assim", pare e só leve o aprendizado para os próximos.
+- Não sobrescrever entregas antigas; não mexer na landing, no produto nem em analytics de produção; não editar fontes do filme durante um render (o hash aborta).
+- **Feedback do dono vale como regra**:
+  - movimento calmo;
+  - vídeos diferentes entre si (variação de gancho só para teste);
+  - escolher as melhores versões, antigas inclusive;
+  - pesquisa e proatividade sempre;
+  - "encerra / tá bom assim" = parar e levar o aprendizado para os próximos.
 
-## Checklist antes de entregar (o resumo do placar)
+## Checklist de entrega (o resumo do placar)
 
-**Primeiros 2 segundos** (o Reels prevê "pular em 2 s")
-- [ ] Rosto expressivo, falando, olhos no terço superior; texto-gancho curto no quadro 0 (ele é a capa); som desde o início
-- [ ] A piada ou a promessa entendida sem som e sem contexto do app
+- [ ] **2 primeiros segundos**: rosto expressivo falando, texto-gancho curto (é a capa), som; a piada entendida sem som e sem saber do app
+- [ ] **Retenção**: duração do formato, nada morto > 0,5 s, algo novo a cada 2–4 s, "mas/então", lacuna < 15 s fechada, pausa + reação, laço
+- [ ] **Emoção e envio**: emoção forte visível no rosto, detalhe brasileiro específico, motivo para mandar a alguém, pergunta fácil + marca-a-amiga
+- [ ] **Humano e autoral**: zero tique de IA (lint sem ERRO), personagens que soam diferentes, visual da marca, Tato num momento-chave, endereço no fim, formato nativo, só o BataTalk faria isso
+- [ ] **Técnico**: legenda palavra a palavra na cor de quem fala, dentro da zona segura (x 120–960, y 270–1248); determinismo, alpha, QC (h264/bt709/aac 48k, −15 LUFS ±1,5, pico ≤ −1 dBTP), black-scan 0, sem fantasma nos cortes; MP4 limpo para cada rede
+- [ ] **Post**: txt completo, ≤ 5 hashtags, avisos; placar ≥ 33/44 sem ★ zerado; gasto informado; fontes citadas
 
-**Retenção** (tempo assistido relativo, assistir até o fim, repetir)
-- [ ] 21–34 s (ou justificado), nenhuma pausa morta > 0,5 s, estímulo novo a cada 2–4 s
-- [ ] "Mas/então" entre as batidas; lacuna curta (< 15 s) aberta e fechada
-- [ ] Pausa antes da piada, reação segurada com vida, final em laço
+## Ferramentas e modelos desta skill
 
-**Emoção e identificação** (comentar, compartilhar, mandar no direct)
-- [ ] Emoção de alta ativação **visível no rosto** do personagem
-- [ ] Detalhe específico brasileiro ("isso sou eu"); motivo claro para **mandar** a alguém
-- [ ] Pergunta fácil para comentar + marca-a-amiga
-
-**Humano e autoral**
-- [ ] Nenhum tique de IA ("não é X, é Y", trio automático, tom de anúncio); cada personagem soa diferente
-- [ ] Visual sem cara genérica: paleta da marca, uma luz, mundo vivo, profundidade; Tato presente num momento-chave; endereço no fim
-- [ ] Animação: antecipação nas ações grandes, poses claras, olhos no mesmo terço entre cortes, nada tremendo
-
-**Técnico e entrega**
-- [ ] Legenda palavra a palavra na cor de quem fala, fora do rosto, na zona segura (x 120–960, y 270–1248)
-- [ ] Determinismo PASS, alpha-scan limpo, QC PASS (h264/bt709/aac 48k, −15 LUFS ±1,5, pico ≤ −1 dBTP), black-scan 0, sem quadro "fantasma" nos cortes
-- [ ] Arquivo limpo para cada rede (sem marca d'água cruzada TikTok→Reels); áudio original reutilizável
-- [ ] `legenda-e-hashtags.txt` com versões TikTok e Reels, ≤ 5 hashtags, comentário para fixar, alt text, avisos
-- [ ] Formato nativo da plataforma (POV, reação, dueto, resposta a comentário) e nada que pareça anúncio de TV; só o BataTalk faria este vídeo
-- [ ] Placar ≥ 33/44, sem ★ zerado; gasto de TTS informado; fontes citadas
-
-## Mapa de arquivos desta skill
-
-| Arquivo | O que tem |
+| Arquivo | Uso |
 |---|---|
-| `references/01-marca-produto-e-verdade.md` | fatos do produto, o que pode e não pode dizer, elenco com pronomes e vozes, estilo de arte, preferências do dono |
-| `references/02-roteiro-e-humor.md` | estrutura de roteiro, humanizer/anti-slop, humor geração Z, memes (VIBES), roteiros prontos que funcionaram |
-| `references/03-retencao-tiktok.md` | pesquisa de retenção e engajamento com fontes e força da evidência; Duolingo e concorrentes |
-| `references/04-legendas-do-post.md` | pesquisa e modelo da legenda do post, hashtags, comentário fixado, alt text |
-| `references/05-pipeline-tecnico.md` | renderizador, comandos na ordem, vozes TTS, cortes de voz, legendas/VTT, render em segundo plano |
-| `references/06-animacao-e-rig.md` | API do rig, poses, vistas 3/4, objetos, enquadramentos, tranco e tremida, falha digital, Tato, confete |
-| `references/07-som.md` | trilhas sintetizadas, efeitos, silêncios de comédia, mix e loudness |
-| `references/08-qc-e-armadilhas.md` | TODOS os erros que aconteceram e como foram corrigidos |
-| `references/09-entregas-e-postagem.md` | pastas, txt, dados do TikTok do dono, dicas de postagem |
-| `references/10-historico-de-casos.md` | linha do tempo do chat: pedidos, decisões, correções, acertos |
-| `references/11-algoritmo-reels-e-tiktok.md` | o que o Reels e o TikTok medem (fontes oficiais: cartão de sistema da Meta, regras do For You), atualização 2026 (Mosseri, originalidade, Reels de teste, EUA × Brasil no TikTok, rótulos de IA), estudo de viralização, regras práticas |
-| `references/12-psicologia-e-viralizacao.md` | ciência de prender e de compartilhar (Berger & Milkman, STEPPS, Loewenstein, McGraw) + checklist |
-| `references/13-animacao-de-qualidade.md` | 12 princípios de animação aplicados ao rig, atuação, câmera, checklist |
-| `references/14-roteiros-que-prendem.md` | "mas/então", esqueleto de 30 s, tipos de gancho, ferramentas de retenção, revisão |
-| `references/15-falas-humanas-anti-slop.md` | tiques de IA e trocas, como gente fala, identificação, direção de voz, teste final |
-| `references/16-ciencia-do-espectador.md` | rastreamento ocular (rostos, olhos, movimento), contágio emocional, efeito de redundância e legenda, ativos distintivos, gatilhos de identificação |
-| `references/17-casos-que-viralizaram.md` | Duolingo (e o estudo de 519 posts), Ryanair, Lu do Magalu, mascotes, manual do MrBeast, nossos próprios dados |
-| `references/18-visual-sem-cara-generica.md` | sinais de visual genérico e o que fazer no BataTalk, detalhes que tiram o "tosco", composição 9:16 e zonas seguras, ativos |
-| `references/19-oficio-de-comedia-e-historia.md` | molde da Pixar, preparação e virada, pausa, etiquetas, regra de três × trio de IA, callback, ritmo de esquete |
-| `references/20-placar-e-briefing.md` | briefing, 3 conceitos, placar de 22 critérios (mínimo 33/44), ciclo de métricas pós-postagem, Reels de teste, comentários do Tato |
-| `references/21-duolingo-e-concorrentes-a-fundo.md` | como o Duolingo fez de fato (comentários, 39º vídeo, Flicker/Flash/Flare, "Duo morreu", o erro do "AI-first", a Lily, o perfil BR); concorrentes de idiomas; Ryanair, Scrub Daddy, Liquid Death, Nutter Butter, Oreo, Audible, Duracell, Chikn Nuggit |
-| `references/22-trends-e-cultura-do-momento.md` | TikTok Next 2026, Mosseri e a "crueza como prova", rótulos de IA, formatos de out/2026, cultura do "inglês de brasileiro", gírias com regras, filtro VIBES (com data: pesquise de novo) |
-| `references/23-banco-de-ideias.md` | 14 ideias prontas para briefing (séries, identificação, desafios, histórias com lacuna, momento, bastidores) |
-| `templates/` | código real dos cortes e ferramentas que funcionaram (copiar para `batatalk-launch-video/v8-publica/`) |
+| `scripts/lint-roteiro.mjs` | `node scripts/lint-roteiro.mjs roteiro.md [--post]`: ERRO para risco legal/de verdade (superlativo, prazo, garantia, álcool, depoimento), AVISO para tique de IA, clichê, trio, travessão, gíria demais, fala longa; estima o tempo falado |
+| `scripts/placar.mjs` | `--modelo > placar.json`, depois `placar.json`: soma os 22 critérios, bloqueia ★ zerado e nota inválida, lista onde ganhar pontos |
+| `templates/folha-de-batidas.md` | modelo da folha de batidas (tempo, plano, fala, intenção, texto, som, sinal) |
+| `templates/legenda-e-hashtags.txt` | modelo do txt de entrega (TikTok, Reels, comentário fixado, alt text, dicas) |
+| `templates/` (código) | cortes e ferramentas reais que funcionaram, para copiar para `batatalk-launch-video/v8-publica/` (ver `templates/README.md`) |
+
+## Mapa dos guias (`references/`, na ordem do trabalho)
+
+| Guia | O que tem |
+|---|---|
+| `01-verdade-marca-e-elenco.md` | fatos do produto, o que pode e não pode, avisos, elenco com pronomes e vozes TTS, estilo de arte |
+| `02-algoritmo-reels-tiktok.md` | o que Reels e TikTok medem (cartão de sistema da Meta, Mosseri, Newsroom), originalidade, Reels de teste, 2026 (EUA × Brasil, rótulos de IA), estudo de viralização |
+| `03-psicologia-do-espectador.md` | emoção de alta ativação, STEPPS, lacuna de curiosidade, violação benigna, pico-fim; rastreamento ocular, contágio emocional, redundância × legenda, ativos distintivos, identificação, o medo do público |
+| `04-casos-e-concorrentes.md` | Duolingo a fundo (comentários, 39º vídeo, Flicker/Flash/Flare, "Duo morreu", o erro do AI-first, a Lily, o perfil BR), concorrentes de idiomas, outros nichos, MrBeast, nossos dados |
+| `05-trends-e-cultura.md` | TikTok Next 2026, "crueza é prova", formatos de out/2026, cultura do "inglês de brasileiro", gírias com regras, VIBES, humor geração Z (**com data: pesquise de novo**) |
+| `06-roteiro-e-retencao.md` | duração por formato, esqueleto de 30 s com exemplo, "mas/então", tipos de gancho, ferramentas de retenção, marca sem cara de anúncio, revisão, evidência de retenção |
+| `07-comedia.md` | molde da Pixar, preparação/virada, pausa, tags, regra de três × trio de IA, callback, ritmo de esquete, **jogo da cena**, humor em propaganda (Eisend) |
+| `08-falas-humanas-e-voz.md` | tiques de IA e trocas, como gente fala, impressão digital por personagem, oralidade pt-BR, direção de voz TTS, teste final |
+| `09-banco-de-ideias-e-roteiros-prontos.md` | 14 ideias prontas para briefing + os roteiros que funcionaram (Mina, bar v2, quiz, desafio) + preferências do dono |
+| `10-placar-e-briefing.md` | briefing, 3 conceitos, placar de 22 critérios, métricas pós-postagem, ferramentas, **como revisar um vídeo pronto** |
+| `11-visual.md` | o que denuncia visual genérico e a troca no BataTalk, detalhes que tiram o "tosco", composição 9:16 e zonas seguras |
+| `12-animacao-e-atuacao.md` | 12 princípios aplicados ao rig, atuação (Ed Hooks), sincronia labial, câmera e montagem, checklist |
+| `13-rig-camera-e-efeitos.md` | API do rig e armadilhas, movimento calmo (números), enquadramentos, tranco/tremida, falha digital, celular em 1ª pessoa, Tato, adesivos, confete |
+| `14-som.md` | trilhas sintetizadas, drops de comédia, efeitos, mix e loudness |
+| `15-pipeline-tecnico.md` | renderizador, contrato `__film`, comandos na ordem, vozes, cortes de voz, legenda karaokê |
+| `16-qc-e-armadilhas.md` | checagens obrigatórias e todos os erros reais com a correção |
+| `17-legenda-do-post.md` | pesquisa e modelo da legenda do post, hashtags, comentário fixado, alt text, legendas antigas |
+| `18-entrega-postagem-e-metricas.md` | pastas, txt, variações e reaproveitamento, métricas, ritmo de postagem e teste |
+| `19-historico.md` | linha do tempo dos pedidos, decisões, correções e do que agradou e desagradou |

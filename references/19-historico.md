@@ -18,9 +18,11 @@
 16. **"Pesquisa ainda mais… psicologia de quem assiste e como prender… visualmente, sem ser genérico e tosco. Seja proativo"** → fontes primárias (cartão de sistema do Reels da Meta com as previsões "pular em 2 s", "assistir mais que 95% de reels do mesmo tamanho", envios, uso do áudio; regras de elegibilidade do For You) no guia 11; guias novos 16 (rastreamento ocular, contágio emocional, redundância × aprendiz de língua, ativos distintivos), 17 (Duolingo/519 posts, Ryanair, Lu do Magalu, mascotes, manual do MrBeast), 18 (visual anti-genérico), 19 (comédia e história), 20 (briefing + placar mínimo 30/40 + ciclo de métricas). SKILL.md reescrito em volta de briefing → 3 conceitos → placar → produção → métricas.
 17. **"Pesquisa muito mais… concorrentes, trends, melhores TikToks e Reels, coisas do momento, Duolingo e outros nichos. Mas antes pesquisa muito mais"** → atualização 2026 do algoritmo (Mosseri, originalidade, Reels de teste; o TikTok dos EUA retreinado pela Oracle, mas o Brasil segue no modelo global; rótulos de IA) e estudo de viralização (close, texto, POV) no guia 11; guias novos 21 (Duolingo a fundo + concorrentes + outros nichos), 22 (trends e cultura de out/2026, gírias, VIBES, com data), 23 (14 ideias prontas); jogo da cena e meta-análise de humor no 19; Ed Hooks e sincronia labial no 13; placar com 22 critérios (mínimo 33/44).
 
+18. **"Analisa e revisa tudo e melhora completamente a skill"** → auditoria: o Duolingo estava em 3 guias, roteiro em 2, anti-IA em 2, VIBES em 2, o guia de algoritmo repetia sinais; havia contradições (pico −2 × −1 dBTP, pausa 0,2–0,4 × 0,2–0,5 s); o SKILL.md tinha 16 KB e mandava ler 8 guias para escrever um roteiro. Reorganização sem perda de texto: 23 guias viraram 19 na ordem do trabalho; roteador por tipo de pedido; fluxo A–F; procedimento para revisar vídeo pronto; ritmo de postagem; ferramentas `scripts/lint-roteiro.mjs` e `scripts/placar.mjs` (testadas com o roteiro do bar v2 e com um roteiro ruim de propósito); modelos de folha de batidas e de txt da legenda.
+
 ## O que agradou
 
-Pesquisa embasando cada decisão; proatividade; várias opções; vídeos que parecem nativos; personagens com personalidade; humor de meme brasileiro; acabamento técnico (QC, área segura).
+Pesquisa embasando cada decisão; proatividade; skill organizada e com ferramentas; várias opções; vídeos que parecem nativos; personagens com personalidade; humor de meme brasileiro; acabamento técnico (QC, área segura).
 
 ## O que desagradou
 

@@ -55,6 +55,21 @@ Itens com "—" são binários (0 ou 2).
 1. Em 24–72 h, anotar: views, retenção 3 s / taxa de pulo, tempo médio, % assistida, repetições, comentários, compartilhamentos/envios, salvamentos, seguidores ganhos.
 2. Comparar com o vídeo anterior parecido e com a variação de gancho.
 3. Ler os comentários: frases reais viram roteiro do próximo vídeo (o "briefing" do Duolingo).
-4. Registrar no `references/10-historico-de-casos.md` o que funcionou e o que não.
+4. Registrar no `references/19-historico.md` o que funcionou e o que não.
 5. Testar ganchos sem cansar quem já segue: no Instagram, sugerir ao dono os **Reels de teste** (vão primeiro para quem não segue) e comparar um teste só com outros testes.
 6. Sugerir ao dono **comentários do Tato** (em personagem) para ele publicar em vídeos de criadores de inglês e de intercâmbio: foi assim que o Duolingo começou. A skill só escreve os textos; quem publica é o dono.
+
+## 5. Ferramentas do placar
+
+- `node scripts/placar.mjs --modelo > placar.json` gera o arquivo para preencher. `node scripts/placar.mjs placar.json` soma, bloqueia ★ zerado e nota inválida (os itens 14 e 19 só aceitam 0 ou 2) e lista onde ganhar pontos.
+- Pontue **três vezes**: no roteiro (itens 1–15, 21, 22; os outros entram com a nota esperada), no storyboard/folha de quadros e no MP4 pronto.
+- `node scripts/lint-roteiro.mjs roteiro.md` acha os riscos legais (ERRO) e os tiques de IA (AVISO) e estima o tempo falado. Com `--post`, checa também o txt da legenda. Ele não sente graça: a leitura em voz alta continua obrigatória.
+
+## 6. Revisar um vídeo que já existe ("melhora o pace", "deixa mais engajado")
+
+1. **Assista como espectador**: folha de 1–2 quadros por segundo + quadros em volta de cada corte (`references/16-qc-e-armadilhas.md`). Anote o tempo da primeira risada, a primeira fala e cada pausa morta > 0,5 s.
+2. **Mapa de retenção no papel**: para cada trecho de 3 s, o que há de novo (corte, piada, adesivo, som)? Os buracos são onde as pessoas saem.
+3. **Pontue no placar** e ordene os problemas: primeiro os ★, depois os de maior peso para o algoritmo (2 s iniciais, duração, envio, laço).
+4. **Lista de correções em ordem de impacto** (exemplo real do bar v1 → v2: piada aos 13 s → abertura fria; 44 s → 35,6 s; sem laço → laço; sem pedido de comentário → marca-a-amiga + comentário fixado).
+5. Reaproveite o que existe (vozes em `picks.json`, cenários, cortes) antes de gastar. Diga o custo antes, se houver.
+6. Refaça, rode o QC inteiro, pontue o MP4 de novo e compare os placares (antes × depois).

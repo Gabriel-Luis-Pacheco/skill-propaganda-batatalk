@@ -23,3 +23,11 @@
 ## Depois de postar
 
 Medir no painel do TikTok: retenção nos 3 s, tempo médio, % até o fim, repetições, comentários, compartilhamentos, salvamentos. Comparar versões (ex.: bar v1 44 s × v2 35,6 s). Responder comentários como a marca/personagem; boas respostas viram vídeos de resposta.
+
+## Ritmo de postagem e teste (sugestões para o dono decidir)
+
+- **Constância vence superprodução**: as séries que cresceram postavam cerca de 3 vídeos por semana (Chikn Nuggit); guias de marca falam em 3–5 por semana ([Hootsuite](https://blog.hootsuite.com/tiktok-marketing/)). O Duolingo só estourou no 39º vídeo (`references/04-casos-e-concorrentes.md`).
+- **Diversidade no feed**: não repetir o formato do post anterior (esquete → quiz → trend curta → série).
+- **Teste de gancho**: mude a abertura de verdade (texto, primeira fala, primeiro plano), não só a cor. No Instagram, use os Reels de teste. Compare **taxa de pulo / retenção em 3 s**, tempo médio, % até o fim, envios e comentários.
+- **Primeira hora**: responder comentários como a marca ou o personagem; os melhores comentários viram vídeos de resposta ("O Tato responde").
+- A skill só **sugere**: postar, impulsionar, comentar em perfis de terceiros e mandar mensagem é com o dono.

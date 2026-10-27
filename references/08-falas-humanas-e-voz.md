@@ -10,10 +10,11 @@ Fontes: [FlowingData sobre a página da Wikipedia](https://flowingdata.com/2025/
 | Regra de três por reflexo | "rápido, fácil e divertido" | um adjetivo concreto, ou dois + um absurdo |
 | Travessão de efeito | "E então — tudo mudou." | vírgula ou ponto |
 | Palavras infladas | "revolucionário", "transformador", "jornada", "potencialize", "desbloqueie" | palavras de conversa |
-| Frase-fecho de efeito | "E isso faz toda a diferença." | corte; termine na piada ou na ação |
+| Frase-fecho de efeito / clichê | "E isso faz toda a diferença.", "no fim do dia" | corte; termine na piada ou na ação |
 | Lista "sem X, sem Y, sem Z" | "sem stress, sem pressão, sem limites" | um fato verdadeiro ("sem cartão") |
 | Abertura genérica | "Você já se perguntou…?" | começar no meio da situação |
 | Simetria perfeita e tom neutro | todas as frases do mesmo tamanho | ritmo irregular: frase curta. Outra mais longa, com respiro. Uma palavra. |
+| Tom de locutor ou comercial | "Descubra agora a nova forma de aprender!" | conselho de amiga, gíria leve, autoironia |
 | Explicar a piada | "Ela travou porque ficou nervosa, haha" | deixar a reação mostrar |
 
 ## Como as pessoas falam de verdade (e como escrever isso)
@@ -43,3 +44,4 @@ Fontes: [FlowingData sobre a página da Wikipedia](https://flowingdata.com/2025/
 - [ ] Há pelo menos um detalhe específico e brasileiro que gera "sou eu"?
 - [ ] O sentimento está no subtexto/reação, não dito?
 - [ ] Soa como conversa de bar lida em voz alta?
+
