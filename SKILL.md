@@ -26,6 +26,7 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | **Revisar um vídeo pronto** ("melhora o pace", "mais engajado") | `references/10` §6: assistir quadro a quadro → mapa de retenção → placar → correções em ordem de impacto | 10, 06, 16 + o guia do problema |
 | **Variação de gancho / teste** | mudar abertura de verdade (texto, primeira fala, primeiro plano); arquivo limpo | 06 (tipos de gancho), 18, 15 (`vertical-wrap`) |
 | **Só legenda / hashtags / comentário fixado** | modelo `templates/legenda-e-hashtags.txt` + `lint-roteiro --post` | 17, 01 |
+| **Alcance ou retenção baixos** ("estamos indo mal") | diagnóstico em 5 passos (`18`): elegibilidade da conta → fonte de tráfego → retenção → esperar 24–48 h → só então mudar o conteúdo | 18, 02, 10 |
 | **Pesquisa / "pesquisa mais"** | pesquise de novo com fontes; marque força da evidência; atualize o guia certo e o histórico | 02–05, 19 |
 | **Trend do momento** | pesquisar se ainda está viva (≤ 3–4 semanas), filtro VIBES, áudio original | 05 |
 
@@ -129,5 +130,5 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | `15-pipeline-tecnico.md` | renderizador, contrato `__film`, comandos na ordem, vozes, cortes de voz, legenda karaokê |
 | `16-qc-e-armadilhas.md` | checagens obrigatórias e todos os erros reais com a correção |
 | `17-legenda-do-post.md` | pesquisa e modelo da legenda do post, hashtags, comentário fixado, alt text, legendas antigas |
-| `18-entrega-postagem-e-metricas.md` | pastas, txt, variações e reaproveitamento, métricas, ritmo de postagem e teste |
+| `18-entrega-postagem-e-metricas.md` | pastas, txt, variações e reaproveitamento, métricas, ritmo de postagem e teste, **diagnóstico de alcance baixo** e os nossos números |
 | `19-historico.md` | linha do tempo dos pedidos, decisões, correções e do que agradou e desagradou |

@@ -20,6 +20,8 @@
 
 18. **"Analisa e revisa tudo e melhora completamente a skill"** → auditoria: o Duolingo estava em 3 guias, roteiro em 2, anti-IA em 2, VIBES em 2, o guia de algoritmo repetia sinais; havia contradições (pico −2 × −1 dBTP, pausa 0,2–0,4 × 0,2–0,5 s); o SKILL.md tinha 16 KB e mandava ler 8 guias para escrever um roteiro. Reorganização sem perda de texto: 23 guias viraram 19 na ordem do trabalho; roteador por tipo de pedido; fluxo A–F; procedimento para revisar vídeo pronto; ritmo de postagem; ferramentas `scripts/lint-roteiro.mjs` e `scripts/placar.mjs` (testadas com o roteiro do bar v2 e com um roteiro ruim de propósito); modelos de folha de batidas e de txt da legenda.
 
+19. **"Analisa isto. Estamos indo mal… o TikTok tá cortando alcance e o Insta não divulga nem retém"** (prints de 27/10, 11h39) → diagnóstico em `references/18` (§ Diagnóstico de alcance baixo): o Desafio teve 1.258 no Instagram e 0 no TikTok; o mesmo vídeo vai 4–9× melhor no Instagram; formato participativo e curto ganham; zero comentários; o "ficar fluente" foi o pior. Próximo passo: o dono confere o Status da conta nas duas redes e manda os prints de retenção e fonte de tráfego.
+
 ## O que agradou
 
 Pesquisa embasando cada decisão; proatividade; skill organizada e com ferramentas; várias opções; vídeos que parecem nativos; personagens com personalidade; humor de meme brasileiro; acabamento técnico (QC, área segura).
