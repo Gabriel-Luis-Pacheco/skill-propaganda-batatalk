@@ -28,6 +28,8 @@
 
 22. **"Pega uma ideia ou formato de vídeo que já viralizou muito no Reels e faz adaptado pro BataTalk… faça 1 e faça o melhor Reel possível pra postar agora"** → 5 opções consideradas (ao pé da letra/erro→reação, expectativa×realidade, Desafio v2, POV atendente, tipos de brasileiro); escolhido "ao pé da letra na imigração" (Mina + Evelyn, que atende a Imigração no app; chutar o balde = kick the bucket = morrer). Produção completa com o placar e o lint antes, TTS ~US$ 0,03 (total ~0,14 de 0,20), cenário novo da imigração, balões de pensamento, fantasma, Tato, carimbo com o bilhete como piada de retorno, laço "Next!". Template em `templates/src/cuts/imigracao.js`.
 
+23. **"Faz o corte de 12–14 s para o TikTok só com o chutei o balde, sem gastar voz nova"** → `imigracao-tt.js` (13,2 s): gancho "nunca traduza ‘chutei o balde’ na imigração 💀", pergunta → erro → "You… died?" + fantasma → Tato → carimbo com cartão final (endereço + "qual expressão você ia traduzir? 👇") → "Next!". Mesmas vozes (US$ 0 de TTS). QC PASS, 0 preto puro, cortes limpos.
+
 ## O que agradou
 
 Pesquisa embasando cada decisão; proatividade; skill organizada e com ferramentas; várias opções; vídeos que parecem nativos; personagens com personalidade; humor de meme brasileiro; acabamento técnico (QC, área segura).

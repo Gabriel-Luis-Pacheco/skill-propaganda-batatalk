@@ -454,3 +454,6 @@ async function airportBitmap() {
   c.width = c.height = c2.width = c2.height = 1;
   return out;
 }
+
+// peças reaproveitadas pelo corte curto do TikTok (src/cuts/imigracao-tt.js)
+export { CH, FR, POSE, DES, TATO, COUNTER_TOP, SEG, FAST, SPEED, PAD_A, PAD_B, LEAD, SHOCK, AGHAST, SLY, counterSVG, passportPage, airportBitmap };

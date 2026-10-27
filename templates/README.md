@@ -7,6 +7,7 @@ Cópias dos arquivos de `batatalk-launch-video/v8-publica/` em 27/10/2026. Eles 
 | `folha-de-batidas.md` | modelo da folha de batidas (tempo, plano, fala, intenção, texto na tela, som, sinal) com checagens |
 | `legenda-e-hashtags.txt` | modelo do txt de entrega (TikTok, Reels, comentário fixado, alt text, dicas) |
 | `src/cuts/imigracao.js` + `airport-room.js` | "ao pé da letra na imigração" (Reels, 30 s): balões de pensamento, pílulas de tradução, fantasma, Tato que pula do balcão, insert do carimbo com bilhete, laço; boca 1 quadro à frente do som |
+| `src/cuts/imigracao-tt.js` | o corte do TikTok (13 s) do mesmo esquete, só o "chutei o balde": importa cenário, personagens e vozes de `imigracao.js` (nenhum TTS novo); mostra como tirar um corte curto de um Reel |
 | `src/cuts/bar.js` + `bar-room.js` | esquete do bar v2 (Priya e June): abertura fria, campo e contracampo, tranco/tremida, travou.exe, Tato que sobe da mesa, celular em primeira pessoa, laço; `samples()` seguro nos cortes |
 | `src/cuts/creator.js` + `room.js` | vídeo falado da Mina (vlog animado no quarto); exporta `fastLine`, `align`, `segVoice`, `stick`, `buildPages`, `focusLines` |
 | `src/cuts/quiz2.js`, `quiz.js` | Quiz rápido e Desafio 3s |

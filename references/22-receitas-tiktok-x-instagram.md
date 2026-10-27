@@ -64,6 +64,10 @@ O nosso melhor no Instagram (1.258). Pergunta na capa, cronômetro, "comenta sua
 - Legenda: a dor + pergunta + "link no perfil"; até 5 hashtags; texto alternativo.
 - Responder comentários na primeira hora; **curtida e comentário de amigos aparecem na aba de amigos**.
 
+## Tirar o corte do TikTok de um Reel (sem voz nova)
+
+Do esquete longo, fique só com a piada mais forte (a que tem a reação maior), refaça o gancho para ela ("nunca traduza ‘chutei o balde’ na imigração 💀") e feche com o cartão final em cima do último plano. Importe cenário, personagens e vozes do corte longo (`templates/src/cuts/imigracao-tt.js`). O Reel de 30 s ficou com 13,2 s no TikTok.
+
 ## O que vale para os dois
 
 - 9:16; cada fala ≤ 1,5 s; algo novo a cada 2–3 s.
