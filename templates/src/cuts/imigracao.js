@@ -385,13 +385,14 @@ export async function create(ctx) {
     // adesivos
     const s = (n, t0, t1, x, y, rot = 0, sc = 1) => stick(n, t, t0, t1, { x, y, rot, s: sc });
     s(st.hook, -1, S.m1.at + 0.38, 540, 352, -2);
-    s(st.p1, S.m1.at + 0.45, c.bub1 - 0.04, 540, 330, -1.5);
-    s(st.b1, c.bub1 + 0.02, S.e3.at - 0.1, 280, 480, -3, 1.12);
-    s(st.p2, S.m2b.at + 0.2, c.bub2 - 0.04, 540, 330, 1.5);
-    s(st.b2, c.bub2 + 0.02, S.e5.at - 0.1, 280, 480, 3, 1.12);
-    s(st.p3, S.m3.at + 0.15, c.drop + 0.08, 540, 330, -1.5);
-    s(st.fact, S.e6b.end + 0.16, c.tato + 0.55, 640, 345, -2);
-    s(st.right, S.t1c.at + 0.05, S.m5.end + 0.1, 540, 330, 2, 0.95);
+    // cada adesivo termina de sair (0,16 s) ANTES do corte seguinte: nada encolhendo em cima do outro rosto
+    s(st.p1, S.m1.at + 0.45, c.bub1 - 0.2, 540, 330, -1.5);
+    s(st.b1, c.bub1 + 0.02, S.e3.at - 0.24, 280, 480, -3, 1.12);
+    s(st.p2, S.m2b.at + 0.2, c.bub2 - 0.2, 540, 330, 1.5);
+    s(st.b2, c.bub2 + 0.02, S.e5.at - 0.24, 280, 480, 3, 1.12);
+    s(st.p3, S.m3.at + 0.15, c.drop - 0.06, 540, 330, -1.5);
+    s(st.fact, S.e6b.end + 0.16, c.tato + 0.42, 640, 345, -2);
+    s(st.right, S.t1c.at + 0.05, S.m5.end - 0.1, 540, 330, 2, 0.95);
     s(st.url, S.m6.at - 0.05, duration + 1, 540, 345, -2);
     s(st.fine, S.m6.at + 0.25, duration + 1, 540, 455, 0, 0.85);
     // legenda

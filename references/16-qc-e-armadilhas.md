@@ -39,6 +39,7 @@
 | Boca de susto da Evelyn parecendo bigode | expressão com boca `wobble` (que funciona na Mina) vira um risco escuro em outro rosto | boca aberta (`open` + `curve` negativa + `w` largo) e conferir no close |
 | Pílula de tradução em cima do texto do gancho | os dois no alto da tela ao mesmo tempo | cada adesivo do alto com o seu tempo: o gancho sai quando a pílula entra |
 | Legenda em cima da boca no close extremo | olhos baixos demais no enquadramento | no close extremo, olhos em y ≈ 740 (a boca fica acima da legenda em 1165) |
+| Adesivo encolhendo em cima do rosto do plano seguinte (6–8 quadros) | o adesivo termina no corte, mas a saída dura mais 0,16 s | terminar cada adesivo pelo menos 0,18 s antes do corte; conferir os quadros em volta de cada corte no MP4 |
 | Take de TTS repetindo a frase ("died? Died?", "Welcome… Welcome…") | instabilidade do modelo; a checagem por palavras não pega repetição | ler a transcrição de cada take e fixar o take limpo em `picks.json` |
 | Whisper com palavra de duração zero | tempos ruins em TTS | `align` por sílabas dentro dos trechos com voz |
 | TTS repetiu a frase / riu no fim | instabilidade do modelo | escolher o outro take ou cortar com `clip` |
