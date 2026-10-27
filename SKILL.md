@@ -15,9 +15,9 @@ Qualquer pedido de vídeo/propaganda/TikTok/Reels/esquete/legenda de post do Bat
 
 1. **Entenda o pedido e a verdade do produto** → `references/01-marca-produto-e-verdade.md`. Só afirmações verdadeiras (grátis para começar, sem cartão, no navegador, 14 cidades, conversa em voz alta, dica do Tato). Nada de "a melhor", depoimento falso, resultado inventado. Vozes de IA sempre avisadas.
 2. **Confira orçamento e permissões antes de gastar** → TTS pago só com autorização explícita e dentro do teto combinado (histórico: teto US$ 0,10, depois ampliado pelo dono para US$ 0,20 no total; gasto até 27/10 ≈ US$ 0,11). Se o vídeo novo precisa de vozes novas e o teto não cobre, **pergunte antes** (AskUserQuestion com opções e custo estimado).
-3. **Pesquise e escreva o roteiro** → `references/02-roteiro-e-humor.md` + `references/03-retencao-tiktok.md`. Regras de ouro: a piada/valor no primeiro quadro (abertura fria), 21–34 s, algo novo a cada 2–4 s, final que emenda no começo, pergunta fácil para comentar, marca-a-amiga para compartilhar. Escreva em pt-BR natural (humanizer: sem "não é X, é Y", sem trio forçado, sem tom de anúncio).
+3. **Pesquise e escreva o roteiro** → `references/14-roteiros-que-prendem.md` (regra do "mas/então", esqueleto de 30 s, tipos de gancho), `references/12-psicologia-e-viralizacao.md` (emoção de alta ativação, STEPPS, lacuna de curiosidade, violação benigna), `references/15-falas-humanas-anti-slop.md` (tiques de IA, subtexto, oralidade pt-BR, impressão digital de cada personagem), `references/02-roteiro-e-humor.md` + `references/03-retencao-tiktok.md` + `references/11-algoritmo-reels-e-tiktok.md` (o que cada plataforma premia: tempo assistido, envios por alcance, curtidas por alcance, originalidade). Regras de ouro: a piada/valor no primeiro quadro (abertura fria), 21–34 s, algo novo a cada 2–4 s, final que emenda no começo, pergunta fácil para comentar, marca-a-amiga para compartilhar. Escreva em pt-BR natural (humanizer: sem "não é X, é Y", sem trio forçado, sem tom de anúncio).
 4. **Vozes** → `references/05-pipeline-tecnico.md` (voice-final, picks, analyze-voices, voice-fast 1,1×, cortes nos respiros com `AudioList.clip`, palavras realinhadas por sílabas).
-5. **Cena, rig e animação** → `references/06-animacao-e-rig.md`. Vetor chapado (nunca pintura/foto/IA raster), o Tato é o único volumétrico. **Movimento calmo**: nada de tremer a cada palavra; só a fala suavizada e o começo das frases mexem o corpo; gestos grandes com mola.
+5. **Cena, rig e animação** → `references/06-animacao-e-rig.md` + `references/13-animacao-de-qualidade.md` (12 princípios aplicados: antecipação, continuidade, arcos, pausas com vida, reação > ação). Vetor chapado (nunca pintura/foto/IA raster), o Tato é o único volumétrico. **Movimento calmo**: nada de tremer a cada palavra; só a fala suavizada e o começo das frases mexem o corpo; gestos grandes com mola.
 6. **Som** → `references/07-som.md` (trilhas sintetizadas `vlog`/`lofi`/`quiz`, silêncios de comédia, efeitos de meme próprios, −15 LUFS, pico ≤ −2 dBTP).
 7. **Revise por quadros antes de renderizar** (`tools/stills.mjs --sheet`), corrija, **verify-determinism** e **alpha-scan**, exporte a linha do tempo, mixe, renderize em segundo plano (`V8P_HASH_SCOPE=film`), monte, **qc + black-scan + safezone + folha de 1–2 quadros por segundo + quadros em volta de cada corte**. → `references/08-qc-e-armadilhas.md`.
 8. **Legenda do post, hashtags, comentário fixado, texto alternativo** → `references/04-legendas-do-post.md`.
@@ -38,7 +38,10 @@ Qualquer pedido de vídeo/propaganda/TikTok/Reels/esquete/legenda de post do Bat
 
 - [ ] Piada/valor no quadro 0, rosto e voz desde o início, texto-gancho no quadro 0 (é a capa)
 - [ ] 21–34 s (ou justificado), nenhuma pausa morta > 0,5 s, estímulo novo a cada 2–4 s
-- [ ] Final em laço ou na piada; pergunta fácil + marca-a-amiga
+- [ ] Final em laço ou na piada; pergunta fácil + marca-a-amiga; motivo claro para **mandar** a alguém (Reels: envios por alcance)
+- [ ] Roteiro passa no "mas/então", tem emoção de alta ativação, lacuna curta, detalhe específico brasileiro, nenhum tique de IA
+- [ ] Animação: antecipação nas ações grandes, reação segurada com vida, olhos no mesmo terço entre cortes, nada tremendo
+- [ ] Arquivo limpo para cada rede (sem marca d'água cruzada TikTok→Reels)
 - [ ] Legenda palavra a palavra na cor de quem fala; textos dentro da zona segura (x 120–960, y 270–1248)
 - [ ] Determinismo PASS, alpha-scan limpo, QC PASS (h264/bt709/aac 48k, −15 LUFS ±1,5, pico ≤ −1 dBTP), black-scan 0, sem quadro "fantasma" nos cortes
 - [ ] `legenda-e-hashtags.txt` com versões TikTok e Reels, ≤ 5 hashtags, comentário para fixar, alt text, avisos
@@ -58,4 +61,9 @@ Qualquer pedido de vídeo/propaganda/TikTok/Reels/esquete/legenda de post do Bat
 | `references/08-qc-e-armadilhas.md` | TODOS os erros que aconteceram e como foram corrigidos |
 | `references/09-entregas-e-postagem.md` | pastas, txt, dados do TikTok do dono, dicas de postagem |
 | `references/10-historico-de-casos.md` | linha do tempo do chat: pedidos, decisões, correções, acertos |
+| `references/11-algoritmo-reels-e-tiktok.md` | o que o Reels e o TikTok medem (oficial × imprensa × mercado) e regras práticas |
+| `references/12-psicologia-e-viralizacao.md` | ciência de prender e de compartilhar (Berger & Milkman, STEPPS, Loewenstein, McGraw) + checklist |
+| `references/13-animacao-de-qualidade.md` | 12 princípios de animação aplicados ao rig, atuação, câmera e checklist |
+| `references/14-roteiros-que-prendem.md` | "mas/então", esqueleto de 30 s, tipos de gancho, ferramentas de retenção, revisão |
+| `references/15-falas-humanas-anti-slop.md` | tiques de IA e trocas, como gente fala, identificação, direção de voz, teste final |
 | `templates/` | código real dos cortes e ferramentas que funcionaram (copiar para `batatalk-launch-video/v8-publica/`) |

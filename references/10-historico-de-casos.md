@@ -14,6 +14,7 @@
 12. **"Revise e melhore o vídeo. Pace. Pesquise profundamente (criadores, concorrentes, Duolingo)"** → v2: abertura fria com a piada, 44 → 35,6 s, travou.exe, tranco/tremida, laço final, documento de pesquisa. Erros achados no MP4: quadro-fantasma nos cortes, preto puro na falha digital, black-scan em fps errado — corrigidos e re-renderizados.
 13. **"As legendas têm que ser as melhores possíveis, pesquisa"** → legenda TikTok/Reels separadas, ≤ 5 hashtags, comentário fixado da marca, alt text.
 14. **"Junta tudo e faz uma skill"** → este repositório.
+15. **"Pesquisa muito mais: algoritmo do Reels e do TikTok, vídeos que viralizam, animação, psicologia de prender, roteiros que prendem, falas humanizadas, anti AI slop"** → guias 11–15.
 
 ## O que agradou
 
