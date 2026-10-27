@@ -33,3 +33,16 @@ Bar em 6 linhas: Era uma vez uma amiga que lê e escreve inglês. Todo dia ela a
 - Corte antes da reação (a reação é metade da graça).
 - Piada que humilha o espectador ou um grupo (vira violação não benigna).
 - Piada que depende de saber o lore do app.
+
+## O "jogo da cena" (UCB): a ferramenta nº 1 para esquete curto
+([Wikipedia](https://en.wikipedia.org/wiki/Game_of_the_scene), [Will Hines](https://willhines.substack.com/p/teaching-game-of-the-scene), [Hoopla](https://www.hooplaimpro.com/quick-guide-game-of-scene))
+1. **Realidade base**: quem, onde, o quê, em 1 fala (duas amigas no bar).
+2. **Primeira coisa estranha**: o desvio da normalidade ("ela lê e escreve inglês, mas só sabe *falar* frases de livro").
+3. **Se isso é verdade, o que mais é verdade?** → **escalar** (heightening: cada repetição mais absurda ou com mais em jogo) e **explorar** (por quê? "foram 7 anos de escola").
+4. Alternar escalar e explorar mantém o jogo andando.
+5. **Pare no pico**, ou vire com o Tato quebrando o padrão.
+
+Num esquete de 30 s cabem: base (2 s) → estranho (no quadro 0, na abertura fria) → 2–3 escaladas → virada → laço.
+
+## Humor em propaganda (meta-análise de Eisend, J. Acad. Mark. Sci., 2009)
+Humor se associa a **mais atenção, mais simpatia pelo anúncio e pela marca e mais intenção de compra**, com um efeito negativo pequeno (e pouco robusto) na **credibilidade** ([Marketing Week](https://marketingweek.com/three-ways-humour-helps-brands-sell), [MPRA](https://mpra.ub.uni-muenchen.de/63973/)). → A piada atrai, e **a prova verdadeira do produto** (tela real do app, "grátis para começar, sem cartão") devolve a credibilidade. Não troque prova por mais piada.

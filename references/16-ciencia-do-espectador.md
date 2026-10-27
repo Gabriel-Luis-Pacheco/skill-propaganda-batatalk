@@ -35,3 +35,9 @@
 3. **Personagem-espelho** + **personagem-amigo** (quem passa pelo problema e quem dá a saída).
 4. **Linguagem do grupo** (gírias reais, sem forçar): "amiga", "socorro", "confia", "trava tudo".
 5. **Resolução que dá esperança**: ela consegue (emoção positiva de alta ativação = compartilhamento).
+
+## O medo do público (a dor que move tudo)
+Professores-criadores dizem que o aluno brasileiro chega "traumatizado", com medo de parecer bobo, e engaja quando se sente **perto** de quem ensina ("proximidade", Fluency Academy) ([Rest of World](https://restofworld.org/2021/brazil-influencers-english-teachers/)). → O humor sempre ao lado do espectador (rimos *com* ele); o personagem-espelho erra primeiro; o Tato acolhe. Números como "X% têm medo de falar" circulam sem fonte primária clara: **não use em vídeo**.
+
+## "Crueza é prova" × animação
+Mosseri: com a IA reproduzindo qualquer estética, "a crueza não é mais estética, é prova", e o foco vai para **quem** posta ([Om Malik](https://om.co/2026/01/01/what-is-instagrams-adam-mosseri-really-saying-in-his-year-end-memo/)). Animação não finge ser câmera; o que prova autenticidade nela é **estilo próprio consistente**, um **elenco que o público reconhece** e, de vez em quando, **bastidores** da mão humana.

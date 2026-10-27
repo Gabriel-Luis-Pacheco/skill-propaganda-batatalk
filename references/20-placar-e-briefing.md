@@ -21,14 +21,14 @@ Métrica de sucesso e comparação: (ex.: retenção 3 s e % assistida vs. víde
 
 Escreva 3 ideias diferentes (gancho em uma linha + virada + prova) e escolha pela tabela abaixo. Guarde as outras como variações para teste.
 
-## 3. Placar (0, 1 ou 2 em cada item; **mínimo 30 de 40 para renderizar**, e nenhum item obrigatório (★) com 0)
+## 3. Placar (0, 1 ou 2 em cada item; **mínimo 33 de 44 para renderizar**, e nenhum item obrigatório (★) com 0)
 
 | # | Critério | 0 | 1 | 2 |
 |---|---|---|---|---|
-| 1★ | Quadro 0: rosto + texto-gancho + algo acontecendo | falta | parcial | tudo |
+| 1★ | Quadro 0: rosto em close/plano médio + texto-gancho + algo acontecendo | falta | parcial | tudo |
 | 2★ | Piada/valor nos 3 primeiros segundos | > 6 s | 3–6 s | < 3 s |
 | 3 | Duração adequada | > 45 s sem motivo | 35–45 s | 21–34 s |
-| 4★ | "Mas/então" entre as batidas | "e depois" | quase | tudo causal |
+| 4★ | Uma ideia só; "mas/então" entre as batidas (jogo da cena que escala) | "e depois" / duas ideias | quase | tudo causal, uma ideia |
 | 5 | Estímulo novo a cada 2–4 s | buracos > 6 s | alguns | sempre |
 | 6 | Emoção de alta ativação clara | não | fraca | forte e visível no rosto |
 | 7 | Lacuna curta aberta e fechada | nenhuma | longa demais | < 15 s |
@@ -45,6 +45,8 @@ Escreva 3 ideias diferentes (gancho em uma linha + virada + prova) e escolha pel
 | 18 | Legenda legível, na cor de quem fala, fora do rosto, zona segura | falha | ok | perfeita |
 | 19★ | Técnico: determinismo, alpha, QC, black-scan, sem fantasma nos cortes | falha | — | tudo PASS |
 | 20 | Som: voz desde o início, silêncios de comédia, efeitos de meme, −15 LUFS | falha | ok | marcante |
+| 21 | Originalidade: só o BataTalk faria este vídeo (elenco, mundo, piada própria; áudio original) | genérico/repost | parece nosso | inconfundível |
+| 22 | Formato nativo: usa um formato da plataforma (POV, "my reaction if", dueto, resposta a comentário) ou uma trend viva que passou no VIBES | anúncio de TV | nativo | nativo + do momento |
 
 Itens com "—" são binários (0 ou 2).
 
@@ -54,3 +56,5 @@ Itens com "—" são binários (0 ou 2).
 2. Comparar com o vídeo anterior parecido e com a variação de gancho.
 3. Ler os comentários: frases reais viram roteiro do próximo vídeo (o "briefing" do Duolingo).
 4. Registrar no `references/10-historico-de-casos.md` o que funcionou e o que não.
+5. Testar ganchos sem cansar quem já segue: no Instagram, sugerir ao dono os **Reels de teste** (vão primeiro para quem não segue) e comparar um teste só com outros testes.
+6. Sugerir ao dono **comentários do Tato** (em personagem) para ele publicar em vídeos de criadores de inglês e de intercâmbio: foi assim que o Duolingo começou. A skill só escreve os textos; quem publica é o dono.

@@ -42,3 +42,22 @@ Base: os 12 princípios da Disney ([Wikipedia](https://en.wikipedia.org/wiki/Twe
 - [ ] Nada treme sem motivo?
 - [ ] Olhos dos personagens no mesmo lugar entre cortes de campo/contracampo?
 - [ ] O desfoque de movimento só aparece em movimento rápido, nunca num corte?
+
+## Atuação a fundo (Ed Hooks, *Acting for Animators*)
+Princípios citados de Hooks: **o pensamento tende a levar a conclusões; a emoção tende a levar à ação**, e **o público só sente empatia por emoção** ([resumo](https://www.actingcoachscotland.co.uk/blog/principles-acting-animators-and-actors), [Thinking Animation](https://thinkinganimation.com/acting-for-animators)).
+- Toda fala tem uma **intenção** (o que o personagem quer da outra pessoa naquela frase: convencer, pedir socorro, provocar). Escreva a intenção ao lado de cada fala na folha de batidas e escolha a pose que a mostra.
+- A emoção aparece **antes** da ação: o rosto muda (medo, ideia), e só então o corpo age.
+- Mostre o **pensamento**: os olhos mudam de direção ou piscam quando a ideia chega (o "clique" da June antes de sugerir o app).
+
+## Sincronia labial que parece profissional
+([Pluralsight](https://www.pluralsight.com/resources/blog/software-development/proven-tips-animating-believable-lip-sync))
+- **Adiante a boca 1–2 quadros em relação ao som** (a boca abre antes do som sair). Formas exatamente no pico do áudio parecem atrasadas. No nosso código: deslocar o `residentMouth` em −1/30 a −2/30 s (testar com folha de quadros).
+- **Não anime cada letra.** Acerte as consoantes fortes e as vogais abertas, e deixe as transições fluírem. Fonemas demais = boca "metralhadora".
+- **B, M, P fecham a boca de verdade** (nunca misture por cima).
+- **Sílabas tônicas e palavras mais altas**: abra mais a boca (já temos o nível de voz; reforce no acento da piada).
+- Referência: grave você dizendo a fala e olhe quadro a quadro.
+
+## Lições da animação que viraliza em rede
+- Séries de personagens fofos com **ritmo constante** (Chikn Nuggit: cerca de 3 por semana) vencem a superprodução esporádica ([Know Your Meme](https://knowyourmeme.com/memes/people/chikn-nuggit)).
+- **Personagem forte gera fan art** e remix (os fãs da Lily do Duolingo fazem animações Gacha que superam o perfil oficial). → Silhuetas e cores simples e marcantes facilitam o público redesenhar.
+- O mais visto é o **close ou plano médio** (estudo de viralização no guia 11): o rosto grande vence o cenário bonito.
