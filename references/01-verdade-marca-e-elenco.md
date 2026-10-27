@@ -9,6 +9,13 @@
 - Endereço falado: "Bata Tók ponto com ponto bê erre" (no TTS, escreva `say:` assim). "BataTalk" pronuncia-se "Bata Tók".
 - A reação final do Sora no app é gerada por modelo; no filme usamos a fala plausível "Perfect. Coming right up!" dentro de "Exemplo animado".
 
+## Onde conferir a verdade no código do site (antes do roteiro)
+- Quem atende cada lugar: `character-places.js`. Bata Airport: Check-in = Priya, **Imigração = Evelyn**, Bagagem = Malik, Portão 7 = Priya, Hotel & Info = Cam.
+- Lugares, dificuldade e frase-chave de cada cidade: `city-experience.js` (a Imigração é "Difícil", frase "Could you repeat that?").
+- Planos e preços: `plans.js`. Grátis = 1 conversa guiada por dia + o 1º encontro de cada cidade; Plus R$ 29,90/mês ou R$ 287/ano; Pro R$ 49,90/mês ou R$ 479/ano.
+- **O encontro grátis de cada cidade é o primeiro lugar** (no aeroporto, o Check-in). Não diga que a Imigração é grátis; diga "dá pra ensaiar a imigração" + "dá pra começar de graça".
+- No produto, a Evelyn tem 72 anos e é radialista na Praça Harmonia (`character-cast.js`), mas é ela quem atende a Imigração: nos vídeos, ela é a oficial.
+
 ## O que NÃO pode
 
 - Superlativo sem prova ("a melhor plataforma") — CONAR/TJSP exigem comprovação. Troque por algo verdadeiro e mais nativo ("Lançaram um site pra treinar inglês falando…").

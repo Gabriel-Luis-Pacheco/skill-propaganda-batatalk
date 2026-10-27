@@ -30,6 +30,8 @@
 
 23. **"Faz o corte de 12–14 s para o TikTok só com o chutei o balde, sem gastar voz nova"** → `imigracao-tt.js` (13,2 s): gancho "nunca traduza ‘chutei o balde’ na imigração 💀", pergunta → erro → "You… died?" + fantasma → Tato → carimbo com cartão final (endereço + "qual expressão você ia traduzir? 👇") → "Next!". Mesmas vozes (US$ 0 de TTS). QC PASS, 0 preto puro, cortes limpos.
 
+24. **"Pega tudo que temos na conversa de conhecimento que ainda não está na skill e coloca lá"** → entraram: onde conferir a verdade no código (character-places, city-experience e plans; a Imigração não é o encontro grátis), o custo por take de TTS e o gasto ≈ US$ 0,14, o banco de expressões ao pé da letra, a conferência da trilha por formas de onda, o mosaico de cortes e a capa por ffmpeg, e o status dos dois vídeos prontos com o que pedir depois de postar.
+
 ## O que agradou
 
 Pesquisa embasando cada decisão; proatividade; skill organizada e com ferramentas; várias opções; vídeos que parecem nativos; personagens com personalidade; humor de meme brasileiro; acabamento técnico (QC, área segura).

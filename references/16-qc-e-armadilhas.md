@@ -48,6 +48,11 @@
 | `tile` do ffmpeg com `-frames:v 3` | um quadro de saída por mosaico | `-frames:v 1` |
 | `\u` em parâmetro de ferramenta vira caractere cru | escape interpretado | evitar `\u` em regex escrita por ferramenta |
 
+## Como ver os cortes no MP4 sem assistir
+Pegue os quadros n−1, n e n+2 de cada corte (os tempos estão em `generated/timeline-<corte>.json` → `cues`) e monte um mosaico com `ffmpeg -vf "select='eq(n\,N1)+eq(n\,N2)+…',scale=180:320,tile=9x5" -frames:v 1 -vsync 0`.
+Procure três defeitos: dois rostos sobrepostos (quadro fantasma), adesivo encolhendo em cima do plano seguinte e legenda em cima da boca.
+Para a capa: `ffmpeg -ss 0.3 -i video.mp4 -frames:v 1 capa.jpg`.
+
 ## Erros de processo (não repetir)
 
 - Pensar que "QC PASS" = vídeo bom. Sempre ver o MP4 quadro a quadro.

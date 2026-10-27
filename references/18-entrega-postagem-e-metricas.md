@@ -59,3 +59,8 @@ O que se pode concluir com 5–6 vídeos (amostra pequena; só o Desafio se dest
 - O mesmo vídeo vai 4–9× melhor no Instagram do que no TikTok → investigar a conta do TikTok (passo 1).
 - Zero comentários em tudo: falta comunidade. Comentário fixado, resposta rápida e o Tato comentando em criadores (sugestão para o dono).
 - O "ficar fluente" teve o pior resultado e é uma promessa que a skill proíbe.
+
+## Status em 27/10 (a medir)
+- **Prontos e ainda não postados:** `00_IMIGRACAO_AO_PE_DA_LETRA` (Reel de 30,3 s) e `00_TIKTOK_IMIGRACAO_CHUTEI_O_BALDE` (TikTok de 13,2 s). Cada pasta tem o MP4, o `legenda-e-hashtags.txt` e a `capa.jpg`.
+- **O que pedir ao dono, 24–72 h depois de postar:** views, taxa de pulo / retenção em 3 s, % que viu até o fim, envios e compartilhamentos, comentários, e quais expressões o público mandou (elas viram o episódio 2).
+- **Antes de qualquer nova análise de alcance:** conferir se algum vídeo do TikTok ficou em "Somente eu".

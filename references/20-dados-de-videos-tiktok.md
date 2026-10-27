@@ -72,3 +72,4 @@ Métricas públicas de cada vídeo (views, curtidas, comentários, compartilhame
 5. A ferramenta do navegador corta comandos com mais de 45 s: rode uma fila em segundo plano, grave cada linha em `localStorage` e leia aos poucos.
 6. Os perfis (`/@conta`) pedem login depois de algumas visitas; as páginas de vídeo e de tema continuam abrindo.
 7. O Creative Center (melhores anúncios) mostra só 3 anúncios sem login. A Biblioteca de Anúncios da Meta (`facebook.com/ads/library`, país BR, tipo vídeo) abre sem login e mostra a data de início (anúncio antigo ainda ativo = vencedor), a duração e o texto.
+8. O navegador do app às vezes trava numa navegação (timeout de 300 s), e a Meta às vezes recusa a Biblioteca de Anúncios. Não insista: siga com o que já tem ou pesquise pela web.

@@ -48,7 +48,7 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 
 **A. Limites antes de criar**
 - Verdade do produto (`01`): só o que é verdade (grátis para começar, sem cartão, no navegador, 14 cidades, conversa em voz alta, dica do Tato). Nada de "a melhor", depoimento falso ou promessa de prazo. Avisos de IA.
-- Orçamento: TTS pago só com autorização explícita e dentro do teto. O teto atual é US$ 0,20 no total e o gasto até 27/10 foi ≈ US$ 0,11. Antes de gerar vozes novas, informe o custo estimado e, se o teto não cobrir, **pergunte** (AskUserQuestion). Reaproveite as falas de `picks.json` sempre que der.
+- Orçamento: TTS pago só com autorização explícita e dentro do teto. O teto atual é US$ 0,20 no total e o gasto até 27/10 foi ≈ US$ 0,14 (cada take curto custa cerca de US$ 0,001; 15 falas × 2 takes ≈ US$ 0,03). Antes de gerar vozes novas, informe o custo estimado e, se o teto não cobrir, **pergunte** (AskUserQuestion). Reaproveite as falas de `picks.json` sempre que der.
 
 **B. Ideia e roteiro**
 1. Briefing + **3 conceitos** (`10` §1–2), partindo do banco de ideias (`09`) e da lógica dos casos (`04`). Cheque o momento (`05`): a lista de trends tem data, então pesquise de novo.

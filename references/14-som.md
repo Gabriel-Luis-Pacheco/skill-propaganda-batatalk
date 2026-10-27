@@ -22,3 +22,10 @@ tap, rung, chip, result, door, swoop, whoosh, untangle, motif, motif-end, dream 
 - Alvo −15 LUFS integrados, pico verdadeiro ≤ −2 dBTP (QC aceita −16,5…−13,5 e ≤ −1).
 - Todo efeito entra com rampa de 2 ms (degrau = clique e pico +3 dB).
 - Confira as formas de onda dos stems (`showwavespic`) — medir, não supor (já aconteceu de o "silêncio" estar mais alto que o café).
+
+## Conferir a trilha antes do render (sem ouvir)
+Desenhe as formas de onda dos stems empilhadas (mix, música, vozes, efeitos) e confira três coisas: a música some de verdade nos silêncios de comédia, os efeitos caem nos tempos certos e não há buraco morto nas vozes.
+```bash
+for s in mix music voices sfx; do ffmpeg -i audio/out/<corte>/$s.wav -filter_complex showwavespic=s=1800x160 -frames:v 1 w-$s.png; done
+ffmpeg -i w-mix.png -i w-music.png -i w-voices.png -i w-sfx.png -filter_complex vstack=inputs=4 ondas.png
+```

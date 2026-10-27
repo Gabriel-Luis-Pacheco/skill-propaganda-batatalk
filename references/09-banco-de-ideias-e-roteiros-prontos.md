@@ -95,6 +95,24 @@ Texto 0 s: "7 anos de inglês na escola… e eu só sei falar isso:" · Priya: "
 ### "Ao pé da letra na imigração" (Mina e Evelyn, 30,3 s, Reels primeiro, 27/10) — resultado ainda não medido
 Por que este formato: "erro → reação do personagem" (Comigo 2,5 mi; criadores da Praktika 1,68 mi) + o tema "expressões brasileiras que deixam o gringo perdido" (todo mundo tem uma para comentar).
 Texto 0 s: "brasileira na imigração traduzindo TUDO ao pé da letra 💀" · Evelyn: "Who's paying for your trip?" · Mina: "My friends made a little cow!" [pílula "ao pé da letra: fizeram uma vaquinha"] · [balão 🐄 "a little… cow?"] Evelyn: "A cow." · "Do you plan to work here?" · Mina: "No, no… I took my little horse out of the rain." [balão 🐴☔] Evelyn: "And a horse." · "And your job back home?" · Mina (erguendo o passaporte): "I kicked the bucket!" [a música para, disco arranhando] · Evelyn (close extremo): "You… died?" [um fantasminha sobe da Mina; "‘kick the bucket’ = MORRER em inglês 💀"] · Mina: "Pera… o quê?!" · Tato (pula do balcão): "Kick the bucket é morrer! Fala: I quit my job." · Mina: "I quit my job!" · [carimbo WELCOME + bilhete "1 cow ✓ 1 horse ✓ alive ✓"] Evelyn: "Welcome to Batata City." · Mina (para a câmera): "E você, ia traduzir qual?" · Evelyn: "Next!" → laço.
+Banco de expressões "ao pé da letra" para os próximos episódios. As melhores têm outro sentido em inglês ou viram uma imagem absurda:
+- chutar o balde → kick the bucket (= MORRER em inglês: a melhor virada);
+- pagar mico → pay a monkey;
+- fazer uma vaquinha → make a little cow;
+- tirar o cavalinho da chuva → take the little horse out of the rain;
+- viajar na maionese → travel in the mayonnaise;
+- ficar de molho → stay in the sauce;
+- engolir sapo → swallow a frog;
+- pisar na bola → step on the ball;
+- enfiar o pé na jaca → stick the foot in the jackfruit;
+- pão-duro → hard bread; mão de vaca → cow hand;
+- dor de cotovelo → elbow pain;
+- segurar vela → hold the candle;
+- quebrar o galho → break the branch;
+- caiu a ficha → the token fell;
+- encher linguiça → fill sausage.
+
+Evite as de duplo sentido sexual ou político.
 Série possível: cada episódio com outras expressões (fazer uma vaquinha, pagar mico, engolir sapo, ficar de molho, pão-duro…) e outro morador (o Sora no café, a Priya na entrevista). As expressões dos comentários viram o próximo episódio.
 
 ### Quiz rápido (22,6 s)
