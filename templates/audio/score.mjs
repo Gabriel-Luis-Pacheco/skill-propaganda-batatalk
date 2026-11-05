@@ -27,7 +27,7 @@ const VOICES = JSON.parse(await readFile(path.join(root, 'generated', 'voices.js
 const DUR = TL.duration + 0.05;
 const N = Math.ceil(DUR * SR);
 const stem = () => [new Float32Array(N), new Float32Array(N)];
-const music = stem(), amb = stem(), sfx = stem(), voices = stem();
+const music = stem(), amb = stem(), sfx = stem(), voices = stem(), crowd = stem();
 
 // ------------------------------------------------------------------ utilidades
 let seed = 12345;
@@ -113,6 +113,17 @@ const SFX = {
   scratch: () => { let ph = 0; const n = noise(Math.round(0.34 * SR)); const o = render(0.34, (t, i) => { const k = t < 0.17 ? Math.sin(Math.PI * t / 0.17) : 0.65 * Math.sin(Math.PI * (t - 0.17) / 0.17); ph += (160 + 1250 * Math.abs(k)) / SR; return ((2 * (ph % 1) - 1) * 0.55 + n[i] * 0.45) * Math.abs(k); }); return biquadBP(o, 1300, 0.7); },
   thud: () => { let ph = 0; const z = onePoleLP(noise(Math.round(0.02 * SR)), 2500); return render(0.85, (t, i) => { ph += 2 * Math.PI * 55 * (1 + 1.8 * expd(t, 0.03)) / SR; return Math.tanh(2.4 * (Math.sin(ph) + 0.3 * Math.sin(2 * ph))) * expd(t, 0.28) * Math.min(1, t / 0.002) * 0.6 + (z[i] || 0) * expd(t, 0.006) * 0.5; }); },
   whoosh: () => { const n = noise(Math.round(0.32 * SR)); return biquadBP(n, 1500, 0.9).map((v, i) => v * env(i / SR, 0.16, 0.03, 0.5, 0.1, 0.32) * 0.5); },
+  // foley do "E se o Cam…": passo de meia no piso, porta que fecha, batida na porta, riser/impacto dos cartões, notificação, tapa, passarinho
+  step: () => { const z = onePoleLP(noise(Math.round(0.06 * SR)), 1400); return render(0.14, (t, i) => ((z[i] || 0) * 1.6 + Math.sin(2 * Math.PI * 95 * t) * 0.6) * expd(t, 0.028) * Math.min(1, t / 0.002) * 0.7); },
+  doorshut: () => { const z = onePoleLP(noise(Math.round(0.4 * SR)), 1100); return render(0.5, (t, i) => ((z[i] || 0) * 0.9 * expd(t, 0.04) + Math.sin(2 * Math.PI * 70 * (1 + 0.6 * expd(t, 0.05)) * t) * expd(t, 0.16) * 0.8 + (t > 0.09 && t < 0.13 ? Math.sin(2 * Math.PI * 1800 * t) * 0.18 * expd(t - 0.09, 0.012) : 0)) * Math.min(1, t / 0.002) * 0.8); },
+  knock: () => { const one = (t) => Math.sin(2 * Math.PI * 190 * t) * expd(t, 0.035) * 0.9 + Math.sin(2 * Math.PI * 480 * t) * expd(t, 0.02) * 0.4; return render(0.62, (t) => { let v = 0; for (const d of [0, 0.19, 0.38]) if (t >= d) v += one(t - d); return v * 0.7; }); },
+  riser: (it) => { const len = it.len ?? 0.5, n = noise(Math.round(len * SR)); const b = biquadBP(n, 2600, 0.7); return b.map((v, i) => v * (i / b.length) ** 2 * 0.55 + Math.sin(2 * Math.PI * (300 + 1600 * (i / b.length) ** 2) * (i / SR)) * (i / b.length) ** 3 * 0.12); },
+  impact: () => { let ph = 0; const z = onePoleLP(noise(Math.round(0.05 * SR)), 3000); return render(0.7, (t, i) => { ph += 2 * Math.PI * 62 * (1 + 1.4 * expd(t, 0.04)) / SR; return (Math.tanh(2 * Math.sin(ph)) * expd(t, 0.22) * 0.7 + (z[i] || 0) * expd(t, 0.01) * 0.4 + Math.sin(2 * Math.PI * 1100 * t) * expd(t, 0.05) * 0.06) * Math.min(1, t / 0.002); }); },
+  notif: () => { const a = bell(midi(NOTE.E5 + 12), 0.5), b = bell(midi(NOTE.A5 + 12), 0.7), o = new Float32Array(a.length + Math.round(0.12 * SR)); a.forEach((v, i) => { o[i] += v * 0.4; }); b.forEach((v, i) => { const k = i + Math.round(0.12 * SR); if (k < o.length) o[k] += v * 0.4; }); return o; },
+  slap: () => { const z = biquadBP(noise(Math.round(0.08 * SR)), 1700, 1.2); return z.map((v, i) => v * expd(i / SR, 0.016) * 2.4); },
+  chirp: () => render(0.22, (t) => Math.sin(2 * Math.PI * (3200 + 1800 * Math.sin(Math.PI * Math.min(1, t / 0.12))) * t) * env(t, 0.01, 0.04, 0.5, 0.1, 0.22) * 0.25),
+  flush: () => { const len = 2.4, n = noise(Math.round(len * SR)); let ph = 0; const lo = onePoleLP(n, 900), bp = biquadBP(n, 1400, 0.6); return render(len, (t, i) => { const e = Math.min(1, t / 0.05) * Math.exp(-Math.max(0, t - 0.5) / 0.75); ph += 2 * Math.PI * (90 + 40 * Math.sin(t * 9)) / SR; return (lo[i] * 1.6 + bp[i] * 0.55 * (0.6 + 0.4 * Math.sin(t * 23)) + Math.sin(ph) * 0.12 * Math.max(0, Math.sin(t * 17))) * e * 0.7; }); },
+  snore: () => { const n = noise(Math.round(1.6 * SR)), lp = onePoleLP(n, 320); return render(1.6, (t, i) => lp[i] * 3.4 * Math.max(0, Math.sin(Math.PI * Math.min(1, t / 1.2))) ** 2 * (0.6 + 0.4 * Math.sin(2 * Math.PI * 26 * t))); },
   stamp: () => { const a = SFX.thud(), b = SFX.pop(); for (let i = 0; i < b.length; i++) a[i] += b[i] * 0.8; return a; },
 };
 
@@ -124,6 +135,10 @@ function voiceStem() {
     const { rate, samples } = readWav(require_(file));
     let x = rate === SR ? samples : resample(samples, rate, SR);
     x = onePoleHP(x, 85);
+    // normWhole: trechos cortados do MESMO take usam o nível do take inteiro (mantém a dinâmica da
+    // fala: o "Com um dedo." dito baixinho continua baixinho, em vez de cada trecho virar −20 dBFS)
+    let wholeRms = null;
+    if (it.normWhole) { let s = 0, c = 0; for (const v of x) if (Math.abs(v) > 0.01) { s += v * v; c++; } wholeRms = Math.sqrt(s / Math.max(1, c)); }
     // trecho de vlog: só [a, b] do arquivo, com 6 ms de rampa nas pontas (o corte não estala)
     if (it.clip) {
       const [ca, cb] = it.clip, i0 = Math.max(0, Math.round(ca * SR)), i1 = Math.min(x.length, Math.round(cb * SR));
@@ -132,7 +147,8 @@ function voiceStem() {
     }
     // nível de fala uniforme: RMS dos trechos com voz → −20 dBFS
     let s = 0, c = 0; for (const v of x) if (Math.abs(v) > 0.01) { s += v * v; c++; }
-    const rms = Math.sqrt(s / Math.max(1, c)), g = 0.1 / Math.max(1e-4, rms) * (it.gain ?? 1);
+    const rms = wholeRms ?? Math.sqrt(s / Math.max(1, c)), g = 0.1 / Math.max(1e-4, rms) * (it.gain ?? 1);
+    if (it.fx === 'phone') { x = onePoleLP(onePoleHP(x, 520), 3600); for (let i = 0; i < x.length; i++) x[i] = Math.tanh(x[i] * 2.4) / 1.7; }
     if (it.fx === 'inner') {
       // voz pensada: mais fechada e com uma cauda curta, para soar como pensamento e não como fala
       x = onePoleLP(x, 3400);
@@ -230,6 +246,45 @@ function musicStem() {
       if (!inDrop(t)) add(music, t, pad(CHORDS[ch].map(midi), VB * 4 + 0.2, { attack: 0.05, release: 0.3, bright: 0.4 }), 0.07);
     }
   }
+  // dias: arco por estágio (gancho esparso → Dia 1 pad+coração → Dia 10 groove → Dia 100 melodia → Dia 1000 cheio → 10.000 nostálgico → fim)
+  if (at('dias') != null) {
+    const q = TL.audio.find((a) => a.kind === 'cue' && a.name === 'music');
+    const DB = 60 / (q.bpm || 100), t1 = at('out') ?? DUR, drops = q.drops || [];
+    const inDrop = (t) => drops.some(([a, b]) => t >= a - 0.02 && t < b);
+    const edges = [0, C.card1, C.card2, C.card3, C.card4, C.card5, C.endCard, DUR].map((v, i) => v ?? (i * 8));
+    const stageAt = q.stages ? (t) => { let k = q.stages[0][1]; for (const [a, l] of q.stages) if (t >= a) k = l; return k; } : (t) => { let k = 0; for (let i = 0; i < edges.length - 1; i++) if (t >= edges[i]) k = i; return k; };
+    const MG = q.gain ?? 1, addM = (t, x, g, p) => add(music, t, x, g * MG, p);
+    const prog = ['D', 'Bm', 'G', 'A'];
+    for (let b = 0, t = 0; t < t1 - 0.05; b++, t += DB * 4) {
+      const ch = prog[b % 4], arp = CHORDS[ch].slice(1).map((m) => m + 12), st = stageAt(t);
+      const padG = [0.09, 0.12, 0.1, 0.1, 0.11, 0.14, 0.2][st];
+      if (!inDrop(t)) addM(t, pad(CHORDS[ch].map(midi), DB * 4 + 0.25, { attack: 0.08, release: 0.35, bright: 0.35 }), padG);
+      for (let i = 0; i < 8; i++) {
+        const tb = t + i * DB / 2; if (tb >= t1 || inDrop(tb)) continue;
+        const sg = stageAt(tb), beat = i / 2;
+        // 0 gancho: só pizzicato nos contratempos
+        if (sg === 0 && i % 2 === 1) addM(tb, pizz(midi(arp[(i + b) % arp.length]), 0.35), 0.22, i % 4 === 1 ? -0.25 : 0.25);
+        // 1 Dia 1: coração (bumbo suave nos tempos 1 e 3) + pizzicato esparso
+        if (sg === 1) { if (i === 0 || i === 4) addM(tb, kick(), 0.2); if (i === 3 || i === 7) addM(tb, pizz(midi(arp[(i + b) % arp.length]), 0.35), 0.16, 0.2); }
+        // 2+ : groove completo
+        if (sg === 2 || sg === 3 || sg === 4 || sg === 6) {
+          if (i % 2 === 0) { if (beat % 2 === 0) addM(tb, kick(), 0.36); else addM(tb, rim(), 0.16, 0.1); addM(tb, bass(midi(ROOT[ch] + (beat === 3 ? 7 : 0)), DB * 0.8), 0.22); }
+          addM(tb, shaker(), 0.05, i % 2 ? -0.25 : 0.25);
+          if (i !== 1 && i !== 5) addM(tb, marimba(midi(arp[(i * 2 + b) % arp.length]), 0.4, 0.7), 0.06, i % 2 ? 0.3 : -0.3);
+        }
+        // 3+ : palminhas nos tempos 2 e 4 e melodia de pizzicato
+        if ((sg === 3 || sg === 4 || sg === 6) && (i === 2 || i === 6)) addM(tb, CLAPS[(i + b) % CLAPS.length], 0.7, 0.1);
+        if ((sg === 3 || sg === 4) && i % 2 === 0) addM(tb + DB * 0.25, pizz(midi([NOTE.D5, NOTE.Fs5, NOTE.A5, NOTE.Fs5, NOTE.E5, NOTE.G5, NOTE.B5, NOTE.A5][(i / 2 + b * 2) % 8]), 0.4), 0.2, i % 4 ? 0.3 : -0.3);
+        // 4 Dia 1000: piano elétrico + brilho de sino no início do compasso
+        if (sg === 4 && i === 0) { addM(tb, epiano(CHORDS[ch].map((m) => midi(m + 12)), DB * 3.6), 0.1); addM(tb + DB, bell(midi(arp[b % arp.length] + 12), 1.2), 0.07, 0.3); }
+        // 5 dez mil: nostálgico, sem bateria — piano elétrico lento e sino
+        if (sg === 5 && i === 0) { addM(tb, epiano(CHORDS[ch].map((m) => midi(m + 12)), DB * 3.9), 0.14); addM(tb + DB * 2, bell(midi(arp[(b + 1) % arp.length] + 12), 1.4), 0.08, -0.25); }
+      }
+    }
+    // acorde de impacto em cada cartão (marimba alta) e floreio do cartão final
+    for (const ct of [C.card1, C.card2, C.card3, C.card4, C.card5]) if (ct != null) for (const [k, m] of [NOTE.D5, NOTE.Fs5, NOTE.A5].entries()) addM(ct + 0.02 + k * 0.03, marimba(midi(m), 0.9, 1), 0.12, (k - 1) * 0.3);
+    if (C.endCard != null) { for (const [k, m] of [NOTE.D5, NOTE.Fs5, NOTE.A5, NOTE.D6].entries()) addM(C.endCard + 0.04 + k * 0.08, marimba(midi(m), 1.3, 1), 0.14, (k - 1.5) * 0.25); addM(C.endCard, kick(), 0.4); addM(C.endCard + 0.3, bell(midi(NOTE.D6), 2.2), 0.1, 0.2); }
+  }
   // lofi: bar à noite (86 BPM, swing), piano elétrico em acordes de sétima que descem
   // (Gmaj7 · F♯m7 · Em7 · Dmaj7), baixo redondo, chiado de vinil; some nos "drops" da piada
   if (at('lofi') != null) {
@@ -268,9 +323,96 @@ function musicStem() {
   }
 }
 
+// ------------------------------------------------------------------ plateia do stand-up
+// Risada = vários takes do banco (tools/crowd-voices.mjs: cada voz do TTS rindo, sem palavra), com
+// alturas, atrasos e lados diferentes, por cima de uma "cama" de risadas sintéticas (rajadas de "ha"
+// com formantes de /a/), tudo numa sala curta. Aplauso = palmas sintéticas (ruído em banda curta).
+// Estéreo de verdade: cada pessoa tem o seu lado. Semente fixa por evento (determinístico).
+let CROWD_BANK = null;
+function crowdBank() {
+  if (CROWD_BANK) return CROWD_BANK;
+  const dir = path.join(here, 'voices', 'crowd');
+  const meta = JSON.parse(readFileSync(path.join(dir, 'crowd.json'), 'utf8')).takes;
+  CROWD_BANK = Object.entries(meta).map(([id, m]) => {
+    const { rate, samples } = readWav(require_(path.join(dir, `${id}.wav`)));
+    const x = (rate === SR ? samples : resample(samples, rate, SR)).slice(Math.round(m.on * SR), Math.round(m.off * SR));
+    let pk = 0; for (const v of x) pk = Math.max(pk, Math.abs(v));
+    return { id, ...m, x: x.map((v) => v / Math.max(1e-4, pk)) };
+  });
+  return CROWD_BANK;
+}
+const seeded = (s) => { let k = (s * 2654435761) >>> 0 || 1; return () => { k = (k * 1664525 + 1013904223) >>> 0; return k / 4294967296; }; };
+function room(chs, wet = 0.22) {
+  // sala pequena: 4 pentes + 2 passa-tudo (Schroeder), um pouco diferente em cada lado
+  return chs.map((x, side) => {
+    const out = Float32Array.from(x), n = x.length;
+    let acc = new Float32Array(n);
+    for (const [ms, fb] of [[29.7, 0.72], [37.1, 0.7], [41.1, 0.68], [43.7, 0.66]]) {
+      const d = Math.round((ms + side * 1.3) * SR / 1000), buf = new Float32Array(n);
+      for (let i = 0; i < n; i++) { buf[i] = x[i] + (i >= d ? buf[i - d] * fb : 0); acc[i] += buf[i] * 0.25; }
+    }
+    for (const ms of [5.0, 1.7]) { const d = Math.round(ms * SR / 1000), g = 0.6, y = new Float32Array(n); for (let i = 0; i < n; i++) { const xd = i >= d ? acc[i - d] : 0, yd = i >= d ? y[i - d] : 0; y[i] = -g * acc[i] + xd + g * yd; } acc = y; }
+    acc = onePoleLP(acc, 5200);
+    for (let i = 0; i < n; i++) out[i] = x[i] * (1 - wet * 0.5) + acc[i] * wet;
+    return out;
+  });
+}
+function laughSfx(it) {
+  const s = it.size ?? 0.6, L = it.len ?? 1.4, n = Math.round((L + 0.9) * SR), r = seeded(it.seed ?? 1);
+  const out = [new Float32Array(n), new Float32Array(n)];
+  const put = (x, at, g, pan) => { const [l, rr] = panLR(pan), o = Math.round(at * SR); for (let i = 0; i < x.length && o + i < n; i++) { out[0][o + i] += x[i] * g * l; out[1][o + i] += x[i] * g * rr; } };
+  // 1. pessoas de verdade (TTS): mais vozes e gargalhadas maiores quanto maior a risada
+  const bank = crowdBank(), people = Math.round(2 + s * 9);
+  for (let v = 0; v < people; v++) {
+    const pool = bank.filter((b) => (s > 0.45 ? (v % 3 ? b.style === 'big' : true) : b.style === 'small'));
+    const b = pool[Math.floor(r() * pool.length)], pitch = 0.9 + r() * 0.24, delay = r() * (0.1 + 0.28 * s);
+    const len = Math.max(0.3, L - delay + 0.5 * r()), m = Math.round(len * SR), x = new Float32Array(m);
+    const from = r() * Math.max(0, b.x.length / SR - len * pitch) * 0.6;
+    for (let i = 0; i < m; i++) {
+      const p = from * SR + i * pitch, k = Math.floor(p), u = p - k; if (k + 1 >= b.x.length) break;
+      const t = i / SR, e = Math.min(1, t / 0.035) * (t < len * 0.5 ? 1 : Math.exp(-(t - len * 0.5) / (len * 0.28)));
+      x[i] = (b.x[k] * (1 - u) + b.x[k + 1] * u) * e;
+    }
+    put(onePoleHP(x, 140), delay, (0.3 + 0.7 * r()) * (0.45 + 0.55 * s) * 0.32, r() * 1.6 - 0.8);
+  }
+  // 2. a cama: rajadas sintéticas de "ha" (pulso glotal + sopro, formantes de /a/)
+  const voicesN = Math.round(5 + 24 * s);
+  for (let v = 0; v < voicesN; v++) {
+    const fem = r() > 0.5, f0 = fem ? 250 + r() * 120 : 125 + r() * 70, rate = 4 + r() * 1.6, delay = r() * (0.12 + 0.3 * s);
+    const len = Math.max(0.3, L * (0.5 + 0.6 * r())), m = Math.round(len * SR), src = new Float32Array(m);
+    let ph = 0;
+    for (let i = 0; i < m; i++) {
+      const t = i / SR, call = (t * rate) % 1, ce = call < 0.55 ? Math.sin(Math.PI * call / 0.55) ** 1.5 : 0;
+      const bout = Math.min(1, t / 0.05) * Math.exp(-t / (len * 0.55)), f = f0 * (1 + 0.12 * (1 - call)) * (1 - 0.15 * t / len);
+      ph += f / SR; const pulse = ph % 1 < f / SR ? 1 : 0;
+      src[i] = (pulse * 1.0 + (r() * 2 - 1) * 0.22) * ce * bout;
+    }
+    const f1 = fem ? 820 + r() * 160 : 700 + r() * 120, f2 = fem ? 1350 + r() * 200 : 1150 + r() * 150;
+    const a1 = biquadBP(src, f1, 5), a2 = biquadBP(src, f2, 6), x = new Float32Array(m);
+    for (let i = 0; i < m; i++) x[i] = a1[i] * 1.0 + a2[i] * 0.55;
+    put(x, delay, (0.25 + 0.75 * r()) * (0.4 + 0.6 * s) * 1.6, r() * 1.8 - 0.9);
+  }
+  return room(out, 0.26);
+}
+const CLAPS = (() => { const r = seeded(99); return Array.from({ length: 10 }, () => { const len = Math.round(0.03 * SR), x = biquadBP(noise(len), 900 + r() * 1800, 1.4), tau = 0.004 + r() * 0.004; return x.map((v, i) => v * Math.exp(-i / SR / tau)); }); })();
+function applauseSfx(it) {
+  const s = it.size ?? 0.6, L = it.len ?? 1.6, n = Math.round((L + 0.8) * SR), r = seeded((it.seed ?? 1) + 500);
+  const out = [new Float32Array(n), new Float32Array(n)], hands = Math.round(10 + 30 * s);
+  for (let h = 0; h < hands; h++) {
+    const [l, rr] = panLR(r() * 1.8 - 0.9), rate = 3.4 + r() * 2, g = (0.4 + 0.6 * r()) * 0.5;
+    for (let t = r() * 0.3; t < L; t += (1 / rate) * (0.85 + 0.3 * r())) {
+      const e = Math.min(1, t / 0.25) * (t < L - 0.6 ? 1 : Math.max(0, (L - t) / 0.6)), c = CLAPS[Math.floor(r() * CLAPS.length)], o = Math.round(t * SR);
+      for (let i = 0; i < c.length && o + i < n; i++) { out[0][o + i] += c[i] * g * e * l; out[1][o + i] += c[i] * g * e * rr; }
+    }
+  }
+  return room(out, 0.3);
+}
+
 // ------------------------------------------------------------------ ambiência do café
 function ambienceStem() {
   const a = TL.audio.find((x) => x.kind === 'cue' && x.name === 'ambience'); if (!a) return;
+  if (a.place === 'club') return clubAmbience(a);
+  if (a.place === 'dias') return diasAmbience(a);
   const spans = [[a.start ?? 0, a.until ?? DUR]]; if (a.back != null) spans.push([a.back, a.backUntil ?? DUR]);
   for (const [t0, t1] of spans) {
     const len = t1 - t0, n = Math.round(len * SR);
@@ -284,8 +426,62 @@ function ambienceStem() {
   }
 }
 
+/** E se o Cam…: um "ar" diferente por cena (sala, silêncio do armário, chuveiro, sonho, rua com carros e passarinhos, murmúrio do bar). */
+function diasAmbience(a) {
+  const AG = a.gain ?? 1, addA = (t, x, g, p) => add(amb, t, x, g * AG, p);
+  const r = seeded(11);
+  for (const sp of a.spans) {
+    const len = sp.t1 - sp.t0; if (len < 0.05) continue;
+    const n = Math.round(len * SR), out = new Float32Array(n), fade = (t) => Math.min(1, t / 0.18, (len - t) / 0.18);
+    if (sp.kind === 'room') { const air = onePoleLP(noise(n), 240), hiss = onePoleHP(onePoleLP(noise(n), 4000), 1500); for (let i = 0; i < n; i++) out[i] = (air[i] * 1.4 + hiss[i] * 0.05) * fade(i / SR); addA(sp.t0, out, 0.32); }
+    else if (sp.kind === 'hush') { const air = onePoleLP(noise(n), 160); for (let i = 0; i < n; i++) out[i] = air[i] * 1.2 * fade(i / SR); addA(sp.t0, out, 0.22); }
+    else if (sp.kind === 'water') { const w = biquadBP(noise(n), 3800, 0.5), w2 = onePoleHP(onePoleLP(noise(n), 7000), 1800); for (let i = 0; i < n; i++) { const t = i / SR; out[i] = (w[i] * 0.9 + w2[i] * 0.5) * (0.8 + 0.2 * Math.sin(2 * Math.PI * 7 * t + Math.sin(t * 3))) * fade(t); } addA(sp.t0, out, 0.22); }
+    else if (sp.kind === 'dream') { const drone = render(len, (t) => (Math.sin(2 * Math.PI * 146.8 * t) * 0.5 + Math.sin(2 * Math.PI * 220 * t * (1 + 0.002 * Math.sin(t * 0.7))) * 0.35 + Math.sin(2 * Math.PI * 293.7 * t) * 0.18) * (0.7 + 0.3 * Math.sin(2 * Math.PI * 0.18 * t)) * fade(t)); addA(sp.t0, drone, 0.1); const air = onePoleLP(noise(n), 200); for (let i = 0; i < n; i++) out[i] = air[i] * fade(i / SR); addA(sp.t0, out, 0.2); }
+    else if (sp.kind === 'city') {
+      const rum = onePoleLP(noise(n), 170), air = onePoleLP(noise(n), 700);
+      for (let i = 0; i < n; i++) out[i] = (rum[i] * 1.6 + air[i] * 0.5) * fade(i / SR); addA(sp.t0, out, 0.34);
+      for (let t = sp.t0 + 0.8 + r() * 1.2; t < sp.t1 - 1.2; t += 2.4 + r() * 2.4) { const d = 1.2, sw = biquadBP(noise(Math.round(d * SR)), 700 + r() * 300, 0.7); addA(t, sw.map((v, i) => v * Math.sin(Math.PI * i / sw.length) ** 2), 0.18, r() > 0.5 ? 0.6 : -0.6); }
+      for (let t = sp.t0 + 0.4 + r() * 1.5; t < sp.t1 - 0.4; t += 1.6 + r() * 2.6) { const c = SFX.chirp(); addA(t, c, 0.05 + r() * 0.05, r() * 1.6 - 0.8); if (r() > 0.4) addA(t + 0.22, c, 0.04, r() * 1.6 - 0.8); }
+    } else { // murmur do bar
+      const murmur = biquadBP(onePoleLP(noise(n), 900), 380, 0.6), chat = biquadBP(noise(n), 1100, 3);
+      for (let i = 0; i < n; i++) { const t = i / SR, sway = 0.7 + 0.3 * Math.sin(2 * Math.PI * 0.23 * t + 1), syl = 0.5 + 0.5 * Math.max(0, Math.sin(2 * Math.PI * 3.1 * t) * Math.sin(2 * Math.PI * 0.9 * t + 2)); out[i] = (murmur[i] * 2.2 * sway + chat[i] * 0.35 * syl) * fade(t); }
+      addA(sp.t0, out, 0.42);
+      for (let t = sp.t0 + 0.6; t < sp.t1 - 0.4; t += 1.3 + r() * 2.2) addA(t, bell(2400 + r() * 1800, 0.5), 0.02 + r() * 0.02, r() * 1.6 - 0.8);
+    }
+  }
+}
+
+/** Bar de comédia durante o set: plateia quieta (ar da sala, um murmúrio bem baixo), um copo de vez
+ *  em quando. Nada de conversa: todo mundo está ouvindo. */
+function clubAmbience(a) {
+  const t0 = a.start ?? 0, t1 = a.until ?? DUR, len = t1 - t0, n = Math.round(len * SR), r = seeded(7);
+  const air = onePoleLP(noise(n), 260), hum = biquadBP(onePoleLP(noise(n), 900), 420, 0.8), out = new Float32Array(n);
+  for (let i = 0; i < n; i++) { const t = i / SR; out[i] = (air[i] * 1.6 + hum[i] * 0.55 * (0.75 + 0.25 * Math.sin(2 * Math.PI * 0.13 * t))) * Math.min(1, t / 0.3, (len - t) / 0.5); }
+  add(amb, t0, out, 0.45);
+  for (let t = t0 + 1.4; t < t1 - 0.6; t += 3.2 + r() * 3.4) add(amb, t, bell(2600 + r() * 1600, 0.45), 0.012 + r() * 0.01, r() * 1.4 - 0.7);
+}
+
 // ------------------------------------------------------------------ montagem e mix
 voiceStem(); musicStem(); ambienceStem();
+/** Trecho de uma gravação de verdade (risada de plateia da Mixkit, por exemplo), em estéreo:
+ *  [from, from + len] do arquivo, nível RMS fixo (−22 dBFS × gain), rampas de entrada e saída. */
+function sampleSfx(it) {
+  const r = spawnSync(ffmpegPath, ['-hide_banner', '-loglevel', 'error', '-i', path.join(root, it.file), '-f', 'f32le', '-ac', '2', '-ar', String(SR), '-'], { maxBuffer: 1 << 28 });
+  if (r.status !== 0) throw new Error(`sample ${it.file}: ${r.stderr}`);
+  const x = new Float32Array(r.stdout.buffer, r.stdout.byteOffset, r.stdout.length / 4);
+  const i0 = Math.round((it.from ?? 0) * SR), n = Math.min(Math.round((it.len ?? 2) * SR), x.length / 2 - i0);
+  const out = [new Float32Array(n), new Float32Array(n)];
+  for (let i = 0; i < n; i++) { out[0][i] = x[2 * (i0 + i)]; out[1][i] = x[2 * (i0 + i) + 1]; }
+  let s = 0; for (let i = 0; i < n; i++) s += (out[0][i] ** 2 + out[1][i] ** 2) / 2;
+  const g = 0.08 / Math.max(1e-4, Math.sqrt(s / Math.max(1, n))), fi = Math.round((it.fadeIn ?? 0.03) * SR), fo = Math.round((it.fadeOut ?? 0.4) * SR);
+  for (let i = 0; i < n; i++) { const e = Math.min(1, i / Math.max(1, fi)) * Math.min(1, (n - i) / Math.max(1, fo)); out[0][i] *= g * e; out[1][i] *= g * e; }
+  return out;
+}
+// plateia: risadas e aplausos num barramento próprio (estéreo largo; abaixa um pouco sob a voz)
+for (const it of TL.audio.filter((x) => x.kind === 'sfx' && (x.name === 'laugh' || x.name === 'applause' || x.name === 'sample'))) {
+  const [l, r] = it.name === 'laugh' ? laughSfx(it) : it.name === 'applause' ? applauseSfx(it) : sampleSfx(it), o = Math.round(it.start * SR), g = it.gain ?? 1;
+  for (let i = 0; i < l.length; i++) { const k = o + i; if (k < 0 || k >= N) continue; crowd[0][k] += l[i] * g; crowd[1][k] += r[i] * g; }
+}
 // todo efeito entra com 2 ms de rampa (meio cosseno): um início em degrau é um clique de banda
 // infinita, com pico entre amostras ~3 dB acima do pico das amostras (o "tap" fazia isso)
 const softStart = (x) => { const r = Math.min(x.length, Math.round(0.002 * SR)); for (let i = 0; i < r; i++) x[i] *= 0.5 - 0.5 * Math.cos(Math.PI * i / r); return x; };
@@ -295,7 +491,7 @@ const venv = new Float32Array(N); { let e = 0; const at = Math.exp(-1 / (0.03 * 
 const mix = stem();
 for (let i = 0; i < N; i++) {
   const duck = 1 / (1 + 6 * Math.min(1, venv[i] * 8));          // até ~ −17 dB quando a voz está cheia
-  for (const ch of [0, 1]) mix[ch][i] = voices[ch][i] + music[ch][i] * (0.35 + 0.65 * duck) * 0.9 + amb[ch][i] * (0.5 + 0.5 * duck) * 0.55 + sfx[ch][i] * 0.8;
+  for (const ch of [0, 1]) mix[ch][i] = voices[ch][i] + music[ch][i] * (0.35 + 0.65 * duck) * 0.9 + amb[ch][i] * (0.5 + 0.5 * duck) * 0.55 + sfx[ch][i] * 0.8 + crowd[ch][i] * (0.55 + 0.45 * duck);
 }
 // loudness: mede (FFmpeg, EBU R128) e ajusta para −15 LUFS; depois limitador de pico verdadeiro
 const outDir = path.join(here, 'out', cut);
@@ -320,7 +516,7 @@ function limiter(chs, ceiling) {
   // segunda passada para frente (ataque suave)
   let h = 1; for (let i = 0; i < n; i++) { h = gain[i] < h ? gain[i] : rel * h + (1 - rel) * gain[i]; for (const ch of chs) ch[i] *= h; }
 }
-for (const [name, chs] of [['voices', voices], ['music', music], ['ambience', amb], ['sfx', sfx]]) await wav24(chs, path.join(outDir, `${name}.wav`));
+for (const [name, chs] of [['voices', voices], ['music', music], ['ambience', amb], ['sfx', sfx], ['crowd', crowd]]) await wav24(chs, path.join(outDir, `${name}.wav`));
 const tmp = path.join(outDir, 'mix-pre.wav');
 await wav24(mix, tmp);
 const m0 = lufs(tmp);

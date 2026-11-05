@@ -92,3 +92,10 @@ Base da revisão do esquete do bar (`V8_TIKTOK_BAR_AMIGAS_9x16`). Cada item traz
 - Os números de mercado vêm de ferramentas e agências com dados próprios e sem método publicado.
 - O TikTok não divulga o peso de cada sinal.
 - A prova real é o painel do próprio TikTok: retenção nos 3 primeiros segundos, tempo médio assistido, % que vê até o fim e repetições. Vale comparar este corte com a versão anterior (44 s).
+
+## Narrador no gancho (decisão de 04/11, ver `26` §3)
+Não existe teste público de gancho falado contra gancho em texto. A Meta (amostra pequena) aponta que imagem + som no gancho rende mais, e Mayer diz que narrar o que está na tela atrapalha. O que funcionou no Reel campeão:
+- **uma voz de menos de 2 s só no gancho**, em 2ª pessoa ("E se você falasse inglês todo dia?"), com o mesmo texto na tela e o personagem já em ação no quadro 0;
+- **nenhuma narração depois**;
+- rótulo de lugar ou hora no chip de cada marco;
+- **final:** pergunta sobre o espectador, por cima da cena ("Quem aí fala inglês escondido? 👀"), e corte seco.

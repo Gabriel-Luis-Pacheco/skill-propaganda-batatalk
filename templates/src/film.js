@@ -17,6 +17,13 @@ const CUTS = {
   quiz2: () => import('./cuts/quiz2.js'),
   creator: () => import('./cuts/creator.js'),
   bar: () => import('./cuts/bar.js'),
+  imigracao: () => import('./cuts/imigracao.js'),
+  imigracaoTT: () => import('./cuts/imigracao-tt.js'),
+  standup: () => import('./cuts/standup.js'),
+  standup3: () => import('./cuts/standup3.js'),
+  dias: () => import('./cuts/dias.js'),
+  dias10: () => import('./cuts/dias10.js'),
+  dias11: () => import('./cuts/dias11.js'),
 };
 
 async function boot() {

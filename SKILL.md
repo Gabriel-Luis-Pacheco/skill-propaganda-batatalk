@@ -1,11 +1,13 @@
 ---
 name: propaganda-batatalk
-description: Cria, revisa e entrega vídeos curtos de propaganda do BataTalk para TikTok e Reels — esquetes com o elenco de Batata City, vídeo de criadora (vlog animado), quiz, trends curtas, séries e variações de gancho — no renderizador próprio do repositório (batatalk-launch-video/v8-publica). Traz pesquisa sobre algoritmo (Meta Reels/TikTok), psicologia de quem assiste, Duolingo e concorrentes, trends do momento, banco de ideias, roteiro e comédia (jogo da cena), falas humanas anti-"cara de IA", visual autoral, animação calma, som, QC técnico, legenda do post, placar de qualidade e ferramentas (lint de roteiro, placar). Use para qualquer pedido de vídeo, propaganda, TikTok, Reels, esquete, roteiro, ideia de post, legenda de post ou revisão de vídeo do BataTalk.
+description: Cria, revisa e entrega vídeos curtos de propaganda do BataTalk para TikTok e Reels — esquetes com o elenco de Batata City, vídeo de criadora (vlog animado), quiz, trends curtas, séries e variações de gancho — no renderizador próprio do repositório (batatalk-launch-video/v8-publica). Traz pesquisa sobre algoritmo (Meta Reels/TikTok), psicologia de quem assiste, Duolingo e concorrentes, trends do momento, banco de ideias, roteiro e comédia (jogo da cena), falas humanas anti-"cara de IA", visual autoral, animação calma, som, QC técnico, legenda do post, placar de qualidade e ferramentas (lint de roteiro, placar). Inclui o formato campeão "E se você … todo dia?" (dia 1/10/100/1000) e o método de revisão crítica com agentes (Haiku e Sonnet) sobre os quadros reais do vídeo. Use para qualquer pedido de vídeo, propaganda, TikTok, Reels, esquete, roteiro, ideia de post, legenda de post ou revisão de vídeo do BataTalk.
 ---
 
 # Propaganda BataTalk: vídeos curtos que prendem, sem mentir
 
-Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikTok e Reels (out/2026): a família V8 pública, as variações de gancho, o Desafio 3s, o Quiz rápido, a Mina criadora e o esquete do bar (Priya e June), além de seis rodadas de pesquisa. Os detalhes, números e fontes estão em `references/`. Leia **só o que o seu pedido precisa** (roteador abaixo).
+Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikTok e Reels (out–nov/2026): a família V8 pública, as variações de gancho, o Desafio 3s, o Quiz rápido, a Mina criadora, o esquete do bar (Priya e June), o stand-up, a imigração e **o campeão "E se você falasse inglês todo dia?" (3.650 views; `24`)**, além de muitas rodadas de pesquisa e de revisão com agentes (`25`, `26`). Os detalhes, números e fontes estão em `references/`. Leia **só o que o seu pedido precisa** (roteador abaixo).
+
+**Objetivo destes vídeos (dono, 04/11):** "o intuito é só ser divertido, engraçado, compartilhável, engajador, viralizador". Sem propaganda direta. Clareza importa só para a piada chegar.
 
 ## O que faz um vídeo nosso funcionar (resumo da pesquisa)
 
@@ -27,6 +29,15 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
    - marca que ensina ou vende vai mal (Fluency, Praktika, Open English); marca com personagem ou que entretém vai bem; **criadores parceiros e colaborações** multiplicam;
    - Reels ganham do TikTok em compartilhamentos em todos os tamanhos de conta (Metricool).
 10. **Concorrentes** (`21`): primeiro fazer o que já funciona para eles (criadores, personagem com atitude, impulsionar só o vencedor, constância); depois se destacar (universo de Batata City, o Tato no momento de travar, humor limpo e brasileiro, preço de app).
+11. **O nosso campeão** (`24`): o formato "E se você … todo dia?" com marcos DIA 1/10/100/1000 teve 3.650 views, o dobro do segundo colocado. O que fez funcionar:
+    - **uma regra de jogo que escala** ("o inglês vaza / cada dia mais gente escuta");
+    - **causa visível em toda piada**;
+    - punch na última palavra;
+    - um punch universal no meio ("…Moço, eu falo português.");
+    - callback no fim;
+    - pergunta sobre o espectador ("Quem aí fala inglês escondido?");
+    - nada de propaganda.
+12. **Revisão com agentes sobre os quadros reais** (`25`): folhas de 2 fps do MP4, linha do tempo do som e a intenção lida só depois, com leigos (Haiku) e especialistas (Sonnet). Vale o que vários veem sem combinar. Foi o que tirou o "no sense" (confete, síndico, app dando "Perfeito" para a vizinha, vizinha falando inglês sem motivo).
 
 ## Roteador: o que ler para cada pedido
 
@@ -43,12 +54,15 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | **Alcance ou retenção baixos** ("estamos indo mal") | diagnóstico em 5 passos (`18`): elegibilidade da conta → fonte de tráfego → retenção → esperar 24–48 h → só então mudar o conteúdo | 18, 02, 10 |
 | **Pesquisa / "pesquisa mais"** | pesquise de novo com fontes; marque força da evidência; atualize o guia certo e o histórico | 02–05, 19 |
 | **Trend do momento** | pesquisar se ainda está viva (≤ 3–4 semanas), filtro VIBES, áudio original | 05 |
+| **Formato "E se você…? / dia 1, 10, 100, 1000"** (o campeão) | partir do roteiro e do código do campeão, trocando a situação; seguir o checklist do formato | 24, 25, 26, 07, `casos/e-se-dias/` |
+| **"Revisa criticamente / faz sentido pra um leigo? / lança agentes"** | folhas de 2 fps + sons + intenção; rodadas Haiku (leigos) + Sonnet (especialistas); tabela do que vários viram; plano revisado e criticado antes de produzir | 25, 26, 16 |
+| **Onde a IA erra / legendas / hashtags / algoritmo** | checklist anti-"cara de IA", regras de legenda (Netflix), 5 hashtags, envios, narrador | 26, 17, 02 |
 
 ## Fluxo completo
 
 **A. Limites antes de criar**
 - Verdade do produto (`01`): só o que é verdade (grátis para começar, sem cartão, no navegador, 14 cidades, conversa em voz alta, dica do Tato). Nada de "a melhor", depoimento falso ou promessa de prazo. Avisos de IA.
-- Orçamento: TTS pago só com autorização explícita e dentro do teto. O teto atual é US$ 0,20 no total e o gasto até 27/10 foi ≈ US$ 0,14 (cada take curto custa cerca de US$ 0,001; 15 falas × 2 takes ≈ US$ 0,03). Antes de gerar vozes novas, informe o custo estimado e, se o teto não cobrir, **pergunte** (AskUserQuestion). Reaproveite as falas de `picks.json` sempre que der.
+- Orçamento: TTS pago só com autorização explícita e dentro do teto. O teto era US$ 0,20 no total. O gasto chegou a ≈ US$ 0,22 em 27/10, e em 28/10 o dono autorizou "as melhores vozes possíveis" da OpenAI para o stand-up v3 (+ ≈ US$ 0,12 → acumulado ≈ US$ 0,34). **Qualquer voz nova precisa de autorização nova do dono** (AskUserQuestion), com o custo estimado. Melhor voz disponível na chave: `gpt-audio-1.5` com a voz `cedar`, um bloco corrido por piada (`tools/voice-audio.mjs`); o dono reprovou o TTS fala por fala ("vozes não estão boas") e a risada sintética ("robotizada"). Estime pelo **tempo de áudio**, não por take: ≈ US$ 0,015/min de TTS + US$ 0,006/min de Whisper (≈ US$ 0,021 por minuto gerado). Fala curta de esquete dá ~2 s por take, mas fala de comediante com "pausa longa", "devagar" ou imitação sai com 5–9 s, e risada de plateia com 3–10 s. No stand-up a conta prevista era US$ 0,04 e deu US$ 0,078. Reaproveite as falas de `picks.json` sempre que der.
 
 **B. Ideia e roteiro**
 1. Briefing + **3 conceitos** (`10` §1–2), partindo do banco de ideias (`09`) e da lógica dos casos (`04`). Cheque o momento (`05`): a lista de trends tem data, então pesquise de novo.
@@ -61,6 +75,7 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
    - pergunta fácil + marca-a-amiga.
 3. `node scripts/lint-roteiro.mjs folha.md`: zero ERRO. Leia em voz alta.
 4. **Placar no papel** (`10` §3, `node scripts/placar.mjs`): ≥ 33/44 e nenhum ★ zerado. Se não passar, reescreva. Não tente consertar na animação.
+5. **Rodadas de agentes sobre o roteiro** (`25`): leigos de idades e regiões diferentes, mais roteirista, advogado do diabo e editor. Pergunte em toda piada: "um leigo sabe **por que** isso acontece?". Rode o checklist anti-IA de `26` §1.
 
 **C. Vozes** (`15`, `08`): voice-final → picks → analyze-voices → voice-fast 1,1×. Corte nos respiros com `AudioList.clip` e realinhe as palavras por sílabas. Dirija a voz como atuação (intenção + subtexto).
 
@@ -81,8 +96,9 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 
 **E. Render e QC** (`15`, `16`)
 - Antes do render: folha de quadros (`stills --sheet`), correções, verify-determinism, alpha-scan, exportar a linha do tempo, mixar.
-- Render em segundo plano (`V8P_HASH_SCOPE=film`), depois `build --fps 60`.
+- Render em segundo plano (`V8P_HASH_SCOPE=film`), **em laço de 3 tentativas** (o render pode morrer com `EBUSY` no OneDrive). Leia a linha `exit N` do log, nunca o `echo`. Depois `build --fps 60`, e confira se o hash do build bate com o do render.
 - Depois do render: qc, black-scan, safezone, folha de 1–2 quadros por segundo e quadros em volta de cada corte.
+- **Antes de entregar uma versão importante:** rodada de agentes sobre as folhas de 2 fps do MP4 real (`25`).
 - Pontue o placar de novo com o MP4.
 
 **F. Post, entrega e métricas** (`17`, `18`)
@@ -98,6 +114,13 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 - **Nunca ler nem servir `.env`.** A chave entra só via `node --env-file=../.env`.
 - Não sobrescrever entregas antigas; não mexer na landing, no produto nem em analytics de produção; não editar fontes do filme durante um render (o hash aborta).
 - **Feedback do dono vale como regra**:
+  - o objetivo é divertir e ser compartilhado, sem divulgar o BataTalk diretamente (o app pode aparecer como personagem do dia a dia);
+  - texto e títulos **centralizados**, sem inclinação nem balanço, longe do rosto (`24` §5);
+  - toda cena com causa: nada "no sense" para leigo;
+  - **regra Gumball**: o personagem não envelhece;
+  - **nomes do app** no elenco: Caio, Vera, Nina, Marcos, Beto… (`01`);
+  - **ícone do app** (`/assets/batatalk-mascot.png`), nunca uma logo desenhada por nós;
+  - animação própria, fluida, melhor que as poses prontas; cenários e roupas bem feitos; mão e objeto nunca atravessam nada;
   - movimento calmo;
   - vídeos diferentes entre si (variação de gancho só para teste);
   - escolher as melhores versões, antigas inclusive;
@@ -111,7 +134,8 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 - [ ] **Emoção e envio**: emoção forte visível no rosto, detalhe brasileiro específico, motivo para mandar a alguém, pergunta fácil + marca-a-amiga
 - [ ] **Humano e autoral**: zero tique de IA (lint sem ERRO), personagens que soam diferentes, visual da marca, Tato num momento-chave, endereço no fim, formato nativo, só o BataTalk faria isso
 - [ ] **Técnico**: legenda palavra a palavra na cor de quem fala, dentro da zona segura (x 120–960, y 270–1248); determinismo, alpha, QC (h264/bt709/aac 48k, −15 LUFS ±1,5, pico ≤ −1 dBTP), black-scan 0, sem fantasma nos cortes; MP4 limpo para cada rede
-- [ ] **Post**: privacidade **Todos** (nunca "Somente eu"); txt completo, ≤ 5 hashtags, avisos; placar ≥ 33/44 sem ★ zerado; gasto informado; fontes citadas
+- [ ] **Post**: privacidade **Todos** (nunca "Somente eu"); txt completo; ≤ 5 hashtags de nicho, sem acento; a primeira linha é a piada; pedido de envio ("manda pra quem…"); sem 👇 nem #fyp; avisos; placar ≥ 33/44 sem ★ zerado; gasto informado; fontes citadas
+- [ ] **Sem "no sense"**: toda piada com causa visível, punch na última palavra, nenhum personagem falando inglês sem motivo, nenhum objeto mágico; revisão por agentes sobre as folhas de 2 fps do MP4 (`25`)
 
 ## Ferramentas e modelos desta skill
 
@@ -150,3 +174,7 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | `21-concorrentes-de-ingles.md` | Duolingo, Praktika, Comigo, Speak, Fluency, Open English, Cambly, escolas: o que fazem, como vendem, fraquezas, como vencer; BataTalk na mesa; plano em duas fases |
 | `22-receitas-tiktok-x-instagram.md` | receita TikTok "erro → reação" de 10–15 s com banco de erros limpos; três receitas de Instagram (esquete 25–45 s, série 15–20 s, participativo/carrossel); o plano dos próximos vídeos |
 | `23-instagram-a-fundo.md` | algoritmo oficial (cartão de sistema, Mosseri, taxa de pulo, aba de amigos, Reels de teste, originalidade), estudos (Socialinsider 9,8 mi, Metricool), **224 posts medidos de 31 contas**, Instagram × TikTok lado a lado, 12 regras de Reels bons, método de coleta |
+| `24-e-se-dias-o-reel-campeao.md` | **o Reel campeão (3.650 views)**: formato, roteiro final com tempos, por que cada versão caiu, regras de comédia, texto, som, rig, pipeline, elenco do app, checklist do formato |
+| `25-revisao-com-agentes.md` | método de revisão com agentes: folhas de 2 fps, papéis (leigos Haiku, especialistas Sonnet), modelos de prompt, como filtrar, formato do relatório |
+| `26-pesquisa-ia-legendas-crescimento.md` | onde a IA erra (estudos), checklist anti-"cara de IA", retenção e ritmo, narrador no gancho, legendas (Netflix), post e hashtags (5 no IG), TikTok oficial, identificação do brasileiro, números sem fonte |
+| `casos/e-se-dias/` | documentos brutos do caso: mensagens do dono, pesquisa, comparação com as referências, roteiros v2–v9, auditorias, rodadas de agentes, folhas e legendas |

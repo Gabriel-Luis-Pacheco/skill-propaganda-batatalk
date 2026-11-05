@@ -115,6 +115,25 @@ Banco de expressões "ao pé da letra" para os próximos episódios. As melhores
 Evite as de duplo sentido sexual ou político.
 Série possível: cada episódio com outras expressões (fazer uma vaquinha, pagar mico, engolir sapo, ficar de molho, pão-duro…) e outro morador (o Sora no café, a Priya na entrevista). As expressões dos comentários viram o próximo episódio.
 
+### Stand-up v3 do Jax (≈ 46,5 s, Reels, 28/10): a versão APROVADA, resultado ainda não medido
+Texto 0 s: "🎤 STAND-UP · 7 anos de inglês na escola e eu perdi pra uma porta 💀".
+Falas:
+- "Eu estudei inglês sete anos na escola. Sete anos."
+- "Primeiro dia de intercâmbio, na porta da escola: PUSH. Meu cérebro leu: puxe." [porta de vidro com a plaqueta]
+- "Puxei. Puxei com força. Puxei com fé." [no "fé" ele fecha os olhos, rezando]
+- "Aí veio uma criança de seis anos… e empurrou. Com um dedo." [a porta abre; risada grande]
+- "Na entrevista de emprego, eu arrasei: I pretend to work here for many years. Pretend é fingir. Eu prometi, olhando no olho do cara, que ia fingir que trabalho." [risada]
+- "Fui contratado." [carimbo] "Pra gerente." [carimbo GERENTE; gargalhada e aplauso; a primeira fila rindo]
+- "Hoje eu treino antes, num site. Quando eu travo, aparece uma batata pra me ajudar." [o Tato sobe]
+- "Uma batata, gente. E o danado fala inglês melhor que eu." [risada; cartão final]
+
+Voz: gpt-audio-1.5 (cedar), um bloco por piada. Risadas: gravações reais da Mixkit.
+
+### "Stand-up dos falsos amigos" v1 (Jax, ≈ 42 s, 27/10): REPROVADO pelo dono ("piadas péssimas e sem sentido"); fica como exemplo do que não fazer (`references/07`)
+Por que este formato: os clipes de stand-up sobre inglês que mais rodam (Rafi Bastos, 2,4–8,5 mi) usam a lógica literal de quem aprende, uma consequência concreta e o fecho na maior risada (`entrega/v8-publica/tiktok/PESQUISA-STANDUP-INGLES.md`). Jogo da cena: o prato da mãe é o termômetro.
+Texto 0 s: "🎤 STAND-UP · palavras em inglês que fingem ser português 💀" · Jax: "Minha namorada gringa provou a feijoada da minha mãe… 'Exquisite!'" (imita a gringa chique) · "Minha mãe tirou o prato." [prato sai voando; pílula "exquisite = requintado ✨"] · "Ela, nervosa: 'I love novels!'" · (a mãe) "'Novela?!'" · "Devolveu o prato. Com farofa." [primeira fila rindo; "novels = romances (livros) 📖"] · "Aí minha mãe: 'Pergunta se ela pretende casar com você!'" · "Eu traduzi: 'Do you pretend to marry me?'" · (a gringa) "'Tipo… pro visto?'" [pílula "pretend = FINGIR 💀"] · "Minha mãe tirou o prato… e a panela." [panela voa, linhas de foco, aplauso] · "Hoje eu treino antes, no BataTalk." · [o Tato sobe da caixa de retorno] Tato: "E exquisite é elogio, tá?" · Jax (para a câmera): "Fala isso pra minha mãe." → emenda no começo.
+Mais falsos amigos para os próximos episódios (mesmo palco, mesmo Jax): parents (pais, não parentes: "uns quarenta"); college (faculdade); costume (fantasia); actually (na verdade); assist (ajudar, não assistir: "fiz a assistência… do sofá"); push × puxe (porta); exquisite/esquisito ao contrário.
+
 ### Quiz rápido (22,6 s)
 Tato: "Quiz de inglês! Três perguntas pra testar seu nível." · Q1 "eu concordo" → I agree ✓ (I'm agree não existe) · Q2 "Pull" na porta → Puxe ✓ · Q3 pedir a conta → The check, please ✓ (account é conta de banco) · "Quantas você acertou? 👇 Comenta 0, 1, 2 ou 3" · Tato: "Bora de novo?". (Pedido do dono: perguntas simples e cativantes; "for here or to go" sem contexto foi rejeitada como difícil; título na tela + voz no começo.)
 
@@ -127,3 +146,21 @@ Níveis café/aeroporto/entrevista com cronômetro, resposta, Tato no nível 3, 
 - Quer o máximo de vídeos **diferentes**; variações leves de gancho valem para testar.
 - Quer voz no começo do vídeo (gancho falado), título na tela.
 - A frase dele "LANÇOU A MELHOR PLATAFORMA…" vira versão verdadeira (sem "a melhor").
+
+## Roteiro pronto: "E se você falasse inglês todo dia?" (o campeão, 3.650 views)
+O roteiro inteiro, com tempos, está em `24` §2; o código em `templates/src/cuts/dias11.js`.
+- **Variações do mesmo formato** (mesma regra "o inglês vaza", outra situação):
+  - "E se você só falasse inglês no trabalho?";
+  - "E se você dublasse tudo em inglês?";
+  - "E se você pensasse em inglês?";
+  - "E se a sua mãe aprendesse inglês?" (inverte quem fala).
+- **Erros e situações para os próximos** (de `26` §6):
+  - "you're on mute";
+  - câmera desligada no Meet;
+  - "actually" = "atualmente";
+  - "I'm good" para recusar e o garçom trazer mesmo assim;
+  - "Can you repeat?", "Yes, sure";
+  - repetir a frase no Uber;
+  - "quit" × "quiet";
+  - "I was boring";
+  - "I'm with hungry".

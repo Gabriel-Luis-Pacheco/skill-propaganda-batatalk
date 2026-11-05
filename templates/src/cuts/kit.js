@@ -142,9 +142,9 @@ export class AudioList {
     return at + (v.off - v.on);
   }
   /** Um trecho [a, b] (s, no arquivo) de uma fala, posto em `at`: o corte seco de vlog. */
-  clip(id, at, a, b, voices, { file, gain = 1, pan = 0 } = {}) {
+  clip(id, at, a, b, voices, { file, gain = 1, pan = 0, fx } = {}) {
     const v = voices.lines[id]; if (!v) return at;
-    this.items.push({ kind: 'voice', id, file: file || v.file, clip: [+a.toFixed(4), +b.toFixed(4)], start: +at.toFixed(4), on: +at.toFixed(4), off: +(at + b - a).toFixed(4), gain, pan, who: v.who, text: v.text });
+    this.items.push({ kind: 'voice', id, file: file || v.file, clip: [+a.toFixed(4), +b.toFixed(4)], start: +at.toFixed(4), on: +at.toFixed(4), off: +(at + b - a).toFixed(4), gain, pan, ...(fx ? { fx } : {}), who: v.who, text: v.text });
     return at + (b - a);
   }
   sfx(name, at, opts = {}) { this.items.push({ kind: 'sfx', name, start: +at.toFixed(4), ...opts }); }

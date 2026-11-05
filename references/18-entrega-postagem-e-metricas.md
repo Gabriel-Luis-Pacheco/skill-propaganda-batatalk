@@ -64,3 +64,14 @@ O que se pode concluir com 5–6 vídeos (amostra pequena; só o Desafio se dest
 - **Prontos e ainda não postados:** `00_IMIGRACAO_AO_PE_DA_LETRA` (Reel de 30,3 s) e `00_TIKTOK_IMIGRACAO_CHUTEI_O_BALDE` (TikTok de 13,2 s). Cada pasta tem o MP4, o `legenda-e-hashtags.txt` e a `capa.jpg`.
 - **O que pedir ao dono, 24–72 h depois de postar:** views, taxa de pulo / retenção em 3 s, % que viu até o fim, envios e compartilhamentos, comentários, e quais expressões o público mandou (elas viram o episódio 2).
 - **Antes de qualquer nova análise de alcance:** conferir se algum vídeo do TikTok ficou em "Somente eu".
+
+## Números do perfil em 05/11 (print do dono)
+| Reel | Views |
+|---|---|
+| **E se você falasse inglês todo dia?** | **3.650** |
+| Stand-up ("7 anos de inglês na escola e eu perdi pra uma porta") | 1.700 |
+| Imigração ao pé da letra | 1.563 |
+| "Lançou um site pra treinar inglês FALANDO" | 1.437 |
+| "7 anos de inglês na escola… e eu só sei falar isso" | 868 |
+
+O formato "E se…? dia 1/10/100/1000", com piada por marco e sem propaganda, foi o melhor até agora. Repita o formato com outras situações (`09`) antes de mudar de linguagem. Teste o Trial Reels e olhe tempo assistido e envios por alcance em 24–72 h.

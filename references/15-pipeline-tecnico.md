@@ -17,6 +17,9 @@ V8P_TTS_AUTORIZADO=1 node --env-file=../.env v8-publica/tools/voice-final.mjs
 #    fixe escolhas em v8-publica/audio/voices/final/picks.json e rode de novo (sem custo)
 node v8-publica/audio/analyze-voices.mjs          # → generated/voices.js (adicione os ids novos na lista)
 node v8-publica/tools/voice-fast.mjs id1 id2       # versões 1,1× em audio/voices/final/fast/
+node v8-publica/tools/voice-fast.mjs --speed 1.2 id1   # outra velocidade em fast-1.2/ (preparação de piada)
+V8P_TTS_AUTORIZADO=1 node --env-file=../.env v8-publica/tools/crowd-voices.mjs   # banco de risadas sintéticas (pago; REPROVADO pelo dono: "robotizada" — use as gravações reais em audio/crowd-real/)
+V8P_TTS_AUTORIZADO=1 node --env-file=../.env v8-publica/tools/voice-audio.mjs    # voz com gpt-audio-1.5 (o melhor modelo de áudio da OpenAI na chave, 28/10): um bloco corrido por piada, transcrição de volta para conferir
 # 2. revisão
 node v8-publica/tools/stills.mjs --cut <c> --format 9x16 --sheet --cues --out v8-publica/review/<c> 0 1.5 3 …
 node v8-publica/tools/verify-determinism.mjs --cut <c> --format 9x16

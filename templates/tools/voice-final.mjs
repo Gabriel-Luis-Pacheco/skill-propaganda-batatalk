@@ -42,8 +42,13 @@ const PERSONA = {
   // esquete do bar (26/10): Priya e June, amigas, à noite; a Priya é a dramática, a June é a calma de humor seco
   priyaBR: 'Identidade de voz — a MESMA pessoa em todas as falas: Priya, mulher brasileira de trinta e poucos anos, num bar à noite contando um drama pra melhor amiga. Português do Brasil nativo, voz feminina expressiva, dramática do jeito engraçado (reclama rindo de si mesma), ritmo rápido de conversa de verdade, jeito de internet; nunca locutora, nunca professora, nunca robótica. Quando fala inglês, é com sotaque brasileiro de quem aprendeu na escola. Microfone próximo, sem ruído.',
   june: 'Identidade de voz — a MESMA pessoa em todas as falas: June, mulher brasileira de trinta e poucos anos, tatuadora, a amiga calma. Português do Brasil nativo, voz grave e quente, frases curtas e simples, humor seco (cara de paisagem), pausas confortáveis; carinhosa sem ser melosa; nunca locutora, nunca professora, nunca robótica. Microfone próximo, sem ruído.',
+  // "ao pé da letra na imigração" (27/10): a Mina (a mesma voz do vídeo de criadora) chega ao Bata Airport
+  minaEN: 'Voice identity — the SAME person in every line: Mina, a 21-year-old Brazilian student at an airport immigration desk, speaking English with a clear, warm Brazilian accent (Brazilian vowels and rhythm, "r" and "th" the Brazilian way) — never a caricature, never an actress. Young, bright, expressive; she is proud of her English and thinks she is nailing every answer. Close microphone, quiet room.',
+  minaAero: 'Identidade de voz — a MESMA pessoa em todas as falas: Mina, 21 anos, estudante brasileira na fila da imigração de um aeroporto. Português do Brasil nativo, voz feminina jovem, rápida, expressiva e engraçada; sorriso que se ouve; nunca locutora, nunca professora, nunca robótica. Microfone próximo, sem ruído.',
+  // "stand-up dos falsos amigos" (27/10): o Jax (voz do cast: verse) como comediante brasileiro no palco
+  jax: 'Identidade de voz — a MESMA pessoa em todas as falas: Jax, 23 anos, comediante brasileiro fazendo stand-up num bar de comédia pequeno, microfone na mão, contando pra plateia uma história da vida dele. Português do Brasil nativo, voz masculina jovem, clara e calorosa, ritmo de comediante: acelera na preparação, segura a pausa e entrega a piada seca, sem rir da própria piada. Quando imita alguém (a mãe brasileira, a namorada americana), muda a voz só um pouco, com carinho, nunca caricatura ofensiva. Nunca locutor, nunca professor, nunca robótico. Microfone de palco próximo, sala pequena sem eco.',
 };
-const CAST = { learner: 'marin', sora: 'ash', evelyn: 'sage', priya: 'coral', tato: 'cedar', mina: 'nova', priyaBR: 'coral', june: 'alloy' };
+const CAST = { learner: 'marin', sora: 'ash', evelyn: 'sage', priya: 'coral', tato: 'cedar', mina: 'nova', priyaBR: 'coral', june: 'alloy', minaEN: 'nova', minaAero: 'nova', jax: 'verse' };
 // três interpretações por fala decisiva do Tato (um take de cada)
 const TATO3 = ['Interpretação 1 — acolhedor e contido: calmo, perto, como quem tira o peso da situação.', 'Interpretação 2 — seco e divertido: humor leve, timing de piada curta, sem exagero.', 'Interpretação 3 — ritmo alternativo natural: um pouco mais solto e rápido, conversa de verdade.'];
 const LINES = {
@@ -90,6 +95,35 @@ const LINES = {
   barP9: { who: 'priyaBR', takes: 2, text: 'Amiga! Eu falei!', how: 'Explosão de alegria, gritinho de vitória rindo; energia alta sem estourar.' },
   barJ7: { who: 'june', takes: 2, text: 'Falou.', how: 'Calma e orgulhosa da amiga, sorriso que se ouve; uma palavra.' },
   barJ8: { who: 'june', takes: 2, text: 'batatalk.com.br. Dá pra começar de graça.', say: 'Bata Tók ponto com ponto bê erre. Dá pra começar de graça.', how: 'Olhando para a câmera, tranquila e seca, dica de amiga; nada de tom de propaganda.' },
+  // "ao pé da letra na imigração" (27/10): a Evelyn é a oficial da Imigração do Bata Airport (character-places.js)
+  imeE1: { who: 'evelyn', takes: 2, text: "Who's paying for your trip?", how: 'Routine question, flat and official, eyes on the passport; dry, not unfriendly.' },
+  imeM1: { who: 'minaEN', takes: 2, text: 'My friends made a little cow!', how: 'Proud and sunny, sure she is nailing it; light Brazilian accent; a tiny pause before "little cow", as if it is a lovely detail.' },
+  imeE2: { who: 'evelyn', takes: 2, text: 'A cow.', how: 'Deadpan. She repeats it slowly while writing it down, completely flat, one beat of disbelief. Two words only.' },
+  imeE3: { who: 'evelyn', takes: 2, text: 'Do you plan to work here?', how: 'Next routine question, a little more careful now, still official.' },
+  imeM2: { who: 'minaEN', takes: 2, text: 'No, no… I took my little horse out of the rain.', how: 'A dismissive little laugh on "No, no…", then explaining as if it were obvious; casual, Brazilian accent.' },
+  imeE4: { who: 'evelyn', takes: 2, text: 'And a horse.', how: 'Deadpan, writing it down under the cow; a tiny tired sigh before; three words, flat.' },
+  imeE5: { who: 'evelyn', takes: 2, text: 'And your job back home?', how: 'The last routine question, a little tired, official.' },
+  imeM3: { who: 'minaEN', takes: 2, text: 'I kicked the bucket!', how: 'Triumphant and proud, as if announcing the best decision of her life; big smile; Brazilian accent.' },
+  imeE6: { who: 'evelyn', takes: 2, text: 'You… died?', how: 'Genuinely alarmed but still polite: a small gasp, a pause after "You…", then "died?" rising in disbelief. Not shouting.' },
+  imeM4: { who: 'minaAero', takes: 2, text: 'Pera… o quê?!', how: 'Cai a ficha: confusa, rápida, rindo de nervoso; "Pera…" curto, "o quê?!" agudo de susto.' },
+  imeT1: { who: 'tato', takes: 2, text: 'Kick the bucket é morrer! Fala: I quit my job.', how: 'Sussurro rápido e cúmplice de quem salva a amiga, rindo junto, sem humilhar; "Kick the bucket" e "I quit my job" em inglês claro; "é morrer!" com espanto divertido.' },
+  imeM5: { who: 'minaEN', takes: 2, text: 'I quit my job!', how: 'Relieved and careful this time, clear words, then a proud little smile at the end.' },
+  imeE7: { who: 'evelyn', takes: 2, text: 'Welcome to Batata City.', how: 'Relieved, stamping the passport; a small tired smile; warm but brief.' },
+  imeM6: { who: 'minaAero', takes: 2, text: 'E você, ia traduzir qual?', how: 'Olhando para a câmera, cúmplice e sorrindo, pergunta leve e rápida para quem está assistindo.' },
+  imeE8: { who: 'evelyn', takes: 2, text: 'Next!', how: 'Calling the next person in the queue, routine, a little louder, eyes already elsewhere. One word.' },
+  // "stand-up dos falsos amigos" (27/10): a namorada gringa almoça na casa da mãe do Jax; o prato é o termômetro
+  sJ1: { who: 'jax', takes: 2, lang: 'pt', text: 'Minha namorada gringa provou a feijoada da minha mãe… e falou: Exquisite!', how: 'Abre o show já contando a história, rápido e com gosto, como quem prepara uma armadilha; em "Exquisite!" imita a namorada americana: voz um pouco mais aguda e chique, sotaque americano, encantada com a comida.' },
+  sJ2: { who: 'jax', takes: 2, lang: 'pt', text: 'Minha mãe tirou o prato.', how: 'A piada: seco, cara de paisagem, quase sem entonação, sem pressa; sem rir.' },
+  sJ3: { who: 'jax', takes: 2, lang: 'pt', text: 'Ela, nervosa: I love novels!', how: '"Ela, nervosa:" narrado rápido; "I love novels!" imitando a namorada americana nervosa e simpática, tentando agradar, sotaque americano.' },
+  sJ4: { who: 'jax', takes: 2, lang: 'pt', text: 'Novela?! Senta aqui, minha filha.', how: 'Imitando a mãe brasileira que muda na hora: "Novela?!" surpresa e encantada; "Senta aqui, minha filha." carinhosa e acolhedora, como mãe que acabou de adotar a nora. Sem caricatura.' },
+  sJ5: { who: 'jax', takes: 2, lang: 'pt', text: 'Devolveu o prato. Com farofa.', how: 'Seco e orgulhoso da mãe; pausa curta entre as duas frases; "Com farofa." como detalhe final, quase sorrindo.' },
+  sJ6: { who: 'jax', takes: 2, lang: 'pt', text: 'Aí minha mãe: pergunta se ela pretende casar com você!', how: '"Aí minha mãe:" narrado rápido; o resto imitando a mãe empolgadíssima, cochichando alto, como quem já está planejando o casamento.' },
+  sJ7: { who: 'jax', takes: 2, lang: 'pt', text: 'Eu traduzi: Do you pretend to marry me?', how: '"Eu traduzi:" orgulhoso; a pergunta em inglês com sotaque brasileiro de escola, devagar e caprichada, achando que arrasou.' },
+  sJ8: { who: 'jax', takes: 2, lang: 'pt', text: 'Tipo… pro visto?', how: 'Imitando a namorada americana falando português com sotaque americano: confusa e desconfiada; pausa depois de "Tipo…"; "pro visto?" subindo em dúvida.' },
+  sJ9: { who: 'jax', takes: 2, lang: 'pt', text: 'Minha mãe tirou o prato… e a panela.', how: 'Seco; pausa longa antes de "e a panela", que sai mais baixo e definitivo. É o fecho da piada; sem rir.' },
+  sJ10: { who: 'jax', takes: 2, lang: 'pt', text: 'Hoje eu treino antes, no BataTalk. Em voz alta. E quando eu travo, uma batata me sopra uma dica.', how: 'Mais calmo, confessando pra plateia com simpatia; "BataTalk" pronunciado “Bata Tók”; a última frase com toda a seriedade do mundo (o humor está em levar a batata a sério).' },
+  sJ11: { who: 'jax', takes: 2, lang: 'pt', text: 'Fala isso pra minha mãe.', how: 'Olhando para a câmera, seco e cansado, cara de paisagem; quase um suspiro.' },
+  sT1: { who: 'tato', takes: 2, text: 'E exquisite é elogio, tá?', how: 'Sussurro cúmplice e carinhoso pro amigo no palco, rindo junto, sem humilhar; "exquisite" em inglês claro.' },
 };
 
 // ------------------------------------------------------------------ áudio
@@ -153,7 +187,7 @@ for (const [id, line] of Object.entries(LINES)) {
     const f = path.join(takeDir, `${id}_${n}.wav`), m = f.replace(/\.wav$/, '.json');
     if (!(await exists(f))) {
       await tts(line, n, f);
-      const x = await pcm(f), tr = await words(f, line.say || line.text, line.lang || (['tato', 'mina', 'priyaBR', 'june'].includes(line.who) ? 'pt' : 'en'));
+      const x = await pcm(f), tr = await words(f, line.say || line.text, line.lang || (['tato', 'mina', 'priyaBR', 'june', 'minaAero'].includes(line.who) ? 'pt' : 'en'));
       await writeFile(m, JSON.stringify({ f0: pitch(x), ...tr, interpretation: line.three ? TATO3[(n - 1) % 3] : null }, null, 1));
       console.log(`  take ${id}_${n}  “${tr.text}”`);
     }

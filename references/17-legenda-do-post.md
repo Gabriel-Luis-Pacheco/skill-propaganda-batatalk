@@ -54,3 +54,13 @@ Esquete animada: duas amigas num bar. Uma só sabe dizer "the book is on the tab
 - "Você entende inglês. Até alguém falar com você. 🙃 Treine a conversa, não só a leitura." (cuidado: esse padrão "não X, mas Y" é tique de IA — prefira as primeiras)
 - Quiz: "Quiz de inglês: 3 perguntas pra testar seu nível 🧠 … Comenta 0, 1, 2 ou 3 👇" / fixado: "A 3 pega muita gente 😅 Qual você errou?"
 - Mina: "A Mina estudou inglês por 10 anos e travou no "for here or to go?" 🫠 … Qual pergunta em inglês te trava? 👇" / fixado: "Teste rápido: for here or to go? Responde aqui 👇"
+
+## Atualização 04/11 (ver `26` §5)
+- **Hashtags:** o Instagram limita a **5 por Reel** desde 18/12/2025. Mosseri: hashtag não dá alcance, só descreve o post. Use 3–5 de nicho, **sem acento** (`#aprenderingles #inglesparabrasileiros #humorbrasileiro`). Sem #reels, #fyp, #viral ou hashtag de marca.
+- **Primeira linha = a piada**, escrita em minúsculas, como fala do personagem (corte em ≈ 125 caracteres). Não entregue o punch do vídeo.
+- **Pedido de envio específico** ("manda pra quem treina inglês trancado no banheiro"): é o sinal que mais pesa para quem não segue. A pergunta de comentário vai dentro do vídeo.
+- **Sem comentário fixado pedindo número** (engagement bait). Responda os comentários com piada, na voz do personagem.
+- **Sem cara de IA:** sem 👇, 😅 de reflexo, travessão, "Você sabia…?", "Comente abaixo!" ou bloco de hashtags (15 pares de troca em `26`).
+- **Modelo campeão:**
+  - Instagram: "meu inglês só funciona com a descarga ligada / manda pra quem treina inglês trancado no banheiro" + as 3 hashtags.
+  - TikTok: a primeira linha + as 3 hashtags; selo de IA ligado.

@@ -32,10 +32,55 @@
 
 24. **"Pega tudo que temos na conversa de conhecimento que ainda não está na skill e coloca lá"** → entraram: onde conferir a verdade no código (character-places, city-experience e plans; a Imigração não é o encontro grátis), o custo por take de TTS e o gasto ≈ US$ 0,14, o banco de expressões ao pé da letra, a conferência da trilha por formas de onda, o mosaico de cortes e a capa por ffmpeg, e o status dos dois vídeos prontos com o que pedir depois de postar.
 
+25. **"Faça um Reels de stand-up com piadas sobre palavras parecidas entre inglês e português; ele é um brasileiro fazendo stand-up"** (imagem do Jax) + no meio: **"Pesquisa stand-ups com piadas sobre inglês que deram certo, como foram feitos, quais piadas"** → pesquisa no YouTube pelo navegador do app, com o roteiro de cada clipe tirado da legenda automática (`entrega/v8-publica/tiktok/PESQUISA-STANDUP-INGLES.md`). Os campeões são os clipes do Rafi Bastos: 2,4–8,5 mi de views, 25–60 s, tema na 1ª frase, lógica literal de quem aprende, consequência concreta com comida, fecho na maior risada. Reel "Stand-up dos falsos amigos" (≈ 42 s):
+    - o Jax como comediante brasileiro (quebra de lore avisada) na Casa de Show de Neon Purê;
+    - a gringa almoça na casa da mãe; o prato é o termômetro: "exquisite" → tirou o prato; "novels" → "Novela?!" → devolveu com farofa; "pretend" → "Tipo… pro visto?" → tirou o prato e a panela;
+    - o Tato sobe da caixa de retorno ("E exquisite é elogio, tá?") e o Jax fecha com "Fala isso pra minha mãe.";
+    - a primeira fila (Mina, June e Malik) ri; plateia feita com banco de risadas TTS + risada e aplauso sintéticos.
+
+    Placar no roteiro: 41/44. TTS ≈ US$ 0,078 (o dobro do previsto: takes longos), **acumulado ≈ US$ 0,22, acima do teto**. Template em `templates/src/cuts/standup.js`.
+
+26. **"As piadas ficaram péssimas e sem sentido"**, **"as risadas fora de contexto"**, **"tá muito pouco humano"**, **"use piadas que seres humanos achariam graça… pesquise muito… inspire-se em piadas que já viralizaram… a risada ficou robotizada, as vozes não estão boas"**. O dono reprovou a v1 inteira (o placar 41/44 não pegou nada disso). Furos achados:
+    - a gringa falava inglês e depois respondia em português;
+    - o erro era da mãe, não do Jax;
+    - a dica do Tato corrigia algo que não era erro dele;
+    - imitações numa voz só;
+    - piada com três saltos de raciocínio;
+    - risada sintética, inclusive fora do punch.
+
+    Pesquisa nova: o especial "Bilíngue não praticante" do Afonso Padilha (2,1 mi) e "O dia que eu fui pra Orlando" (5,5 mi), mais o método de Greg Dean (`entrega/v8-publica/tiktok/PESQUISA-STANDUP-INGLES.md` §7). O dono aprovou o roteiro v3 por escrito antes da produção:
+    - **a porta**: sete anos de inglês, "PUSH", "meu cérebro leu: puxe", "puxei com força, puxei com fé", e uma criança de seis anos empurrou com um dedo;
+    - **a entrevista**: "I pretend to work here for many years", pretend é fingir, "prometi olhando no olho do cara", fui contratado… pra gerente;
+    - **o fecho**: "aparece uma batata pra me ajudar. Uma batata, gente. E o danado fala inglês melhor que eu".
+
+    Voz: o dono mandou usar "as melhores possíveis" da OpenAI → **gpt-audio-1.5** (Chat Completions com saída de áudio, voz `cedar`). Cada piada é um bloco corrido, cortado só nas pausas mortas (`tools/voice-audio.mjs`). A transcrição veio idêntica nos 6 takes; 1.791 tokens de áudio ≈ US$ 0,12, autorizado pelo dono acima do teto. Risadas: gravações reais da Mixkit (5 WAVs baixados com permissão, licença de efeitos gratuita para redes e anúncios), só depois de punch. Corte `standup3` (`src/cuts/standup3.js`, ≈ 46 s).
+
+27. **"Eu amei. Só dá pra ajustar algumas leves coisas… o som ambiente de chiado, talvez o pace de algumas partes… revisa tudo e corrige"** → v3 revisada (43,9 s):
+    - o chiado era a ambiência sintética (−25 dBFS nas pausas): saiu, e o piso nas pausas foi a −120 dBFS;
+    - o volume pulava entre trechos do mesmo take: agora normaliza o take inteiro (`normWhole`);
+    - pace: fala a 1,05× e as pausas mortas mais curtas, incluindo 0,41 s no meio de "olhando no olho do cara"; as pausas de comediante antes do punch ficaram;
+    - saíram os "toc" nos puxões e o 🚪, que virava quadradinho.
+
+    **O que agradou**: piadas de gente (a porta, o "pretend", a batata), voz do gpt-audio, risada real.
+
+28. **"faz um reels incrível e que vai viralizar… o que acontece se você começar a estudar inglês todo dia? 1 dia, 10, 100, 1000"** (03–05/11): **o Reel campeão (3.650 views)**. Tudo em `24` (regras), `25` (revisão com agentes), `26` (pesquisa) e `casos/e-se-dias/` (documentos brutos e as mensagens do dono). A sequência:
+    - "faz tipo esses" (@rmhkaiser "E se tu acordasse com telecinese?", @esev0ce, @lunarcheeseee) e "NÃO usa o For here or to go";
+    - "o foco NÃO é divulgar o BataTalk, só um Reels engraçado"; "não precisa envelhecer, é tipo Gumball";
+    - "animações melhores e mais fluidas", "cenários e roupas bem feitos", "mãos não atravessam nada";
+    - "usa o ícone do app, não essa logo horrível";
+    - v1 → "pacing, trilha, bugs, títulos e textos muito esquisitos e descentralizados" → v2 (`pin()` centralizado, cartões sobre a cena, trilha com arco, ambiência por cena);
+    - "analise criticamente", "lança muitos Haikus", "faça mais rodadas", "refaz com o Sonnet", "pesquisa onde a IA erra em roteiro, legenda e hashtag, e algoritmo, crescimento, ritmo e gancho" → 6 rodadas com 45 agentes; o roteiro foi do v6 ao v10 no papel;
+    - "Sim, produz o v10" + "usa os nomes novos dos personagens" (Caio, Vera, Nina, Marcos, Beto);
+    - "ficou bom, mas tem pontos no sense pra quem é leigo… narrador no começo?" → revisão sobre os **quadros reais** com 14 agentes → v11 (celular grande do app, FLUSH!, prédio cortado com nomes, vassoura no teto, narrador só no gancho, "Quem aí fala inglês escondido?");
+    - "**o intuito é só ser divertido, engraçado, compartilhável, viralizador**";
+    - "por que a Vera falou em inglês?" → v12 com "Cala a boca, Caio!" em português.
+
+    Gasto de voz: ≈ US$ 0,07 no total (gpt-audio-1.5, 37 falas × 2 tomadas, 3 rodadas autorizadas). Armadilhas: render com EBUSY, build de cache antigo, sussurro baixo demais, braços cruzando o corpo, câmera presa na borda do mundo (tudo em `16` e `13`).
+
 ## O que agradou
 
-Pesquisa embasando cada decisão; proatividade; skill organizada e com ferramentas; várias opções; vídeos que parecem nativos; personagens com personalidade; humor de meme brasileiro; acabamento técnico (QC, área segura).
+Pesquisa embasando cada decisão; proatividade; skill organizada e com ferramentas; várias opções; vídeos que parecem nativos; personagens com personalidade; humor de meme brasileiro; acabamento técnico (QC, área segura). **(03–05/11)** O formato "E se…? dia 1/10/100/1000" com piada por marco; uma regra de jogo que escala; "Moço, eu falo português"; a vassoura no teto com o "…thank you!" dormindo; revisão por muitos agentes, Haiku e Sonnet, sobre os quadros reais; nomes do app no elenco.
 
 ## O que desagradou
 
-Tremor dos personagens; perguntas difíceis/sem contexto; vídeos longos e lentos (master 40 views); repetir o mesmo vídeo; parar sem entregar; não mostrar os arquivos.
+Tremor dos personagens; perguntas difíceis/sem contexto; vídeos longos e lentos (master 40 views); repetir o mesmo vídeo; parar sem entregar; não mostrar os arquivos. **(03–05/11)** Texto descentralizado, inclinado ou balançando; cenas sem causa ("confete do celular, que??"); personagem falando inglês sem motivo; logo genérica em vez do ícone do app; personagem envelhecendo; responder "terminou?" sem conferir o log do render.

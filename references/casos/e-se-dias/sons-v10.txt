@@ -1,0 +1,30 @@
+0.35s  VOZ cam: Hello…
+1.29s  efeito: pop
+1.32s  VOZ app: Mais alto!
+2.01s  efeito: step
+2.31s  efeito: step
+2.82s  efeito: step
+2.97s  efeito: step
+3.21s  efeito: flush
+3.51s  VOZ cam: Hello!
+4.35s  efeito: chip
+4.98s  efeito: whoosh
+5.45s  VOZ cam: How are you? I'm fine, thank you! And you?
+9.48s  VOZ vera: …Cansada.
+11.06s  efeito: whoosh
+11.28s  efeito: dream
+11.73s  VOZ cam: Hey… what's up…
+14.20s  VOZ vera: Not much. You?
+15.93s  efeito: chip
+15.95s  VOZ app: Perfeito!
+17.33s  efeito: whoosh
+17.66s  efeito: step
+17.85s  efeito: step
+18.07s  VOZ dante: Moço, a rodoviária?
+19.92s  VOZ cam: Go straight, then left at the bakery!
+23.72s  VOZ dante: …Moço, eu falo português.
+26.81s  efeito: whoosh
+27.38s  VOZ nia: Fala inglês aí, Caio!
+29.16s  VOZ cam: Hello…
+30.18s  VOZ malik: Mais alto!
+31.00s  efeito: sample

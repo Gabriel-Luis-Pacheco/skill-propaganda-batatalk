@@ -85,3 +85,14 @@ No feed de recomendações também aparecem: "quão informativo é o post" (aval
 
 ### O que prevê viralização (estudo com 400 vídeos rotulados, ACM WebSci 2022)
 Depois do **número de seguidores**, que não controlamos, os fatores que pesam são **plano fechado ou médio**, **texto** na tela, **ponto de vista** e o tempo de vida do vídeo ([Ling et al., arXiv](https://arxiv.org/abs/2111.02452)). → Rosto em close ou plano médio enquanto fala (nunca personagem pequeno num plano aberto), texto na tela e POV.
+
+## Atualização 04/11 (ver `26` §5)
+- **Instagram:**
+  - máx. 5 hashtags (18/12/2025);
+  - Mosseri: tempo assistido, curtidas por alcance e **envios por alcance** são os sinais principais;
+  - quem só reposta conteúdo alheio perde a recomendação (30/04/2026).
+- **TikTok (Newsroom):**
+  - seguidores não contam;
+  - não original e pedido de curtida ficam fora do Para Você;
+  - Commercial Music Library obrigatória em conta comercial (a nossa trilha é própria);
+  - rótulo de IA com voz sintética.

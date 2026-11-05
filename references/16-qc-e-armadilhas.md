@@ -47,6 +47,17 @@
 | Node não acha arquivo em `/c/Users/...` | caminho do Git Bash | usar `C:/Users/...` no Node |
 | `tile` do ffmpeg com `-frames:v 3` | um quadro de saída por mosaico | `-frames:v 1` |
 | `\u` em parâmetro de ferramenta vira caractere cru | escape interpretado | evitar `\u` em regex escrita por ferramenta |
+| A ambiência some do mix | `A.cue('ambience', 0, { kind: 'club' })`: o `kind` das opções sobrescreve o `kind: 'cue'` do item, e o score não acha a deixa | use outro nome (`place: 'club'`) |
+| Fala de comediante com o dobro do tempo previsto | instrução "devagar", "pausa longa" ou imitação | cortar nos respiros com `clip` + preparação a 1,2× (`voice-fast.mjs --speed 1.2`) + inglês da piada no tempo natural; estimar custo por minuto |
+| Take termina repetindo uma palavra ("Tipo… pro visto? Tipo…") | instabilidade do TTS | `clip` só nos trechos com voz certos (spans de `voices.json`); a transcrição do take mostra a repetição |
+| O adesivo da piada aparece antes da fala (a panela antes de "e a panela") | entrada amarrada ao corte, não à palavra | o objeto da piada entra na palavra e sai no fim dela |
+| Sorriso falando a piada seca | o visema traz curva positiva por cima da cara de paisagem | se a expressão tem curva negativa, a boca usa a curva da expressão |
+| O neon/título do cenário nunca aparece | a pílula do alto cobre o neon no plano aberto | neon logo acima da cabeça no plano aberto (abaixo da faixa das pílulas) |
+| Render aborta no 1º pedaço e o `build.mjs` monta o render ANTIGO sem avisar | um `.json` salvo em `v8-publica/docs/` (o placar do MP4) durante o render entra no hash | salve placar/notas `.json` antes do render ou fora de `v8-publica/`; depois do render, confira que o `build` usou a pasta com o hash novo (o log do render mostra "fontes <hash>") |
+| "Chiado" nas pausas (o dono ouviu) | ambiência sintética de sala (ruído filtrado) em −25 dBFS, só ~10 dB abaixo da fala, tocando o vídeo inteiro | meça o stem `ambience.wav` nas pausas; no stand-up, sem ambiência (as risadas reais já trazem a sala). Pausa em silêncio é melhor que ruído constante |
+| Volume da voz pulando entre trechos do MESMO take ("Com um dedo." baixinho saindo alto) | o `score.mjs` normalizava cada trecho cortado para −20 dBFS | `A.items.at(-1).normWhole = true` depois do `A.clip`: o ganho sai do take inteiro e a dinâmica da fala fica |
+| Emoji vira quadradinho/borrão no MP4 (🚪) | glifo pequeno ou ausente na fonte de emoji do Windows | prefira texto ("PUSH = EMPURRE") ou emoji conferido num quadro |
+| Personagem cai na faixa da legenda do post (y > 1248) num plano a dois | o personagem pequeno fica na boca do palco, longe do rosto do outro | close próprio para a fala dele (o rosto em y ≈ 820) e, nesse close, esconda a plateia em primeiro plano e qualquer pedaço de braço do outro na borda |
 
 ## Como ver os cortes no MP4 sem assistir
 Pegue os quadros n−1, n e n+2 de cada corte (os tempos estão em `generated/timeline-<corte>.json` → `cues`) e monte um mosaico com `ffmpeg -vf "select='eq(n\,N1)+eq(n\,N2)+…',scale=180:320,tile=9x5" -frames:v 1 -vsync 0`.
@@ -58,3 +69,19 @@ Para a capa: `ffmpeg -ss 0.3 -i video.mp4 -frames:v 1 capa.jpg`.
 - Pensar que "QC PASS" = vídeo bom. Sempre ver o MP4 quadro a quadro.
 - Parar no meio sem dizer o estado; ao bater limite, dizer o que ficou feito e o que falta.
 - Afirmar que ouviu/assistiu sem ter feito. Sempre: "ninguém ouviu nem assistiu num celular ainda".
+
+## Armadilhas do Reel "E se…?" (03–05/11)
+- **Render morreu com `EBUSY … .part.mkv`** (OneDrive ou antivírus) e o `echo exit` disse 0. Leia a linha `exit N` do log. Rode o render num laço de 3 tentativas: quem tentar de novo aproveita os pedaços prontos.
+- **Build sobre render incompleto** montou um MP4 com cache antigo. Compare o hash do build (`← dias11-9x16-60-<hash>`) com o do render antes de entregar.
+- **Build interrompido** deixou um MP4 de 17 MB incompleto. Apague e refaça.
+- **`replace` que troca `add(music, ` por `addM(`** também trocou a definição do próprio `addM` (recursão infinita). Defina o helper **depois** da troca.
+- **Heredoc com crase ou aspas no bash** quebra ("unexpected EOF"). Patch por arquivo com Write + `node fix.mjs`, e `rep()` que lança erro se a âncora sumir.
+- **Texto:**
+  - adesivo com rotação senoidal ("esquisito");
+  - HUD no canto batendo em cabelo ou chapéu;
+  - título sobre o rosto;
+  - chip grande entrando sobre o rosto (troque para a faixa da legenda);
+  - legenda sobre o rosto nos planos gerais (suba para a laje);
+  - legenda sobre o balão do celular;
+  - página de legenda terminando em artigo ("VOU CHAMAR O / SÍNDICO").
+- **Cartão final parado** de 2,5 s, ou cartões de dia em tela cheia (4,5 s): a retenção cai. Ponha a pergunta por cima da cena e corte seco.

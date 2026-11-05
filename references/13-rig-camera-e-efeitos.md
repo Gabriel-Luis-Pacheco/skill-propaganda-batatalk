@@ -42,3 +42,26 @@ O dono reclamou: "pq a personagem fica tremendo tanto até onde não é necessá
 ## Adesivos e confete
 
 `stick()`: entra com mola, balança 1,6°, sai encolhendo. Estilos: caixa branca TikTok (Fredoka 600), pílula manteiga/verde, neon rosa para o endereço, janela de erro "travou.exe". Confete: 46 retângulos com semente fixa saindo dos punhos (não do rosto).
+
+## Armadilhas novas (Reel "E se…?", 03–05/11; ver `24` §7)
+- **Antebraço negativo cruza o corpo; positivo aponta para fora.** Abrir os braços = `[66, 40, 'open']`; apontar para a esquerda da tela = `armL [84, 92, 'point']`. `openWide [78,-70]` e `pointL [84,-92]` atravessavam o peito.
+- **A câmera trava na borda do mundo** (`540/s`, `960/s`). Personagem perto do topo ou do fundo não pode ser enquadrado mais embaixo, e o chip pousa na cabeça. Dê folga ao mundo (2700 de altura) ou diminua o personagem.
+- **Deitado:**
+  - `transformOrigin '50% 12%'`, mais `mv('lie')` (rot −90) e `mv('sleep')`;
+  - cobertor DOM por cima do corpo;
+  - sem piscar (`blink` falso).
+- **Atrás/na frente:** `world.insertBefore(obj, inst.n)` põe o objeto entre dois personagens.
+- **Personagem que muda de estado:** duas instâncias com `vis` por tempo (a Vera deitada → a Vera de pé com a vassoura).
+- **Prop vassoura:** `prop([...], { front: true, grip: 'fist' })` com o cabo para cima; braços `[128, 150, 'fist']`.
+- **Batida no teto:**
+  - `mv('bang', { times })` (tranco do corpo);
+  - `shakes: [...]` na câmera;
+  - poeira caindo da laje.
+- **Panorâmica dentro de um plano:** `win: [t0, t1]` (a câmera desce do andar de cima para o de baixo e ensina a geografia).
+- **Prédio cortado:** `floorsSVG` recorta cenas existentes com `<svg viewBox>` aninhado, com uma laje entre os andares.
+- **Celular grande do app** como camada DOM do quadro (620×1060), e não o celular do rig com zoom (que borra):
+  - entra com mola de baixo;
+  - mostra "Oi, Caio!", o microfone pulsando, a barra de volume baixa e o balão "🔊 Mais alto!";
+  - a legenda some enquanto ele está na tela.
+- **Onomatopeia** ("FLUSH!"): pequena, cor fria, rotacionada −8°, junto do objeto e por menos de 1 s. Grande e no centro vira infantil.
+- **Imagem dupla no pulo:** sub-amostras `[8, 0.5]` nos trechos rápidos (`FASTW`) e um pulo menor.

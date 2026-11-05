@@ -45,6 +45,7 @@ Tudo que fala com o espectador é pt-BR (título, adesivo, legenda, oferta). Ing
 | Sora Nakamura | ele | 27 | barista do Café Central; pergunta "For here or to go?" | `ash` (EN) |
 | Evelyn Shaw | ela | 72 | imigração ("How long will you be staying?") | `sage` (EN) |
 | aluno/learner | — | 26 | brasileiro praticando | `marin` (EN com sotaque leve) |
+| Jax Doyle | ele | 23 | "momentum"; cabelo laranja, bomber azul-elétrico; trabalha na Casa de Show de Neon Purê e faz "Tiny Gigs" | `verse` (pt, persona comediante de stand-up; no stand-up de 27/10 ele é brasileiro, quebra de lore avisada) |
 
 Outros moradores: Jax, Malik, Vera, Cam, Gus, Nia, Dante. **Nunca deduza pronome pela aparência — leia `character-cast.js`.** No app, Priya/June/Sora são NPCs que falam inglês; num esquete eles podem virar "atores" brasileiros (avise o dono da quebra de lore se for relevante).
 
@@ -54,3 +55,20 @@ Outros moradores: Jax, Malik, Vera, Cam, Gus, Nia, Dante. **Nunca deduza pronome
 - SVG de arte não tem `<text>` (como `<img>` não carrega fonte): textos vão no canvas depois de rasterizar, ou em HTML por cima.
 - O dono rejeita o "simples e feio" e o "cara de IA/amador": riqueza, universo, acabamento nível Duolingo.
 - Mudanças de visual de personagem só em `character-designs.js` (nunca editar PNG).
+
+## Nomes atuais do elenco no app (o dono pediu em 04/11: "usa os nomes novos dos personagens do BataTalk")
+Fonte: `character-designs.js` (`name:`).
+- cam = **Caio**
+- nia = **Nina**
+- malik = **Marcos**
+- vera = **Vera**
+- dante = **Beto**
+- mina = Yasmin
+- jax = Thiago
+- priya = Priscila
+- gus = Guto
+- sora = Kenji
+- evelyn = Helena
+- june = Juliana
+
+Nos vídeos, use o **nome do app**; o id fica só no código. Vozes TTS do app (`character-cast.js`): Caio ballad, Vera coral, Nina nova, Marcos onyx, Beto ash, Yasmin sage, Thiago verse, Priscila marin, Guto fable, Kenji echo, Helena shimmer, Juliana alloy. Narrador neutro = cedar.
