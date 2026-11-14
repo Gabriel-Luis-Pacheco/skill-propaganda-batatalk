@@ -64,3 +64,7 @@ Princípios citados de Hooks: **o pensamento tende a levar a conclusões; a emo�
 - Séries de personagens fofos com **ritmo constante** (Chikn Nuggit: cerca de 3 por semana) vencem a superprodução esporádica ([Know Your Meme](https://knowyourmeme.com/memes/people/chikn-nuggit)).
 - **Personagem forte gera fan art** e remix (os fãs da Lily do Duolingo fazem animações Gacha que superam o perfil oficial). → Silhuetas e cores simples e marcantes facilitam o público redesenhar.
 - O mais visto é o **close ou plano médio** (estudo de viralização em `references/02-algoritmo-reels-tiktok.md`): o rosto grande vence o cenário bonito.
+
+## Motion graphics e cinema (integração Design OS)
+
+A atuação do rig é a base. Para movimentos tipográficos, transições de cena, vinhetas, UI, motion de produto, HyperFrames ou GSAP veja [`28-motion-graphics-e-ferramentas.md`](28-motion-graphics-e-ferramentas.md). Cada efeito deve ter uma função e permanecer compatível com o `seek(t)` determinístico se integrado ao renderizador atual.
