@@ -8,6 +8,8 @@ description: Cria, revisa e entrega vídeos curtos de propaganda do BataTalk par
 Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikTok e Reels (out–nov/2026): a família V8 pública, as variações de gancho, o Desafio 3s, o Quiz rápido, a Mina criadora, o esquete do bar (Priya e June), o stand-up, a imigração e **o campeão "E se você falasse inglês todo dia?" (3.650 views; `24`)**, além de muitas rodadas de pesquisa e de revisão com agentes (`25`, `26`). Os detalhes, números e fontes estão em `references/`. Leia **só o que o seu pedido precisa** (roteador abaixo).
 
 **Integração Design OS Prime — 14/11/2026:** a skill de propaganda agora aplica **direção de arte baseada em referências reais, assinatura autoral, motion com intenção, HyperFrames opcional, crítica de frames renderizados, estratégia criativa/comercial e especialistas sob demanda**. Estes conhecimentos estão nos guias **27–31**. O renderizador próprio `v8-publica`, o Tato canônico e a prioridade de humor permanecem. Não copiar regras de landing ou carregar todas as referências por padrão. Origem dos métodos: [Best-Designer-in-the-World.-](https://github.com/Gabriel-Luis-Pacheco/Best-Designer-in-the-World.-).
+**Motion Studio incorporado — 14/11/2026:** os **15 SKILL.md de Charlie947** estão em `vendor/motion-graphics-charlie947/` com licença MIT; o catálogo dos **17 estilos do Awesome Claude** e a orquestração das **Agent Skills oficiais do Remotion** estão em **`references/32-motion-studio-integrado.md`**. Para trabalho de motion importante, consultar obrigatoriamente o guia 32, preservar `brand.md`/`MOTION.md` quando existentes, definir storyboard e escolher pipeline (v8-publica por padrão para personagens). Consultar as três famílias não significa forçar simultaneamente três motores. A Design OS Prime tem os mesmos 15 módulos, mais Impeccable/Taste/Emil/UI/UX Pro Max/Anthropic.
+
 **Objetivo destes vídeos (dono, 04/11):** "o intuito é só ser divertido, engraçado, compartilhável, engajador, viralizador". Sem propaganda direta. Clareza importa só para a piada chegar.
 
 ## O que faz um vídeo nosso funcionar (resumo da pesquisa)
@@ -63,6 +65,8 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | **Crítica visual / comparar renders / “ainda parece IA”** | observar quadros reais do MP4, identificar maior falha causal, reparar, rerenderizar e comparar | **29**, 25, 16, 27 |
 | **Anúncio, campanha, roteiro comercial, experimentos/growth** | distinguir orgânico divertido de venda paga; mensagem comprovável, hipótese, observações e métricas com denominador | **30**, 02, 06, 18 |
 | **Especialistas, design OS, economia de tokens** | consultar skill real instalada só quando traz valor; carregar guias progressivamente; registrar o que foi executado | **31**, 27–30 |
+
+| **Motion graphics avançado / 15 skills Charlie947 / 17 estilos / Remotion** | triagem das três famílias, brief/brand/MOTION, storyboard com timing, escolha deliberada de renderer e QC de contact-sheet; manter v8-publica quando adequado | **32**, 28, 15, 16, `vendor/motion-graphics-charlie947/` |
 
 ## Fluxo completo
 
@@ -194,3 +198,4 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | `29-render-critica-reparo.md` | duas pistas de QA, crítica leiga/arte, diagnóstico causal, rerender e comparação honesta |
 | `30-estrategia-criativa-copy-e-medicao.md` | psicologia de espectador, entretenimento vs venda, copy, crescimento, hipóteses, funil e métricas honestas |
 | `31-orquestracao-e-contexto.md` | especialistas instalados, carregamento proporcional, níveis de evidência e aprendizagem contínua |
+| `32-motion-studio-integrado.md` | todos os 15 módulos Charlie947 já copiados; catálogo 17 estilos Awesome Claude e rotas oficiais Remotion, seleção de pipeline e QA de vídeo |
