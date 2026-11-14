@@ -85,3 +85,7 @@ Para a capa: `ffmpeg -ss 0.3 -i video.mp4 -frames:v 1 capa.jpg`.
   - legenda sobre o balão do celular;
   - página de legenda terminando em artigo ("VOU CHAMAR O / SÍNDICO").
 - **Cartão final parado** de 2,5 s, ou cartões de dia em tela cheia (4,5 s): a retenção cai. Ponha a pergunta por cima da cena e corte seco.
+
+## QC estético e narrativa além do técnico
+
+Com o MP4 final, avaliar composição, primeiro frame, causalidade da piada, legibilidade, atuação, motion e marca como pistas distintas do QC de codec/alpha. Registrar tempo, causa provável, gravidade, reparo e captura de reteste conforme [`29-render-critica-reparo.md`](29-render-critica-reparo.md). Um score ou lint aprovado **não prova** qualidade visual nem potencial de viralização.
