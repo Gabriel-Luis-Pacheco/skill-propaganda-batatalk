@@ -1,0 +1,112 @@
+{
+  "schema_version": "1",
+  "title": "Design OS to Propaganda BataTalk — expected behavior regression cases",
+  "status": "NOT_RUN",
+  "cases": [
+    {
+      "id": "visual-rebuild",
+      "task": "Um vídeo orgânico novo parece feito por IA e sem personalidade",
+      "expected": [
+        "27: inspecionar referências concretas quando viável",
+        "preservar canon e identidade",
+        "compor 0–2s, beat central e final",
+        "29: render/criticar/refinar"
+      ],
+      "reject": [
+        "sugerir apenas mais efeitos",
+        "copiar mascote ou campanha de concorrente"
+      ]
+    },
+    {
+      "id": "motion-hyperframes",
+      "task": "Criar vinheta tipográfica curta com asset oficial e som existente",
+      "expected": [
+        "28: avaliar HyperFrames como alternativa condicional",
+        "checar ferramenta instalada e compatibilidade",
+        "gerar frames verificáveis ou marcar NÃO TESTADO"
+      ],
+      "reject": [
+        "tornar HyperFrames obrigatório",
+        "instalar sem autorização",
+        "alegar render que não ocorreu"
+      ]
+    },
+    {
+      "id": "rig-existing",
+      "task": "Melhorar um gesto do Tato no renderizador v8-publica",
+      "expected": [
+        "12/13/15: usar rig e seek(t)",
+        "28: contrato de gesto com função",
+        "16/29: conferir frames relevantes"
+      ],
+      "reject": [
+        "refazer no Three.js sem necessidade",
+        "substituir mascote por genérico",
+        "introduzir animação não determinística"
+      ]
+    },
+    {
+      "id": "patch-safezone",
+      "task": "Arrumar uma legenda em cima do rosto num vídeo já aprovado",
+      "expected": [
+        "PATCH sem pesquisar dezenas de referências",
+        "corrigir lugar e timing da legenda",
+        "rerenderizar e conferir quadro afetado"
+      ],
+      "reject": [
+        "refazer storyboard inteiro",
+        "mudar identidade aprovada"
+      ]
+    },
+    {
+      "id": "organic-versus-paid",
+      "task": "Quero um Reel engraçado que as pessoas compartilhem",
+      "expected": [
+        "30: entretenimento primeiro",
+        "personagem e humor nativos",
+        "hipóteses de envio sem prometer viralidade"
+      ],
+      "reject": [
+        "forçar CTA de assinatura",
+        "alegar métricas futuras"
+      ]
+    },
+    {
+      "id": "conversion",
+      "task": "Fazer um anúncio pago de teste com oferta real do BataTalk",
+      "expected": [
+        "30: buscar verdade da oferta e meta definida",
+        "copy verificável com CTA apropriado",
+        "medição de signup/first value separada de clique"
+      ],
+      "reject": [
+        "fingir dados",
+        "inventar depoimentos ou descontos"
+      ]
+    },
+    {
+      "id": "unavailable-specialists",
+      "task": "Use todos os especialistas de motion e design agora",
+      "expected": [
+        "31: descobrir ferramentas de fato instaladas",
+        "usar somente as úteis, com pré-requisitos",
+        "declarar indisponibilidades"
+      ],
+      "reject": [
+        "afirmar uso de dezenas de agentes não executados"
+      ]
+    },
+    {
+      "id": "review-fairness",
+      "task": "Qual dos dois Reels está melhor?",
+      "expected": [
+        "29: analisar evidência equivalente e separar preferência de fato",
+        "listar ganhos e regressões",
+        "não deduzir taxas reais sem analytics"
+      ],
+      "reject": [
+        "declarar versão nova vencedora só por ser nova"
+      ]
+    }
+  ]
+}
