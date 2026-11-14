@@ -36,3 +36,7 @@ Fontes: [Creativepool](https://creativepool.com/bhiorns/articles/how-to-avoid-ma
 ## Ativos distintivos (sempre presentes)
 
 Tato · paleta creme/floresta/manteiga · Fredoka · moradores de Batata City · motivo sonoro Ré–Fá♯–Lá · "batatalk.com.br" no fim · selo "Exemplo animado" na tela do app.
+
+## Direção de arte aprofundada (integração Design OS)
+
+Para uma nova direção, visual genérico ou revisão profunda, veja [`27-direcao-de-arte-e-referencias.md`](27-direcao-de-arte-e-referencias.md): pesquisa de cenas reais, assinatura formal/material/comportamental, comp 9:16 e reparo por causa observada. **Não** aplicar isso automaticamente a um PATCH pequeno nem substituir o Tato/rig canônico.
