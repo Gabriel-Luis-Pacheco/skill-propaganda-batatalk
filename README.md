@@ -18,6 +18,8 @@ A skill agora incorpora **todo o conjunto de conhecimentos da skill de design qu
 | [30 — Estratégia criativa, copy e medição](references/30-estrategia-criativa-copy-e-medicao.md) | Criatividade, espectador, abertura, entretenimento vs conversão, testes, funil e medição honesta |
 | [31 — Orquestração e contexto](references/31-orquestracao-e-contexto.md) | Skills especialistas de verdade, pesquisa sob demanda, custo de tokens e proveniência da execução |
 
+**Auditoria da transferência:** [mapa de cobertura e exclusões](docs/INTEGRACAO_DESIGN_OS_2026-11-14.md). **Cenários de regressão propostos (ainda não executados):** [design-motion-transfer-scenarios.json](evals/design-motion-transfer-scenarios.json).
+
 Os materiais de origem são da [Design OS Prime](https://github.com/Gabriel-Luis-Pacheco/Best-Designer-in-the-World.-); o método foi adaptado para **filme e social video**, não apenas linkado. O roteador em `SKILL.md` indica quando carregar cada guia.
 
 ## Estrutura
