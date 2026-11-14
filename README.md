@@ -1,5 +1,11 @@
 # skill-propaganda-batatalk
 
+## Motion Studio — mais 15 skills integradas (14/11/2026)
+
+A propaganda agora contém os [**15 arquivos `SKILL.md` de Charlie947**](vendor/motion-graphics-charlie947/), com licença MIT. Isso inclui `brand-intake`, `reference-to-motion`, `motion-effects`, `launch-video`, `reel-export` e todos os demais workflows. O [guia 32](references/32-motion-studio-integrado.md) também incorpora um catálogo autoral baseado nos 17 estilos do Awesome Claude e define quando usar as skills oficiais de Remotion, sem impor a instalação nem copiar textos sem licença de redistribuição identificada.
+
+**Uso:** a skill continua sendo a diretora de criação do BataTalk e preserva o Tato, o elenco, a animação de personagem, a comédia e o renderer `v8-publica`. Os novos módulos entram para brief, direção, motion de UI, gráficos, 3D, launch films ou exportação, dependendo da cena. Não trocar tudo por Remotion/HyperFrames nem prometer que vídeos já foram produzidos; nenhum MP4 novo foi renderizado neste trabalho.
+
 Skill do Claude para criar, revisar e entregar vídeos curtos de propaganda do BataTalk para TikTok e Reels. Cobre verdade do produto, algoritmo, psicologia de quem assiste, Duolingo e concorrentes, trends, banco de ideias, roteiro e comédia, falas humanas, visual, animação, som, render, QC, legenda do post, placar de qualidade e métricas. Reúne tudo o que foi aprendido em outubro de 2026: acertos, erros e correções.
 
 Comece por [`SKILL.md`](SKILL.md). Ele tem um roteador que diz o que ler para cada tipo de pedido.
