@@ -4,6 +4,22 @@ Skill do Claude para criar, revisar e entregar vídeos curtos de propaganda do B
 
 Comece por [`SKILL.md`](SKILL.md). Ele tem um roteador que diz o que ler para cada tipo de pedido.
 
+## Integração com a Design OS Prime — 14/11/2026
+
+A skill agora incorpora **todo o conjunto de conhecimentos da skill de design que é diretamente transferível para vídeo publicitário**, sem copiar os módulos de landing, interface ou as licenças de terceiros: pesquisa visual de cenas reais, composição autoral, identidade de personagens, direção cinematográfica, motion com função, animação e ferramentas opcionais (HyperFrames, GSAP, Remotion, 3D), revisão de frames renderizados, copy/psicologia ética, experimentos, indicadores, trabalho de especialistas e eficiência de contexto.
+
+**Não torna HyperFrames obrigatório.** A produção normal de esquetes continua no `v8-publica`, com rig, personagens e `seek(t)` determinísticos; HyperFrames entra se for adequado a um motion graphic e estiver disponível. A skill continua priorizando humor e compartilhamento nos vídeos orgânicos, sem transformar todo Reel em anúncio de vendas.
+
+| Novo guia | Conteúdo |
+|---|---|
+| [27 — Direção de arte e referências](references/27-direcao-de-arte-e-referencias.md) | Referências reais de vídeo, assinatura visual, art direction, personagens/brand, composição 9:16 e correção do “cara de IA” |
+| [28 — Motion graphics e ferramentas](references/28-motion-graphics-e-ferramentas.md) | Cinematografia, timing, coreografia e escolha de pipeline; HyperFrames/GSAP/Remotion/3D como ferramentas condicionais |
+| [29 — Render, crítica e reparo](references/29-render-critica-reparo.md) | Auditoria de frames, checagem de atuação/estética/QC, correção causal e comparação real entre versões |
+| [30 — Estratégia criativa, copy e medição](references/30-estrategia-criativa-copy-e-medicao.md) | Criatividade, espectador, abertura, entretenimento vs conversão, testes, funil e medição honesta |
+| [31 — Orquestração e contexto](references/31-orquestracao-e-contexto.md) | Skills especialistas de verdade, pesquisa sob demanda, custo de tokens e proveniência da execução |
+
+Os materiais de origem são da [Design OS Prime](https://github.com/Gabriel-Luis-Pacheco/Best-Designer-in-the-World.-); o método foi adaptado para **filme e social video**, não apenas linkado. O roteador em `SKILL.md` indica quando carregar cada guia.
+
 ## Estrutura
 
 - `SKILL.md`: resumo da pesquisa, roteador, fluxo A–F, regras e checklist.
