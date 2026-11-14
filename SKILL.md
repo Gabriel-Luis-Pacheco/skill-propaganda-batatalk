@@ -7,6 +7,7 @@ description: Cria, revisa e entrega vídeos curtos de propaganda do BataTalk par
 
 Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikTok e Reels (out–nov/2026): a família V8 pública, as variações de gancho, o Desafio 3s, o Quiz rápido, a Mina criadora, o esquete do bar (Priya e June), o stand-up, a imigração e **o campeão "E se você falasse inglês todo dia?" (3.650 views; `24`)**, além de muitas rodadas de pesquisa e de revisão com agentes (`25`, `26`). Os detalhes, números e fontes estão em `references/`. Leia **só o que o seu pedido precisa** (roteador abaixo).
 
+**Integração Design OS Prime — 14/11/2026:** a skill de propaganda agora aplica **direção de arte baseada em referências reais, assinatura autoral, motion com intenção, HyperFrames opcional, crítica de frames renderizados, estratégia criativa/comercial e especialistas sob demanda**. Estes conhecimentos estão nos guias **27–31**. O renderizador próprio `v8-publica`, o Tato canônico e a prioridade de humor permanecem. Não copiar regras de landing ou carregar todas as referências por padrão. Origem dos métodos: [Best-Designer-in-the-World.-](https://github.com/Gabriel-Luis-Pacheco/Best-Designer-in-the-World.-).
 **Objetivo destes vídeos (dono, 04/11):** "o intuito é só ser divertido, engraçado, compartilhável, engajador, viralizador". Sem propaganda direta. Clareza importa só para a piada chegar.
 
 ## O que faz um vídeo nosso funcionar (resumo da pesquisa)
@@ -58,6 +59,12 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | **"Revisa criticamente / faz sentido pra um leigo? / lança agentes"** | folhas de 2 fps + sons + intenção; rodadas Haiku (leigos) + Sonnet (especialistas); tabela do que vários viram; plano revisado e criticado antes de produzir | 25, 26, 16 |
 | **Onde a IA erra / legendas / hashtags / algoritmo** | checklist anti-"cara de IA", regras de legenda (Netflix), 5 hashtags, envios, narrador | 26, 17, 02 |
 
+| **Direção visual / estética de estúdio / vídeo genérico** | inspecionar referências de cenas, extrair mecanismos, preservar assets, escolher assinatura formal/material/comportamental, criticar composição no frame | **27**, 11, 01 |
+| **Motion / HyperFrames / GSAP / cinemática / animação de texto** | criar contrato de gesto e timeline de beats; priorizar renderizador v8-publica e usar HyperFrames só onde oferecer vantagem real e houver acesso | **28**, 12, 13, 15 |
+| **Crítica visual / comparar renders / “ainda parece IA”** | observar quadros reais do MP4, identificar maior falha causal, reparar, rerenderizar e comparar | **29**, 25, 16, 27 |
+| **Anúncio, campanha, roteiro comercial, experimentos/growth** | distinguir orgânico divertido de venda paga; mensagem comprovável, hipótese, observações e métricas com denominador | **30**, 02, 06, 18 |
+| **Especialistas, design OS, economia de tokens** | consultar skill real instalada só quando traz valor; carregar guias progressivamente; registrar o que foi executado | **31**, 27–30 |
+
 ## Fluxo completo
 
 **A. Limites antes de criar**
@@ -65,6 +72,7 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 - Orçamento: TTS pago só com autorização explícita e dentro do teto. O teto era US$ 0,20 no total. O gasto chegou a ≈ US$ 0,22 em 27/10, e em 28/10 o dono autorizou "as melhores vozes possíveis" da OpenAI para o stand-up v3 (+ ≈ US$ 0,12 → acumulado ≈ US$ 0,34). **Qualquer voz nova precisa de autorização nova do dono** (AskUserQuestion), com o custo estimado. Melhor voz disponível na chave: `gpt-audio-1.5` com a voz `cedar`, um bloco corrido por piada (`tools/voice-audio.mjs`); o dono reprovou o TTS fala por fala ("vozes não estão boas") e a risada sintética ("robotizada"). Estime pelo **tempo de áudio**, não por take: ≈ US$ 0,015/min de TTS + US$ 0,006/min de Whisper (≈ US$ 0,021 por minuto gerado). Fala curta de esquete dá ~2 s por take, mas fala de comediante com "pausa longa", "devagar" ou imitação sai com 5–9 s, e risada de plateia com 3–10 s. No stand-up a conta prevista era US$ 0,04 e deu US$ 0,078. Reaproveite as falas de `picks.json` sempre que der.
 
 **B. Ideia e roteiro**
+- **Direção quando necessária (`27`):** preservar o canon e observar poucas referências de cenas reais antes de inventar o visual; se o vídeo já está aprovado, não reiniciar por obrigação. Planejar frame 0, beat central e fechamento. Nunca escolher tecnologia pelo hype.
 1. Briefing + **3 conceitos** (`10` §1–2), partindo do banco de ideias (`09`) e da lógica dos casos (`04`). Cheque o momento (`05`): a lista de trends tem data, então pesquise de novo.
 2. **Folha de batidas** (`templates/folha-de-batidas.md`), com tempo, plano, fala, intenção, texto na tela, som e o sinal que cada batida mira (`06`, `07`, `08`):
    - abertura fria com rosto + voz + texto-gancho no quadro 0;
@@ -80,6 +88,8 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 **C. Vozes** (`15`, `08`): voice-final → picks → analyze-voices → voice-fast 1,1×. Corte nos respiros com `AudioList.clip` e realinhe as palavras por sílabas. Dirija a voz como atuação (intenção + subtexto).
 
 **D. Cena, animação e som**
+- **Direção de arte (`27`):** assinatura visual própria, um foco por quadro, marca e rig fiéis, tipografia e leitura reais em 9:16.
+- **Motion cinematográfico (`28`):** cada efeito precisa de gatilho, estado antes/depois, motivo, tempo, som e teste. GSAP/HyperFrames/Remotion/3D são alternativas condicionais, não requisitos; o `seek(t)` determinístico do pipeline atual prevalece.
 - Visual (`11`): vetor chapado; o Tato é o único volumétrico; uma luz por cena; mundo vivo; profundidade; ativos da marca.
 - Animação (`12`, `13`):
   - **movimento calmo**: o corpo segue a voz suavizada; cabeça e mãos só no começo das frases; nada tremendo;
@@ -95,6 +105,7 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
   - −15 LUFS, pico-alvo ≤ −2 dBTP (o QC aceita ≤ −1).
 
 **E. Render e QC** (`15`, `16`)
+- **Crítica renderizada (`29`):** avaliar duas pistas — técnica/verdade/direitos e arte/narrativa/comédia. Inspecionar frames do MP4, corrigir a causa mais relevante, rerenderizar e comparar; notas automáticas não provam qualidade.
 - Antes do render: folha de quadros (`stills --sheet`), correções, verify-determinism, alpha-scan, exportar a linha do tempo, mixar.
 - Render em segundo plano (`V8P_HASH_SCOPE=film`), **em laço de 3 tentativas** (o render pode morrer com `EBUSY` no OneDrive). Leia a linha `exit N` do log, nunca o `echo`. Depois `build --fps 60`, e confira se o hash do build bate com o do render.
 - Depois do render: qc, black-scan, safezone, folha de 1–2 quadros por segundo e quadros em volta de cada corte.
@@ -137,6 +148,7 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 - [ ] **Post**: privacidade **Todos** (nunca "Somente eu"); txt completo; ≤ 5 hashtags de nicho, sem acento; a primeira linha é a piada; pedido de envio ("manda pra quem…"); sem 👇 nem #fyp; avisos; placar ≥ 33/44 sem ★ zerado; gasto informado; fontes citadas
 - [ ] **Sem "no sense"**: toda piada com causa visível, punch na última palavra, nenhum personagem falando inglês sem motivo, nenhum objeto mágico; revisão por agentes sobre as folhas de 2 fps do MP4 (`25`)
 
+**Camada profissional adicional (27–31), antes de entregar:** conferir fidelidade do Tato e do produto, assinatura visual que não serviria a qualquer app, intenção de todo movimento, frames 0–2 s e quadros ao redor dos cortes, causa da piada, leitura no celular, possibilidade de erro do próprio revisor, e diferença entre dado medido e hipótese de performance. Corrigir P0/P1 realmente observados; não inventar aprovação, virais ou especialistas consultados.
 ## Ferramentas e modelos desta skill
 
 | Arquivo | Uso |
@@ -178,3 +190,8 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | `25-revisao-com-agentes.md` | método de revisão com agentes: folhas de 2 fps, papéis (leigos Haiku, especialistas Sonnet), modelos de prompt, como filtrar, formato do relatório |
 | `26-pesquisa-ia-legendas-crescimento.md` | onde a IA erra (estudos), checklist anti-"cara de IA", retenção e ritmo, narrador no gancho, legendas (Netflix), post e hashtags (5 no IG), TikTok oficial, identificação do brasileiro, números sem fonte |
 | `casos/e-se-dias/` | documentos brutos do caso: mensagens do dono, pesquisa, comparação com as referências, roteiros v2–v9, auditorias, rodadas de agentes, folhas e legendas |
+| `27-direcao-de-arte-e-referencias.md` | assinatura autoral, assets canônicos, referências de estúdios e concorrentes, storyboard visual e anti-slop causal |
+| `28-motion-graphics-e-ferramentas.md` | contrato de movimento, coreografia, HyperFrames opcional, GSAP/Remotion/3D quando compatíveis, QA de animação |
+| `29-render-critica-reparo.md` | duas pistas de QA, crítica leiga/arte, diagnóstico causal, rerender e comparação honesta |
+| `30-estrategia-criativa-copy-e-medicao.md` | psicologia de espectador, entretenimento vs venda, copy, crescimento, hipóteses, funil e métricas honestas |
+| `31-orquestracao-e-contexto.md` | especialistas instalados, carregamento proporcional, níveis de evidência e aprendizagem contínua |
