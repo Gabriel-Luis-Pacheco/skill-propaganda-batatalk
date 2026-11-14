@@ -56,3 +56,7 @@ node v8-publica/tools/captions.mjs --cut <c> --out entrega/v8-publica/tiktok   #
 ## Entrega
 
 Pasta `Downloads/BataTalk-TikTok-21-videos/00_<NOME>/` com `<arquivo>.mp4` + `legenda-e-hashtags.txt`; cópia em `entrega/v8-publica/tiktok/`; `LEGENDAS-TIKTOK.md`; `PROGRESSO.md`.
+
+## Ferramentas alternativas — critério de adoção
+
+O `v8-publica` e seu contrato `window.__film.seek(t)` continuam sendo o **pipeline padrão e suportado**. HyperFrames, Remotion, GSAP ou Three.js só entram quando um shot específico se beneficia, a instalação existe e o resultado é determinístico/verificado. Não misturar runtimes sem ensaios de timing e QC. Critérios, protocolo e ressalvas em [`28-motion-graphics-e-ferramentas.md`](28-motion-graphics-e-ferramentas.md).
