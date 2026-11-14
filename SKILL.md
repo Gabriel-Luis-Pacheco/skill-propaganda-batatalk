@@ -58,7 +58,6 @@ Reúne tudo o que funcionou e o que deu errado nos vídeos do BataTalk para TikT
 | **Formato "E se você…? / dia 1, 10, 100, 1000"** (o campeão) | partir do roteiro e do código do campeão, trocando a situação; seguir o checklist do formato | 24, 25, 26, 07, `casos/e-se-dias/` |
 | **"Revisa criticamente / faz sentido pra um leigo? / lança agentes"** | folhas de 2 fps + sons + intenção; rodadas Haiku (leigos) + Sonnet (especialistas); tabela do que vários viram; plano revisado e criticado antes de produzir | 25, 26, 16 |
 | **Onde a IA erra / legendas / hashtags / algoritmo** | checklist anti-"cara de IA", regras de legenda (Netflix), 5 hashtags, envios, narrador | 26, 17, 02 |
-
 | **Direção visual / estética de estúdio / vídeo genérico** | inspecionar referências de cenas, extrair mecanismos, preservar assets, escolher assinatura formal/material/comportamental, criticar composição no frame | **27**, 11, 01 |
 | **Motion / HyperFrames / GSAP / cinemática / animação de texto** | criar contrato de gesto e timeline de beats; priorizar renderizador v8-publica e usar HyperFrames só onde oferecer vantagem real e houver acesso | **28**, 12, 13, 15 |
 | **Crítica visual / comparar renders / “ainda parece IA”** | observar quadros reais do MP4, identificar maior falha causal, reparar, rerenderizar e comparar | **29**, 25, 16, 27 |
